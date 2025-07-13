@@ -2,7 +2,7 @@
 
 ## Overview
 
-The TikTok Video Analysis System employs 17 active ML analyzers distributed across GPU and CPU workers to provide comprehensive video analysis. Each analyzer is optimized for specific aspects of video content and designed for maximum GPU utilization and model caching efficiency.
+The TikTok Video Analysis System employs 19 active ML analyzers distributed across GPU and CPU workers to provide comprehensive video analysis. Each analyzer is optimized for specific aspects of video content and designed for maximum GPU utilization and model caching efficiency.
 
 ## Analyzer Architecture
 

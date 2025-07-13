@@ -2,7 +2,7 @@
 
 ## Overview
 
-The TikTok Video Analysis System is a GPU-optimized machine learning pipeline that processes videos through 17 active ML analyzers to generate comprehensive production documentation. The system achieves **1.5-0.8x realtime performance** through advanced optimizations including model caching, memory pool management, and multiprocess GPU parallelization.
+The TikTok Video Analysis System is a GPU-optimized machine learning pipeline that processes videos through 19 active ML analyzers to generate comprehensive production documentation. The system achieves **1.5-0.8x realtime performance** through advanced optimizations including model caching, memory pool management, and multiprocess GPU parallelization.
 
 ## High-Level Architecture
 

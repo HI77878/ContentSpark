@@ -1,5 +1,5 @@
 # TikTok Video Analysis System - Requirements
-# GPU-optimized ML video analysis with 17 active analyzers
+# GPU-optimized ML video analysis with 19 active analyzers
 # Python 3.10+ required for optimal compatibility
 
 # Core ML Frameworks

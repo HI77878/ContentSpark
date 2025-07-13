@@ -2,7 +2,7 @@
 
 ## Overview
 
-The TikTok Video Analysis System provides a RESTful API built with FastAPI that processes videos through 17 ML analyzers. The API is optimized for GPU utilization and supports both TikTok URL downloads and local file analysis.
+The TikTok Video Analysis System provides a RESTful API built with FastAPI that processes videos through 19 ML analyzers. The API is optimized for GPU utilization and supports both TikTok URL downloads and local file analysis.
 
 ## Base Information
 

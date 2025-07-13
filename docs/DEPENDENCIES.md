@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides comprehensive information about all dependencies required for the TikTok Video Analysis System. The system relies on 17 active ML analyzers requiring specialized dependencies for GPU optimization, video processing, and advanced machine learning capabilities.
+This document provides comprehensive information about all dependencies required for the TikTok Video Analysis System. The system relies on 19 active ML analyzers requiring specialized dependencies for GPU optimization, video processing, and advanced machine learning capabilities.
 
 ## Python Version Requirements
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This codebase implements a **GPU-optimized TikTok video analysis system** that processes videos through 17 active ML analyzers to generate comprehensive film production documentation. The system achieves **1.5-0.8x realtime performance** (80-90% faster than baseline) through advanced GPU optimizations including model caching, memory pool management, and multiprocess GPU parallelization.
+This codebase implements a **GPU-optimized TikTok video analysis system** that processes videos through 19 active ML analyzers to generate comprehensive film production documentation. The system achieves **1.5-0.8x realtime performance** (80-90% faster than baseline) through advanced GPU optimizations including model caching, memory pool management, and multiprocess GPU parallelization.
 
 ## System Architecture
 
@@ -12,7 +12,7 @@ This codebase implements a **GPU-optimized TikTok video analysis system** that p
 ```
 TikTok URL → Downloader → Video File → API → Cached GPU Executor → Worker Processes → JSON Results
                                               ↓
-                                    [17 ML Analyzers with model caching]
+                                    [19 ML Analyzers with model caching]
 ```
 
 ### GPU-Optimized Service Topology
@@ -25,7 +25,7 @@ TikTok URL → Downloader → Video File → API → Cached GPU Executor → Wor
 ### Directory Structure
 ```
 tiktok_production/
-├── analyzers/                    # 130+ analyzer files (17 active, optimized versions)
+├── analyzers/                    # 130+ analyzer files (19 active, optimized versions)
 ├── api/                         # FastAPI servers (use stable_production_api_multiprocess.py)
 ├── configs/                     # GPU groups, performance configs, optimization settings
 ├── utils/                       # GPU management, model caching, parallel processing
@@ -138,7 +138,7 @@ All analyzers inherit from `GPUBatchAnalyzer` with:
 - Automatic GPU memory management
 
 ### Configuration Files
-- `ml_analyzer_registry_complete.py` - Central analyzer registry (30+ total, 17 active)
+- `ml_analyzer_registry_complete.py` - Central analyzer registry (30+ total, 19 active)
 - `configs/gpu_groups_config.py` - GPU workload distribution and disabled analyzers
 - `configs/performance_config.py` - Frame sampling rates and batch sizes
 - `utils/multiprocess_gpu_executor_registry_cached.py` - Cached model executor
@@ -291,7 +291,7 @@ python3 api/stable_production_api_multiprocess.py > logs/api_restart.log 2>&1 &
 - Python 3.10+ with specific ML model dependencies
 
 ### Current Status (July 2025)
-- **17 active analyzers** (out of 30+ total available)
+- **19 active analyzers** (out of 30+ total available)
 - **GPU-optimized** with 80-90% performance improvement
 - **Production-ready** with model caching and memory optimization
 - **Quality maintained** at 100% reconstruction score

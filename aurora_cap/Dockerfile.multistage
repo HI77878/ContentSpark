@@ -1,0 +1,54 @@
+# Multi-stage Dockerfile für AuroraCap
+# Stage 1: Download and prepare the AuroraCap repository
+FROM alpine/git:latest as downloader
+WORKDIR /download
+RUN git clone https://github.com/rese1f/aurora.git
+
+# Stage 2: Build the final image
+FROM pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime
+
+# Systemabhängigkeiten installieren
+RUN apt-get update && apt-get install -y \
+    git \
+    ffmpeg \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Arbeitsverzeichnis im Container setzen
+WORKDIR /aurora
+
+# Copy AuroraCap from stage 1
+COPY --from=downloader /download/aurora /aurora
+
+# Python-Abhängigkeiten installieren
+# Installiere zuerst die Basis-Requirements
+RUN pip install --no-cache-dir \
+    transformers==4.47.0 \
+    accelerate \
+    opencv-python \
+    numpy \
+    pillow \
+    sentencepiece \
+    protobuf \
+    decord
+
+# AuroraCap installieren
+RUN pip install --no-cache-dir -e .
+
+# Verzeichnisse für Videos und Ausgaben erstellen
+RUN mkdir -p /videos /app/output
+
+# Kopiere das Videoverarbeitungsskript in den Container
+COPY ./video_captioning_script.py /app/video_captioning_script.py
+
+# Arbeitsverzeichnis für die Ausführung setzen
+WORKDIR /app
+
+# Lege das Standardkommando fest
+CMD ["python", "/app/video_captioning_script.py"]

@@ -1,0 +1,484 @@
+2025-07-08 10:54:21.418937: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-08 10:54:21.439715: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1751972061.467269 3231663 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1751972061.475680 3231663 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1751972061.497625 3231663 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972061.497673 3231663 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972061.497676 3231663 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972061.497679 3231663 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-08 10:54:21.504131: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/user/.local/lib/python3.10/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-07-08 10:54:26,480 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-08 10:54:26,489 - __main__ - INFO - Starting Stable Production API with Multiprocess Parallelization...
+INFO:     Started server process [3231663]
+INFO:     Waiting for application startup.
+2025-07-08 10:54:26,511 - __main__ - INFO - 🚀 Stable Production API (Multiprocess) starting...
+2025-07-08 10:54:26,511 - __main__ - INFO - 📊 Target: <3x realtime, >90% reconstruction
+2025-07-08 10:54:26,511 - __main__ - INFO - 🔧 Using process-based GPU parallelization
+2025-07-08 10:54:26,512 - __main__ - INFO - 🚀 Production Engine initialized with 23 active analyzers
+2025-07-08 10:54:26,512 - __main__ - INFO -    Using multiprocess GPU parallelization
+2025-07-08 10:54:26,512 - __main__ - INFO -    3 GPU processes for true parallel execution
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+2025-07-08 10:59:40,191 - __main__ - INFO - 🎬 Starting analysis: /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 10:59:40,224 - utils.multiprocess_gpu_executor_final - INFO - Started 3 GPU worker processes
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1751972383.738033 3233591 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1751972383.744516 3233591 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1751972383.760845 3233591 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.760908 3233591 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.760911 3233591 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.760914 3233591 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1751972383.861780 3233593 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1751972383.868158 3233593 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1751972383.884500 3233593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.884543 3233593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.884546 3233593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.884549 3233593 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1751972383.955932 3233592 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1751972383.964019 3233592 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1751972383.983775 3233592 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.983819 3233592 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.983822 3233592 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1751972383.983826 3233592 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+/home/user/.local/lib/python3.10/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/user/.local/lib/python3.10/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/user/.local/lib/python3.10/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-07-08 10:59:48,656 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-08 10:59:48,663 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded text_overlay
+2025-07-08 10:59:48,663 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text Overlay] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 10:59:48,798 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-08 10:59:48,807 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Initializing on cuda
+2025-07-08 10:59:48,807 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded speech_transcription
+2025-07-08 10:59:48,807 - analyzers.speech_transcription_ultimate - INFO - Loading Whisper base model with FP16 optimization...
+2025-07-08 10:59:49,119 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-08 10:59:49,133 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded qwen2_vl_temporal
+2025-07-08 10:59:49,133 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Loading model: Qwen/Qwen2-VL-7B-Instruct
+2025-07-08 10:59:49,751 - analyzers.speech_transcription_ultimate - INFO - ✅ Whisper base model loaded with automatic FP16 optimization
+2025-07-08 10:59:49,752 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Starting analysis of /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 10:59:50,844 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Processor loaded with enhanced resolution settings
+2025-07-08 10:59:50,844 - analyzers.qwen2_vl_temporal_analyzer - INFO - Loading model with GPU optimizations...
+2025-07-08 10:59:50,845 - analyzers.qwen2_vl_temporal_analyzer - INFO - ⚠️ Using standard attention (Flash Attention not available)
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+`Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]2025-07-08 10:59:52,106 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Audio duration: 68.4s
+Detected language: English
+  0%|          | 0/6836 [00:00<?, ?frames/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:09,  2.35s/it] 38%|███▊      | 2610/6836 [00:02<00:03, 1208.51frames/s]Loading checkpoint shards:  40%|████      | 2/5 [00:04<00:06,  2.16s/it] 82%|████████▏ | 5610/6836 [00:02<00:00, 2071.00frames/s]100%|██████████| 6836/6836 [00:03<00:00, 2545.09frames/s]100%|██████████| 6836/6836 [00:03<00:00, 2165.52frames/s]
+2025-07-08 10:59:55,996 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Transcribed 6 segments with 33 words
+2025-07-08 10:59:56,097 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Pitch analysis: low/masculine
+2025-07-08 10:59:56,097 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Speaking rate: 127 WPM
+2025-07-08 10:59:56,184 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Found 19 emphasized words
+2025-07-08 10:59:56,185 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: speech_transcription completed in 7.4s
+2025-07-08 10:59:56,689 - utils.multiprocess_gpu_executor_final - INFO - Progress: 1/23 analyzers completed
+2025-07-08 10:59:56,699 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded product_detection
+2025-07-08 10:59:56,699 - analyzers.gpu_batch_product_detection_light - INFO - [ProductDetection-Light] Loading YOLOv8s...
+2025-07-08 10:59:56,824 - analyzers.gpu_batch_product_detection_light - INFO - ✅ YOLOv8s loaded - 5x faster for products!
+Loading checkpoint shards:  60%|██████    | 3/5 [00:06<00:03,  1.99s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:08<00:01,  1.94s/it]2025-07-08 10:59:59,385 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text Overlay] Loading EasyOCR with German + English
+2025-07-08 10:59:59,882 - analyzers.text_overlay_tiktok_fixed - INFO - ✅ EasyOCR loaded on GPU for TikTok text detection
+Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.78s/it]
+2025-07-08 11:00:00,589 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] GPU Memory after loading: 15.49GB allocated, 16.78GB reserved
+2025-07-08 11:00:00,589 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Qwen2-VL Temporal model loaded successfully
+2025-07-08 11:00:00,589 - analyzers.qwen2_vl_temporal_analyzer - INFO - Warming up model...
+2025-07-08 11:00:02,572 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Model warmed up
+2025-07-08 11:00:02,572 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Analyzing video: chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:00:02,592 - analyzers.qwen2_vl_temporal_analyzer - INFO - Video: 68.5s at 60.0 FPS
+2025-07-08 11:00:02,593 - analyzers.qwen2_vl_temporal_analyzer - INFO - Processing 68 temporal segments
+2025-07-08 11:00:02,593 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 1/68: 0.0s - 1.0s
+2025-07-08 11:00:05,137 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> In the bathroom, a shirtless man is seen moving from one position to another, with a sink and mirror...
+2025-07-08 11:00:05,602 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 2/68: 1.0s - 2.0s
+2025-07-08 11:00:07,906 - analyzers.gpu_batch_product_detection_light - INFO - [ProductDetection-Light] Processing 137 frames
+2025-07-08 11:00:09,572 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> In the bathroom, a shirtless man is seen moving from one position to another, with a sink and mirror...
+2025-07-08 11:00:09,572 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 3/68: 2.0s - 3.0s
+2025-07-08 11:00:15,579 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> In the bathroom, a shirtless man is seen moving from one position to another, with a sink and mirror...
+2025-07-08 11:00:15,579 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 4/68: 3.0s - 4.0s
+2025-07-08 11:00:16,051 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: product_detection completed in 19.4s
+2025-07-08 11:00:16,544 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded object_detection
+2025-07-08 11:00:16,545 - utils.multiprocess_gpu_executor_final - INFO - Progress: 2/23 analyzers completed
+2025-07-08 11:00:16,545 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Loading YOLOv8x model...
+2025-07-08 11:00:18,226 - analyzers.gpu_batch_object_detection_yolo - INFO - ✅ YOLOv8x loaded on cuda
+2025-07-08 11:00:18,227 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Extracting up to 300 frames with interval 3
+2025-07-08 11:00:20,150 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 5/68: 4.0s - 5.0s
+2025-07-08 11:00:21,355 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Extracted 300 frames for batch processing
+2025-07-08 11:00:21,356 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Processing 300 frames in batches
+2025-07-08 11:00:21,356 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 1 with 32 frames...
+2025-07-08 11:00:25,222 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 6/68: 5.0s - 6.0s
+2025-07-08 11:00:32,016 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 7/68: 6.0s - 7.0s
+2025-07-08 11:00:37,145 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 8/68: 7.0s - 8.0s
+2025-07-08 11:00:37,343 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 2 with 32 frames...
+2025-07-08 11:00:38,664 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 3 with 32 frames...
+2025-07-08 11:00:40,339 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 4 with 32 frames...
+2025-07-08 11:00:41,849 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 5 with 32 frames...
+2025-07-08 11:00:43,152 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 9/68: 8.0s - 9.0s
+2025-07-08 11:00:43,247 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 6 with 32 frames...
+2025-07-08 11:00:44,680 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 7 with 32 frames...
+2025-07-08 11:00:46,382 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 8 with 32 frames...
+2025-07-08 11:00:47,960 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 9 with 32 frames...
+2025-07-08 11:00:49,073 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 10/68: 9.0s - 10.0s
+2025-07-08 11:00:49,166 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 10 with 12 frames...
+2025-07-08 11:00:55,145 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 11/68: 10.0s - 11.0s
+2025-07-08 11:00:55,205 - analyzers.gpu_batch_object_detection_yolo - INFO - ✅ Detected 2272 objects in 300 frames
+2025-07-08 11:00:55,219 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: object_detection completed in 38.7s
+2025-07-08 11:00:55,706 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded visual_effects
+2025-07-08 11:00:55,706 - analyzers.standardized_base_analyzer - INFO - [VisualEffectsLight] Loading model...
+2025-07-08 11:00:55,706 - analyzers.visual_effects_light_fixed - INFO - [VisualEffects-Light] Ready - using CV algorithms only
+2025-07-08 11:00:55,706 - analyzers.standardized_base_analyzer - INFO - [VisualEffectsLight] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:00:55,715 - utils.multiprocess_gpu_executor_final - INFO - Progress: 3/23 analyzers completed
+2025-07-08 11:00:58,728 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The shirtless man in the bathroom transitions from standing in front of the mirror to moving towards...
+2025-07-08 11:00:59,157 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 12/68: 11.0s - 12.0s
+2025-07-08 11:01:02,758 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 13/68: 12.0s - 13.0s
+2025-07-08 11:01:05,193 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 14/68: 13.0s - 14.0s
+2025-07-08 11:01:07,692 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 15/68: 14.0s - 15.0s
+2025-07-08 11:01:12,360 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 16/68: 15.0s - 16.0s
+2025-07-08 11:01:15,797 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 17/68: 16.0s - 17.0s
+2025-07-08 11:01:16,921 - analyzers.visual_effects_light_fixed - INFO - [VisualEffects-Light] Found 175 effect segments
+2025-07-08 11:01:16,922 - analyzers.standardized_base_analyzer - INFO - [VisualEffectsLight] Completed in 21.2s
+2025-07-08 11:01:17,384 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: visual_effects completed in 21.7s
+2025-07-08 11:01:17,799 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded streaming_dense_captioning
+2025-07-08 11:01:17,799 - analyzers.streaming_dense_captioning_fixed - INFO - [SDC-Fixed] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:01:17,799 - utils.multiprocess_gpu_executor_final - INFO - Progress: 4/23 analyzers completed
+2025-07-08 11:01:17,804 - analyzers.streaming_dense_captioning_fixed - INFO - [SDC-Fixed] Video: 68.5s, 60.0 FPS
+2025-07-08 11:01:19,339 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 18/68: 17.0s - 18.0s
+2025-07-08 11:01:24,574 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 19/68: 18.0s - 19.0s
+2025-07-08 11:01:27,742 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 20/68: 19.0s - 20.0s
+2025-07-08 11:01:29,896 - analyzers.streaming_dense_captioning_fixed - INFO - [SDC-Fixed] Generated 34 segments, 99.3% coverage
+2025-07-08 11:01:30,391 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: streaming_dense_captioning completed in 12.6s
+2025-07-08 11:01:30,547 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 21/68: 20.0s - 21.0s
+2025-07-08 11:01:30,846 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded camera_analysis
+2025-07-08 11:01:30,846 - utils.multiprocess_gpu_executor_final - INFO - Progress: 5/23 analyzers completed
+2025-07-08 11:01:30,847 - analyzers.camera_analysis_fixed - INFO - [CameraAnalysis-Fixed] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:01:33,392 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The shirtless man in the bathroom rinses his mouth with water from a cup, then places the cup on the...
+2025-07-08 11:01:33,806 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 22/68: 21.0s - 22.0s
+2025-07-08 11:01:36,953 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 23/68: 22.0s - 23.0s
+2025-07-08 11:01:40,251 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 24/68: 23.0s - 24.0s
+2025-07-08 11:01:43,942 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text] Found 274 segments with text
+2025-07-08 11:01:43,943 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: text_overlay completed in 115.3s
+2025-07-08 11:01:44,346 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded background_segmentation
+2025-07-08 11:01:44,347 - analyzers.background_segmentation_light - INFO - [BackgroundSeg-Light] Loading SegFormer-B0...
+2025-07-08 11:01:44,347 - utils.multiprocess_gpu_executor_final - INFO - Progress: 6/23 analyzers completed
+2025-07-08 11:01:44,716 - analyzers.background_segmentation_light - INFO - ✅ SegFormer-B0 loaded - 8x faster!
+2025-07-08 11:01:44,869 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 25/68: 24.0s - 25.0s
+2025-07-08 11:01:45,072 - analyzers.camera_analysis_fixed - INFO - [CameraAnalysis-Fixed] Found 20 segments
+2025-07-08 11:01:45,072 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: camera_analysis completed in 14.2s
+2025-07-08 11:01:45,550 - utils.multiprocess_gpu_executor_final - INFO - Progress: 7/23 analyzers completed
+2025-07-08 11:01:45,550 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded color_analysis
+2025-07-08 11:01:45,550 - analyzers.gpu_batch_color_analysis - INFO - [ColorAnalysisOptimized] Starting GPU analysis of /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:01:47,357 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 26/68: 25.0s - 26.0s
+2025-07-08 11:01:50,390 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 27/68: 26.0s - 27.0s
+2025-07-08 11:01:53,747 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 28/68: 27.0s - 28.0s
+2025-07-08 11:01:56,505 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 29/68: 28.0s - 29.0s
+2025-07-08 11:01:57,105 - analyzers.background_segmentation_light - INFO - [BackgroundSeg-Light] Processing 137 frames
+2025-07-08 11:01:57,928 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: color_analysis completed in 12.4s
+2025-07-08 11:01:58,396 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded content_quality
+2025-07-08 11:01:58,396 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality-Fixed] Starting analysis of /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:01:58,396 - utils.multiprocess_gpu_executor_final - INFO - Progress: 8/23 analyzers completed
+2025-07-08 11:01:59,431 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 30/68: 29.0s - 30.0s
+2025-07-08 11:02:02,852 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 31/68: 30.0s - 31.0s
+2025-07-08 11:02:02,981 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: background_segmentation completed in 18.6s
+2025-07-08 11:02:03,453 - utils.multiprocess_gpu_executor_final - INFO - Progress: 9/23 analyzers completed
+2025-07-08 11:02:03,469 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded eye_tracking
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1751972523.473645 3235032 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1751972523.508767 3235034 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+2025-07-08 11:02:07,103 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The shirtless man in the bathroom is seen bending over and reaching down to the floor, likely to pic...
+2025-07-08 11:02:07,588 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 32/68: 31.0s - 32.0s
+2025-07-08 11:02:10,480 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 33/68: 32.0s - 33.0s
+2025-07-08 11:02:10,790 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality] Analyzing quality of 137 frames
+2025-07-08 11:02:10,791 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality] Sampled 137 frames down to 20 for faster processing
+2025-07-08 11:02:11,818 - analyzers.gpu_batch_content_quality_fixed - INFO - ✅ Quality analysis completed in 1.03s
+2025-07-08 11:02:11,818 - analyzers.gpu_batch_content_quality_fixed - INFO - 📊 Overall quality score: 5.90/10
+2025-07-08 11:02:11,818 - analyzers.gpu_batch_content_quality_fixed - INFO - ✅ ContentQuality completed: 20 segments
+2025-07-08 11:02:11,819 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: content_quality completed in 13.4s
+2025-07-08 11:02:12,297 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded scene_segmentation
+2025-07-08 11:02:12,297 - utils.multiprocess_gpu_executor_final - INFO - Progress: 10/23 analyzers completed
+2025-07-08 11:02:12,851 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 34/68: 33.0s - 34.0s
+2025-07-08 11:02:15,654 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 35/68: 34.0s - 35.0s
+W0000 00:00:1751972535.894441 3235029 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+2025-07-08 11:02:16,930 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: eye_tracking completed in 13.5s
+2025-07-08 11:02:17,371 - utils.multiprocess_gpu_executor_final - INFO - Progress: 11/23 analyzers completed
+2025-07-08 11:02:17,370 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded cut_analysis
+2025-07-08 11:02:18,761 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 36/68: 35.0s - 36.0s
+2025-07-08 11:02:22,517 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 37/68: 36.0s - 37.0s
+2025-07-08 11:02:26,598 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 38/68: 37.0s - 38.0s
+2025-07-08 11:02:29,379 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 39/68: 38.0s - 39.0s
+2025-07-08 11:02:29,608 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: scene_segmentation completed in 17.3s
+2025-07-08 11:02:29,619 - utils.multiprocess_gpu_executor_final - INFO - Progress: 12/23 analyzers completed
+2025-07-08 11:02:30,113 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded age_estimation
+2025-07-08 11:02:30,113 - analyzers.age_estimation_light - INFO - [AgeEstimation-Light] Loading lightweight age detector...
+2025-07-08 11:02:30,130 - analyzers.age_estimation_light - INFO - ✅ Lightweight age estimation ready - 5x faster!
+2025-07-08 11:02:31,733 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 40/68: 39.0s - 40.0s
+2025-07-08 11:02:32,030 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: cut_analysis completed in 14.7s
+2025-07-08 11:02:32,041 - utils.multiprocess_gpu_executor_final - INFO - Progress: 13/23 analyzers completed
+2025-07-08 11:02:32,505 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded speech_rate
+2025-07-08 11:02:32,506 - analyzers.gpu_batch_speech_rate_enhanced - INFO - [SpeechRateEnhanced] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:02:35,283 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 41/68: 40.0s - 41.0s
+2025-07-08 11:02:39,372 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> In the bathroom, the shirtless man bends over and reaches down to the floor, possibly to pick someth...
+2025-07-08 11:02:39,791 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 42/68: 41.0s - 42.0s
+2025-07-08 11:02:41,456 - analyzers.age_estimation_light - INFO - [AgeEstimation-Light] Processing 137 frames
+2025-07-08 11:02:43,226 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 43/68: 42.0s - 43.0s
+2025-07-08 11:02:45,599 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: age_estimation completed in 15.5s
+2025-07-08 11:02:46,018 - analyzers.gpu_batch_sound_effects_enhanced - INFO - [SoundEffectsEnhanced] Initialized - detecting beyond music
+2025-07-08 11:02:46,019 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded sound_effects
+2025-07-08 11:02:46,019 - analyzers.gpu_batch_sound_effects_enhanced - INFO - [SoundEffectsEnhanced] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:02:46,019 - utils.multiprocess_gpu_executor_final - INFO - Progress: 14/23 analyzers completed
+2025-07-08 11:02:46,240 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 44/68: 43.0s - 44.0s
+2025-07-08 11:02:49,057 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 45/68: 44.0s - 45.0s
+2025-07-08 11:02:52,221 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 46/68: 45.0s - 46.0s
+2025-07-08 11:02:55,186 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 47/68: 46.0s - 47.0s
+2025-07-08 11:02:59,022 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Initializing on cuda
+2025-07-08 11:02:59,022 - analyzers.speech_transcription_ultimate - INFO - Loading Whisper base model with FP16 optimization...
+2025-07-08 11:02:59,028 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 48/68: 47.0s - 48.0s
+2025-07-08 11:02:59,610 - analyzers.speech_transcription_ultimate - INFO - ✅ Whisper base model loaded with automatic FP16 optimization
+2025-07-08 11:02:59,611 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Starting analysis of /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:02:59,930 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Audio duration: 68.4s
+[TikTokTextOverlayAnalyzer] Extracted 274 frames with pinned memory
+[TikTokTextOverlayAnalyzer] Loading model...
+[TikTokTextOverlayAnalyzer] GPU Memory after loading: 0.09GB
+[GPUBatchBackgroundSegmentationLight] Loading model...
+[GPUBatchBackgroundSegmentationLight] GPU Memory after loading: 0.11GB
+[GPUBatchBackgroundSegmentationLight] Extracted 137 frames with pinned memory
+[EyeTracking] MediaPipe Face Mesh initialized (CPU only, iris tracking enabled)
+[EyeTracking] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+[GPUBatchEyeTracking] Using sample_rate=30 from config (fps=60.0)
+[GPUBatchEyeTracking] Extracted 137 frames with pinned memory
+[EyeTracking] Eye tracking at 28.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 29.00s - Gaze: weg_oben
+[EyeTracking] Eye tracking at 29.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 30.00s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 30.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 33.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 34.00s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 34.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 35.00s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 36.00s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 37.00s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 37.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 38.00s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 39.50s - Gaze: in_kamera
+[EyeTracking] Eye tracking at 55.50s - Gaze: in_kamera
+[EyeTracking] Found 15 eye tracking segments
+[CutAnalysis-Fixed] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+[CutAnalysisFixedAnalyzer] Using sample_rate=30 from config (fps=60.0)
+[CutAnalysisFixedAnalyzer] Extracted 137 frames with pinned memory
+Detected language: English
+  0%|          | 0/6836 [00:00<?, ?frames/s]2025-07-08 11:03:02,441 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: sound_effects completed in 16.4s
+2025-07-08 11:03:02,607 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 49/68: 48.0s - 49.0s
+2025-07-08 11:03:02,954 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded speech_emotion
+2025-07-08 11:03:02,955 - utils.multiprocess_gpu_executor_final - INFO - Progress: 15/23 analyzers completed
+ 38%|███▊      | 2610/6836 [00:03<00:05, 737.93frames/s]Some weights of the model checkpoint at ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition were not used when initializing Wav2Vec2ForSequenceClassification: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.output.bias', 'classifier.output.weight']
+- This IS expected if you are initializing Wav2Vec2ForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForSequenceClassification were not initialized from the model checkpoint at ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Device set to use cuda:0
+2025-07-08 11:03:04,658 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 50/68: 49.0s - 50.0s
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+2025-07-08 11:03:07,675 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 51/68: 50.0s - 51.0s
+ 82%|████████▏ | 5610/6836 [00:07<00:01, 718.44frames/s]2025-07-08 11:03:08,467 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: speech_emotion completed in 5.5s
+100%|██████████| 6836/6836 [00:08<00:00, 890.86frames/s]100%|██████████| 6836/6836 [00:08<00:00, 829.01frames/s]
+2025-07-08 11:03:08,539 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Transcribed 5 segments with 33 words
+2025-07-08 11:03:08,648 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Pitch analysis: low/masculine
+2025-07-08 11:03:08,648 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Speaking rate: 125 WPM
+2025-07-08 11:03:08,749 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Found 20 emphasized words
+2025-07-08 11:03:08,753 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: speech_rate completed in 36.2s
+2025-07-08 11:03:08,959 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded speech_flow
+2025-07-08 11:03:08,959 - analyzers.gpu_batch_speech_flow - INFO - [SpeechFlow] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:03:08,959 - utils.multiprocess_gpu_executor_final - INFO - Progress: 16/23 analyzers completed
+2025-07-08 11:03:09,197 - utils.multiprocess_gpu_executor_final - INFO - Progress: 17/23 analyzers completed
+2025-07-08 11:03:09,204 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded comment_cta_detection
+2025-07-08 11:03:09,205 - analyzers.gpu_batch_comment_cta_detection - INFO - [CommentCTA] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:03:09,205 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: comment_cta_detection completed in 0.0s
+2025-07-08 11:03:09,278 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Initializing on cuda
+2025-07-08 11:03:09,278 - analyzers.speech_transcription_ultimate - INFO - Loading Whisper base model with FP16 optimization...
+2025-07-08 11:03:09,578 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded audio_environment
+2025-07-08 11:03:09,578 - utils.multiprocess_gpu_executor_final - INFO - Progress: 18/23 analyzers completed
+2025-07-08 11:03:09,955 - analyzers.speech_transcription_ultimate - INFO - ✅ Whisper base model loaded with automatic FP16 optimization
+2025-07-08 11:03:09,955 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Starting analysis of /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:03:10,304 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Audio duration: 68.4s
+2025-07-08 11:03:10,305 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> In the bathroom, the shirtless man bends over and reaches down to the floor, possibly to pick someth...
+[GPUBatchProductDetectionLight] Loading model...
+[GPUBatchProductDetectionLight] GPU Memory after loading: 0.30GB
+[GPUBatchProductDetectionLight] Extracted 137 frames with pinned memory
+[GPUBatchObjectDetectionYOLO] Loading model...
+[GPUBatchObjectDetectionYOLO] GPU Memory after loading: 0.56GB
+[GPUBatchObjectDetectionYOLO] Extracted 300 frames with pinned memory
+[CameraAnalysis-Fixed] Initializing with movement detection on cuda:0
+✅ Optical flow initialized for camera movement detection
+[GPUBatchCameraAnalysisFixed] Extracted 20 frames with pinned memory
+[GPUBatchContentQualityFixed] Using sample_rate=30 from config (fps=60.0)
+[GPUBatchContentQualityFixed] Extracted 137 frames with pinned memory
+[SceneSegmentation-Fixed] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+[SceneSegmentationFixedAnalyzer] Using sample_rate=30 from config (fps=60.0)
+[SceneSegmentationFixedAnalyzer] Extracted 137 frames with pinned memory
+[SceneSegmentation-Fixed] Extracted 137 frames for analysis
+[GPUBatchAgeEstimationLight] Loading model...
+[GPUBatchAgeEstimationLight] GPU Memory after loading: 0.56GB
+[GPUBatchAgeEstimationLight] Extracted 137 frames with pinned memory
+[SpeechEmotionML] Initialized - will load model on first use
+[SpeechEmotionML] Analyzing: /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+[SpeechEmotionML] Loading pretrained emotion model...
+[SpeechEmotionML] ✅ Loaded pretrained emotion model
+[SpeechEmotionML] ✅ Analyzed 23 segments
+Detected language: English
+  0%|          | 0/6836 [00:00<?, ?frames/s]2025-07-08 11:03:10,663 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 52/68: 51.0s - 52.0s
+ 38%|███▊      | 2610/6836 [00:01<00:01, 2518.07frames/s]2025-07-08 11:03:12,077 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: audio_environment completed in 2.5s
+2025-07-08 11:03:12,570 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded temporal_flow
+2025-07-08 11:03:12,571 - utils.multiprocess_gpu_executor_final - INFO - Progress: 19/23 analyzers completed
+2025-07-08 11:03:13,622 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 53/68: 52.0s - 53.0s
+ 82%|████████▏ | 5610/6836 [00:03<00:00, 1608.35frames/s]100%|██████████| 6836/6836 [00:03<00:00, 1942.50frames/s]100%|██████████| 6836/6836 [00:03<00:00, 1908.31frames/s]
+2025-07-08 11:03:13,970 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Transcribed 6 segments with 33 words
+2025-07-08 11:03:14,063 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Pitch analysis: low/masculine
+2025-07-08 11:03:14,064 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Speaking rate: 127 WPM
+2025-07-08 11:03:14,156 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Found 19 emphasized words
+2025-07-08 11:03:14,170 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: speech_flow completed in 5.2s
+2025-07-08 11:03:14,176 - utils.multiprocess_gpu_executor_final - INFO - Progress: 20/23 analyzers completed
+2025-07-08 11:03:14,577 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: temporal_flow completed in 2.0s
+2025-07-08 11:03:14,723 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Maximum quality mode on cuda
+2025-07-08 11:03:14,724 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: Loaded audio_analysis
+2025-07-08 11:03:14,724 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Starting comprehensive analysis of /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+2025-07-08 11:03:15,046 - utils.multiprocess_gpu_executor_final - INFO - Progress: 21/23 analyzers completed
+2025-07-08 11:03:15,046 - utils.multiprocess_gpu_executor_final - INFO - Worker 0 shutting down
+[AudioEnvironment-Enhanced] Initializing enhanced audio environment analysis
+✅ Librosa available for advanced audio analysis
+[AudioEnvironment-Enhanced] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+[AudioEnvironment-Enhanced] Created 23 temporal segments
+   First segment: Innenraum mit Aktivität at 0.0s
+[TemporalFlow] Initializing temporal flow and narrative analysis
+[TemporalFlow] Analyzing /home/user/tiktok_production/test_videos/chaseridgewayy_7522589683939921165.mp4
+[CPUBatchTemporalFlow] Using sample_rate=30 from config (fps=60.0)
+[CPUBatchTemporalFlow] Extracted 20 frames with pinned memory
+[TemporalFlow] Analyzed temporal flow with 21 segments
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 131072 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 1146880 bytes read, 0 seeks
+2025-07-08 11:03:15,055 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Loaded 68.4s at 22050Hz
+2025-07-08 11:03:15,055 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Extracting global features...
+2025-07-08 11:03:16,580 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 54/68: 53.0s - 54.0s
+2025-07-08 11:03:19,219 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Processing 46 segments...
+2025-07-08 11:03:20,158 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 55/68: 54.0s - 55.0s
+2025-07-08 11:03:23,781 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 56/68: 55.0s - 56.0s
+2025-07-08 11:03:24,978 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Completed in 10.3s
+2025-07-08 11:03:24,979 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Primary type: voice_over
+2025-07-08 11:03:24,979 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Quality: high, SNR: 49.7dB
+2025-07-08 11:03:24,980 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: audio_analysis completed in 10.3s
+2025-07-08 11:03:25,444 - utils.multiprocess_gpu_executor_final - INFO - Worker 0 shutting down
+2025-07-08 11:03:25,444 - utils.multiprocess_gpu_executor_final - INFO - Progress: 22/23 analyzers completed
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 1960056 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 25695107 bytes read, 32 seeks
+[OPENCV:FFMPEG:40] Statistics: 1146880 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 12667990 bytes read, 30 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 13339746 bytes read, 0 seeks
+2025-07-08 11:03:25,708 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 57/68: 56.0s - 57.0s
+2025-07-08 11:03:28,052 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 58/68: 57.0s - 58.0s
+2025-07-08 11:03:30,705 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 59/68: 58.0s - 59.0s
+2025-07-08 11:03:33,898 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 60/68: 59.0s - 60.0s
+2025-07-08 11:03:37,780 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 61/68: 60.0s - 61.0s
+2025-07-08 11:03:41,131 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> In the bathroom, the shirtless man bends over and reaches down to the floor, possibly to pick someth...
+2025-07-08 11:03:41,569 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 62/68: 61.0s - 62.0s
+2025-07-08 11:03:44,349 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 63/68: 62.0s - 63.0s
+2025-07-08 11:03:46,492 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 64/68: 63.0s - 64.0s
+2025-07-08 11:03:49,876 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 65/68: 64.0s - 65.0s
+2025-07-08 11:03:52,669 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 66/68: 65.0s - 66.0s
+2025-07-08 11:03:55,315 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 67/68: 66.0s - 67.0s
+2025-07-08 11:03:58,188 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 68/68: 67.0s - 68.0s
+2025-07-08 11:04:01,080 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Temporal analysis complete: 68 segments in 251.9s
+2025-07-08 11:04:01,081 - analyzers.qwen2_vl_temporal_analyzer - INFO -    Realtime factor: 3.68x
+2025-07-08 11:04:01,081 - analyzers.qwen2_vl_temporal_analyzer - INFO -    Detected scene: bathroom
+2025-07-08 11:04:01,492 - utils.multiprocess_gpu_executor_final - INFO - Worker 0: qwen2_vl_temporal completed in 252.4s
+2025-07-08 11:04:01,896 - utils.multiprocess_gpu_executor_final - INFO - Worker 0 shutting down
+2025-07-08 11:04:01,896 - utils.multiprocess_gpu_executor_final - INFO - Progress: 23/23 analyzers completed
+[OPENCV:FFMPEG:40] Statistics: 131072 bytes read, 0 seeks
+[OPENCV:FFMPEG:40] Statistics: 524288 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 851968 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1212416 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1572864 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1867776 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2129920 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2424832 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1310720 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 851968 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1114112 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1409024 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1887318 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1254955 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1114112 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1572864 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1900544 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2424832 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2818048 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1572864 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1081344 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1441792 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1671168 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1867776 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2228224 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1081344 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 622592 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 884736 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1310720 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2162688 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2818048 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3506176 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1835008 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1343488 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2588672 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3801088 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 4947968 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 6455296 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1245184 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2392064 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 4096000 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 5079040 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 5898240 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2555904 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 983040 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1343488 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1769472 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2326528 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3085594 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1005828 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1549731 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1975715 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2434467 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3089827 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3810723 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 4629531 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1524518 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2114342 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2999078 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3982118 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 4769016 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3675566 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 855652 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1281636 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 1779722 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2471133 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2929885 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 3323101 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Statistics: 2775861 bytes read, 3 seeks
+2025-07-08 11:04:04,474 - utils.multiprocess_gpu_executor_final - INFO - Analysis complete in 264.3s (3.86x realtime)
+2025-07-08 11:04:04,477 - __main__ - INFO - ✅ Analysis complete in 264.3s
+2025-07-08 11:04:04,477 - __main__ - INFO - ⚡ Realtime factor: 3.86x
+2025-07-08 11:04:04,477 - __main__ - INFO - 📊 Reconstruction score: 100.0%
+2025-07-08 11:04:04,477 - __main__ - INFO - 🎯 Successful analyzers: 23/23
+2025-07-08 11:04:04,681 - __main__ - INFO - 💾 Results saved to /home/user/tiktok_production/results/chaseridgewayy_7522589683939921165_multiprocess_20250708_110404.json
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-07-08 12:36:56,619 - __main__ - INFO - Shutting down...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3231663]

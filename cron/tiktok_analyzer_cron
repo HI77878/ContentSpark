@@ -1,0 +1,17 @@
+# Crontab entries for TikTok Analyzer maintenance
+# Install with: crontab /home/user/tiktok_production/cron/tiktok_analyzer_cron
+
+# System monitoring every 5 minutes
+*/5 * * * * /usr/bin/python3 /home/user/tiktok_production/monitoring/system_monitor.py --once >> /home/user/tiktok_production/logs/monitor_cron.log 2>&1
+
+# Log rotation daily at 2 AM
+0 2 * * * /home/user/tiktok_production/scripts/log_rotation.sh >> /home/user/tiktok_production/logs/rotation.log 2>&1
+
+# Health check every 10 minutes with auto-restart if needed
+*/10 * * * * /home/user/tiktok_production/scripts/health_check.sh >> /home/user/tiktok_production/logs/health_check.log 2>&1
+
+# GPU memory cleanup every hour
+0 * * * * /usr/bin/python3 -c "import torch; torch.cuda.empty_cache() if torch.cuda.is_available() else None" 2>/dev/null
+
+# Weekly system report (Sundays at 3 AM)
+0 3 * * 0 /home/user/tiktok_production/scripts/weekly_report.sh | mail -s "TikTok Analyzer Weekly Report" admin@example.com

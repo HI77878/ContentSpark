@@ -1,0 +1,14 @@
+{
+  "test_time": "2025-07-11T05:55:32.322290",
+  "analysis_time": 35.9253716468811,
+  "successful_analyzers": 15,
+  "total_analyzers": 20,
+  "success_rate": 75.0,
+  "critical_analyzers_working": {
+    "Qwen2-VL Temporal": true,
+    "Object Detection": true,
+    "Face Emotion": false,
+    "Speech Transcription": true,
+    "Body Pose": false
+  }
+}

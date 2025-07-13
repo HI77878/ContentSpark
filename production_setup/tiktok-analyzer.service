@@ -1,0 +1,53 @@
+[Unit]
+Description=TikTok Video Analyzer Production Service
+Documentation=https://github.com/user/tiktok_production
+After=network.target
+
+[Service]
+Type=simple
+User=user
+Group=user
+WorkingDirectory=/home/user/tiktok_production
+
+# Environment setup
+Environment="PYTHONPATH=/home/user/tiktok_production"
+Environment="CUDA_VISIBLE_DEVICES=0"
+Environment="TF_FORCE_GPU_ALLOW_GROWTH=true"
+Environment="PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512"
+Environment="OPENCV_FFMPEG_CAPTURE_OPTIONS=protocol_whitelist=file,http,https,tcp,tls"
+Environment="OPENCV_VIDEOIO_PRIORITY_BACKEND=4"
+Environment="OPENCV_FFMPEG_MULTITHREADED=0"
+
+# Pre-start script to ensure environment
+ExecStartPre=/bin/bash -c 'source /home/user/tiktok_production/fix_ffmpeg_env.sh'
+
+# Main service - use multiprocess API for production
+ExecStart=/usr/bin/python3 /home/user/tiktok_production/api/stable_production_api_multiprocess.py
+
+# Restart policy
+Restart=always
+RestartSec=10
+StartLimitInterval=600
+StartLimitBurst=5
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Memory management
+MemoryMax=50G
+MemoryHigh=45G
+
+# CPU management
+CPUWeight=100
+CPUQuota=800%
+
+# Logging
+StandardOutput=append:/home/user/tiktok_production/logs/service.log
+StandardError=append:/home/user/tiktok_production/logs/service_error.log
+
+# Health check
+ExecStartPost=/bin/bash -c 'sleep 30 && curl -f http://localhost:8003/health || exit 1'
+
+[Install]
+WantedBy=multi-user.target

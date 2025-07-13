@@ -1,0 +1,243 @@
+{
+  "segments": [
+    {
+      "timestamp": 0.0,
+      "start_time": 0.0,
+      "end_time": 5.0,
+      "description": "ovided fragmented description of the video doesn't provide enough information to give an accurate, detailed description of events or actions",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 0.0,
+      "start_time": 0.0,
+      "end_time": 5.0,
+      "description": "[0-10s] - Start of the video",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 0.0,
+      "start_time": 0.0,
+      "end_time": 5.0,
+      "description": "No action captured as there are no details provided",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 2.0,
+      "start_time": 2.0,
+      "end_time": 7.0,
+      "description": "However, I will describe it based on the given timestamps",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 2.0,
+      "start_time": 2.0,
+      "end_time": 7.0,
+      "description": "[10s] - The man begins brushing his teeth while looking into the camera with a smile",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 4.0,
+      "start_time": 4.0,
+      "end_time": 9.0,
+      "description": "[3s] - He continues brushing his teeth and then stops to talk",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 6.0,
+      "start_time": 6.0,
+      "end_time": 11.0,
+      "description": "[13s] - The man turns away from the camera",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 8.0,
+      "start_time": 8.0,
+      "end_time": 13.0,
+      "description": "[16s] - He returns to brushing his teeth and turns back towards the camera",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 10.0,
+      "start_time": 10.0,
+      "end_time": 15.0,
+      "description": "[20s] - He looks directly into the camera again",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 12.0,
+      "start_time": 12.0,
+      "end_time": 17.0,
+      "description": "[23s] - The man pauses his activity to speak",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 13.0,
+      "start_time": 13.0,
+      "end_time": 18.0,
+      "description": "At around 13-18s - He begins speaking in German, using hand gestures for emphasis",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 14.0,
+      "start_time": 14.0,
+      "end_time": 19.0,
+      "description": "[26s] - He resumes brushing his teeth and looks off to the side",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 16.0,
+      "start_time": 16.0,
+      "end_time": 21.0,
+      "description": "[39s] - The man looks off into the distance for a moment before returning to the camera",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 18.0,
+      "start_time": 18.0,
+      "end_time": 23.0,
+      "description": "[42s] - The man smiles slightly while continuing to brush his teeth",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 20.0,
+      "start_time": 20.0,
+      "end_time": 25.0,
+      "description": "[46s] - He looks directly into the camera once more",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 20.0,
+      "start_time": 20.0,
+      "end_time": 25.0,
+      "description": "At 20s - His expression changes to one of confusion as he continues talking",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 22.0,
+      "start_time": 22.0,
+      "end_time": 27.0,
+      "description": "[52s] - The man finishes brushing his teeth and waves goodbye to the camera",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 24.0,
+      "start_time": 24.0,
+      "end_time": 29.0,
+      "description": "Throughout the entire video, the main focus remains on the man and his actions",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 25.0,
+      "start_time": 25.0,
+      "end_time": 30.0,
+      "description": "At around 25-30s - Another man appears, entering the frame from behind the first man",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 26.0,
+      "start_time": 26.0,
+      "end_time": 31.0,
+      "description": "There are no significant changes in scenes beyond this",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 28.0,
+      "start_time": 28.0,
+      "end_time": 33.0,
+      "description": "We see him brushing his teeth and interacting with the camera",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30.0,
+      "start_time": 30.0,
+      "end_time": 35.0,
+      "description": "His facial expressions show a range of emotions from smiling to being serious",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30.0,
+      "start_time": 30.0,
+      "end_time": 35.0,
+      "description": "At 30s - First man looks up, surprised by the second man's arrival",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 32.0,
+      "start_time": 32.0,
+      "end_time": 37.0,
+      "description": "The video appears to be a casual selfie, capturing the man's daily routine in a personal setting",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 34.0,
+      "start_time": 34.0,
+      "end_time": 39.0,
+      "description": "Text does not appear in the description provided",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 35.0,
+      "start_time": 35.0,
+      "end_time": 40.0,
+      "description": "At 35-40s - Second man speaks to first man, but their conversation is unclear",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 36.0,
+      "start_time": 36.0,
+      "end_time": 41.0,
+      "description": "- Man appears on screen with a serious look on his face",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 45.0,
+      "start_time": 45.0,
+      "end_time": 48.96666666666667,
+      "description": "At 45s - First man starts brushing his teeth while still looking confused",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 60.0,
+      "start_time": 60.0,
+      "end_time": 48.96666666666667,
+      "description": "At around 60s - Both men turn away from each other, indicating that their discussion has ended",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 75.0,
+      "start_time": 75.0,
+      "end_time": 48.96666666666667,
+      "description": "At 75s - First man waves goodbye to the camera with a smile, ending the video",
+      "confidence": 0.85
+    }
+  ],
+  "metadata": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-hf",
+    "video_duration": 48.96666666666667,
+    "frames_analyzed": 16,
+    "frame_timestamps": [
+      0.0,
+      3.2333333333333334,
+      6.5,
+      9.766666666666667,
+      13.033333333333333,
+      16.3,
+      19.566666666666666,
+      22.833333333333332,
+      26.066666666666666,
+      29.333333333333332,
+      32.6,
+      35.86666666666667,
+      39.13333333333333,
+      42.4,
+      45.666666666666664,
+      48.93333333333333
+    ],
+    "coverage": "complete",
+    "description_type": "full_video"
+  },
+  "descriptions": {
+    "chronological": "ovided fragmented description of the video doesn't provide enough information to give an accurate, detailed description of events or actions. However, I will describe it based on the given timestamps.\n\n\n[0-10s] - Start of the video. No action captured as there are no details provided.\n\n\n[10s] - The man begins brushing his teeth while looking into the camera with a smile.\n\n[3s] - He continues brushing his teeth and then stops to talk.\n[13s] - The man turns away from the camera.\n[16s] - He returns to brushing his teeth and turns back towards the camera.\n[20s] - He looks directly into the camera again.\n[23s] - The man pauses his activity to speak.\n[26s] - He resumes brushing his teeth and looks off to the side.\n[39s] - The man looks off into the distance for a moment before returning to the camera.\n\n[42s] - The man smiles slightly while continuing to brush his teeth.\n[46s] - He looks directly into the camera once more.\n[52s] - The man finishes brushing his teeth and waves goodbye to the camera.\n\n\nThroughout the entire video, the main focus remains on the man and his actions. There are no significant changes in scenes beyond this. We see him brushing his teeth and interacting with the camera. His facial expressions show a range of emotions from smiling to being serious. The video appears to be a casual selfie, capturing the man's daily routine in a personal setting. Text does not appear in the description provided.",
+    "timeline": "- Man appears on screen with a serious look on his face.\nAt around 13-18s - He begins speaking in German, using hand gestures for emphasis.\nAt 20s - His expression changes to one of confusion as he continues talking.\nAt around 25-30s - Another man appears, entering the frame from behind the first man.\nAt 30s - First man looks up, surprised by the second man's arrival.\nAt 35-40s - Second man speaks to first man, but their conversation is unclear.\nAt 45s - First man starts brushing his teeth while still looking confused.\nAt around 60s - Both men turn away from each other, indicating that their discussion has ended.\nAt 75s - First man waves goodbye to the camera with a smile, ending the video."
+  }
+}

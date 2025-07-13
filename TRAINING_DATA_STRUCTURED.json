@@ -1,0 +1,183 @@
+{
+  "system_overview": {
+    "name": "TikTok Video Analysis System",
+    "version": "2.0",
+    "primary_analyzer": "video_llava",
+    "total_analyzers": 21,
+    "performance": "3.15x realtime",
+    "architecture": "multiprocess_gpu_parallelization",
+    "gpu": "Quadro RTX 8000 (44.5GB)"
+  },
+  
+  "critical_commands": {
+    "startup": [
+      "cd /home/user/tiktok_production",
+      "source fix_ffmpeg_env.sh",
+      "python3 api/stable_production_api_multiprocess.py"
+    ],
+    "health_check": "curl http://localhost:8003/health | python3 -m json.tool",
+    "gpu_monitoring": "watch -n 1 nvidia-smi",
+    "log_monitoring": "tail -f logs/stable_multiprocess_api.log"
+  },
+  
+  "analyzer_configuration": {
+    "active_analyzers": [
+      "video_llava", "object_detection", "product_detection", "background_segmentation",
+      "visual_effects", "camera_analysis", "text_overlay", "speech_transcription",
+      "composition_analysis", "color_analysis", "content_quality", "eye_tracking",
+      "scene_segmentation", "cut_analysis", "age_estimation", "audio_analysis",
+      "audio_environment", "speech_emotion", "speech_rate", "sound_effects", "temporal_flow"
+    ],
+    "disabled_analyzers": [
+      "blip2_video_analyzer", "auroracap_analyzer", "vid2seq", "face_detection",
+      "emotion_detection", "body_pose", "body_language", "hand_gesture",
+      "gesture_recognition", "facial_details", "scene_description",
+      "depth_estimation", "temporal_consistency", "audio_visual_sync", "trend_analysis"
+    ]
+  },
+  
+  "video_llava_details": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-hf",
+    "quantization": "4-bit",
+    "load_time": "14 seconds",
+    "analysis_time": "10 seconds per video",
+    "gpu_memory": "3.8GB",
+    "frame_sampling": {
+      "interval": 90,
+      "max_frames": 8
+    }
+  },
+  
+  "common_problems_solutions": [
+    {
+      "problem": "FFmpeg Assertion Error",
+      "error": "Assertion fctx->async_lock failed at libavcodec/pthread_frame.c:175",
+      "solution": "Always run 'source fix_ffmpeg_env.sh' before starting"
+    },
+    {
+      "problem": "Video-LLaVA not loading",
+      "symptoms": "Model loading timeout or CUDA OOM",
+      "solution": "rm -rf ~/.cache/huggingface/hub/models--llava-hf* && restart API"
+    },
+    {
+      "problem": "High latency (>5x realtime)",
+      "symptoms": "Slow processing times",
+      "solution": "Check GPU utilization, reduce analyzers in request, or restart workers"
+    },
+    {
+      "problem": "API not starting",
+      "symptoms": "Port already in use or process hanging",
+      "solution": "pkill -f stable_production_api && source fix_ffmpeg_env.sh && restart"
+    }
+  ],
+  
+  "performance_metrics": {
+    "target": "<3x realtime",
+    "achieved": "3.15x realtime",
+    "test_video_duration": "28.9 seconds",
+    "processing_time": "91.0 seconds",
+    "success_rate": "100% (21/21 analyzers)",
+    "gpu_memory_usage": {
+      "idle": "<1GB",
+      "during_analysis": "15-20GB",
+      "peak_with_video_llava": "25GB"
+    }
+  },
+  
+  "architecture_details": {
+    "multiprocessing": {
+      "start_method": "spawn",
+      "num_workers": 3,
+      "reason": "Bypass Python GIL, true GPU parallelization"
+    },
+    "gpu_groups": {
+      "stage1_heavy": ["video_llava", "product_detection", "object_detection", "visual_effects"],
+      "stage2_medium": ["camera_analysis", "text_overlay", "background_segmentation", "speech_rate"],
+      "stage3_light": ["composition_analysis", "color_analysis", "content_quality", "eye_tracking", "scene_segmentation"],
+      "stage4_fast": ["cut_analysis", "age_estimation"],
+      "cpu_parallel": ["speech_transcription", "sound_effects", "speech_emotion", "audio_environment", "temporal_flow", "audio_analysis"]
+    }
+  },
+  
+  "maintenance_procedures": {
+    "daily": [
+      "Check API health",
+      "Monitor GPU usage",
+      "Check log sizes",
+      "Verify disk space"
+    ],
+    "weekly": [
+      "Rotate logs",
+      "Clean old results (>30 days)",
+      "Run performance test",
+      "Check for model updates"
+    ],
+    "monthly": [
+      "Full system backup",
+      "Performance trend analysis",
+      "Update documentation",
+      "Review error logs"
+    ]
+  },
+  
+  "api_endpoints": {
+    "health": {
+      "method": "GET",
+      "url": "http://localhost:8003/health",
+      "response": "System health status with GPU info"
+    },
+    "analyze": {
+      "method": "POST",
+      "url": "http://localhost:8003/analyze",
+      "body": {
+        "video_path": "string (required)",
+        "analyzers": "array[string] (optional)",
+        "turbo_mode": "boolean (optional)"
+      },
+      "response": {
+        "status": "string",
+        "processing_time": "float",
+        "successful_analyzers": "int",
+        "total_analyzers": "int",
+        "results_file": "string"
+      }
+    }
+  },
+  
+  "key_files": {
+    "main_api": "api/stable_production_api_multiprocess.py",
+    "analyzer_registry": "ml_analyzer_registry_complete.py",
+    "gpu_config": "configs/gpu_groups_config.py",
+    "multiprocess_executor": "utils/multiprocess_gpu_executor_final.py",
+    "ffmpeg_fix": "fix_ffmpeg_env.sh",
+    "performance_test": "final_video_llava_performance_test.py"
+  },
+  
+  "lessons_learned": [
+    "Video-LLaVA superior to BLIP-2/AuroraCap for production",
+    "4-bit quantization optimal for performance/quality balance",
+    "Multiprocessing complexity requires spawn method for CUDA",
+    "FFmpeg thread safety issues require environment variable fixes",
+    "Production stability more important than absolute performance",
+    "Experimental models often not production-ready",
+    "GPU memory management critical for long-running services"
+  ],
+  
+  "future_improvements": {
+    "short_term": [
+      "Activate Docker service for Video-LLaVA",
+      "Implement monitoring dashboard",
+      "Optimize batch sizes and frame sampling"
+    ],
+    "medium_term": [
+      "Horizontal scaling with load balancer",
+      "Update to newer model versions",
+      "Implement batch processing for multiple videos"
+    ],
+    "long_term": [
+      "Achieve real-time processing (<1x)",
+      "Cloud migration (AWS/GCP)",
+      "Custom fine-tuning for TikTok content"
+    ]
+  }
+}

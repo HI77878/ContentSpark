@@ -1,0 +1,29 @@
+{
+  "audit_timestamp": "2025-07-11 06:34:56.869872",
+  "analyzed_file": "results/test_video_multiprocess_20250711_055531.json",
+  "video_duration": 10.0,
+  "total_analyzers": 20,
+  "good_analyzers": 9,
+  "problems": {
+    "cut_analysis": null,
+    "text_overlay": null,
+    "camera_analysis": null,
+    "object_detection": "Keine Segmente",
+    "background_segmentation": "Zu wenig Segmente (3.3s/Seg)",
+    "scene_segmentation": "Nur 0% Abdeckung",
+    "visual_effects": null,
+    "color_analysis": null,
+    "age_estimation": null,
+    "content_quality": null,
+    "sound_effects": "Nur 0% Abdeckung",
+    "speech_transcription": "Keine Segmente",
+    "speech_rate": "Keine Segmente",
+    "audio_analysis": null,
+    "audio_environment": "Zu wenig Segmente (2.5s/Seg)",
+    "temporal_flow": null,
+    "comment_cta_detection": "Keine Segmente",
+    "speech_emotion": "Zu wenig Segmente (2.5s/Seg)",
+    "speech_flow": "Keine Segmente",
+    "qwen2_vl_temporal": "Zu wenig Segmente (2.5s/Seg)"
+  }
+}

@@ -1,0 +1,347 @@
+# TikTok Video Analysis System - Git Ignore File
+
+# =====================================================
+# SENSITIVE AND SECURITY FILES
+# =====================================================
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Backblaze B2 credentials
+.b2_config
+b2_account_info.json
+
+# SSH keys
+id_rsa*
+id_ed25519*
+*.ssh/
+
+# API keys and tokens
+api_keys.txt
+tokens.json
+credentials.json
+
+# =====================================================
+# TEMPORARY AND CACHE FILES
+# =====================================================
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# =====================================================
+# MODEL CACHE AND DOWNLOADS
+# =====================================================
+
+# Hugging Face model cache
+.cache/
+models/
+*.bin
+*.onnx
+*.tflite
+*.pb
+
+# YOLOv8 weights
+yolov8*.pt
+*.weights
+
+# Whisper models
+*.whisper
+
+# Large model files
+*.safetensors
+model_*.pt
+pytorch_model.bin
+
+# =====================================================
+# VIDEO AND MEDIA FILES
+# =====================================================
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.flv
+*.wmv
+
+# Audio files
+*.mp3
+*.wav
+*.aac
+*.ogg
+*.flac
+
+# Image files (except documentation)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+!docs/**/*.png
+!docs/**/*.jpg
+!README_images/
+
+# =====================================================
+# DATA AND RESULTS
+# =====================================================
+
+# Analysis results
+results/*.json
+results/**/*.json
+output/
+processed/
+
+# Downloaded videos
+downloads/
+videos/
+tiktok_videos/
+
+# Temporary processing files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Frame extractions
+frames/
+extracted_frames/
+
+# =====================================================
+# LOGS AND MONITORING
+# =====================================================
+
+# Log files
+*.log
+logs/*.log
+logs/**/*.log
+
+# Monitoring data
+metrics/
+monitoring/
+*.csv
+gpu_monitoring.csv
+performance_logs/
+
+# Test results (keep summary files)
+test_results_detailed_*.txt
+benchmark_*.json
+!test_results.txt
+
+# =====================================================
+# SYSTEM AND OS FILES
+# =====================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =====================================================
+# DEVELOPMENT AND TESTING
+# =====================================================
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Profiling data
+*.prof
+*.lprof
+
+# =====================================================
+# BACKUPS AND ARCHIVES
+# =====================================================
+
+# Backup files
+*.bak
+*.backup
+*~
+backup_*/
+backups/
+*.tar.gz
+*.tar.bz2
+*.zip
+*.7z
+
+# Archive directories
+_archive_*/
+archived_*/
+
+# =====================================================
+# BUILD AND DEPLOYMENT
+# =====================================================
+
+# Docker
+.dockerignore
+Dockerfile.backup
+
+# Deployment scripts (keep main deployment files)
+deploy_*.sh
+!deploy_production.sh
+
+# Configuration backups
+config_backup_*/
+
+# =====================================================
+# SPECIFIC TO THIS PROJECT
+# =====================================================
+
+# Mass processing queue files
+mass_processing/celery_beat_schedule
+mass_processing/worker_*.log
+
+# Model optimization files
+model_quantized/
+optimized_models/
+
+# Performance test outputs
+performance_test_*.json
+optimization_results_*.txt
+
+# GPU monitoring temporary files
+gpu_monitor_*.csv
+memory_usage_*.log
+
+# B2 temporary files
+b2_sync/
+b2_temp/
+
+# Lock files
+*.lock
+*.pid
+
+# =====================================================
+# KEEP THESE FILES (EXCEPTIONS)
+# =====================================================
+
+# Keep essential config files
+!configs/*.py
+!fix_ffmpeg_env.sh
+!requirements.txt
+!CLAUDE.md
+!README_COMPLETE.md
+
+# Keep documentation
+!docs/
+!docs/**/*
+
+# Keep scripts
+!scripts/
+!scripts/**/*.sh
+!scripts/**/*.py
+
+# Keep sample configurations
+!.env.example
+!config.example.json
+
+# Keep API files
+!api/
+!api/**/*.py
+
+# Keep analyzer files (but not cached models)
+!analyzers/
+!analyzers/**/*.py
+
+# Keep utils
+!utils/
+!utils/**/*.py
+
+# Keep test files
+!test_*.py
+!*_test.py
+
+# =====================================================
+# NOTES FOR DEVELOPERS
+# =====================================================
+
+# This .gitignore is designed to:
+# 1. Exclude all sensitive data (API keys, credentials)
+# 2. Exclude large files (models, videos, results)
+# 3. Exclude temporary/cache files
+# 4. Include essential code and configuration
+# 5. Include documentation and scripts
+#
+# Before committing:
+# - Verify no sensitive data is included
+# - Check that required files are not ignored
+# - Use 'git status' to review staged files
+# - Consider using 'git add -n' for dry run
+
+# Embedded git repositories
+aurora_cap/aurora/
+llava_next/

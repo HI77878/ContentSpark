@@ -1,0 +1,5 @@
+# Test-Videos für verschiedene Längen und Komplexität
+VIDEO_1="https://www.tiktok.com/@leon_schliebach/video/7446489995663117590"  # Bekanntes Video (Baseline)
+VIDEO_2="https://www.tiktok.com/@marcgebauer/video/7525171065367104790"     # Alternativ
+VIDEO_3="https://www.tiktok.com/@manel_nicolau/video/7196765040433761542"   # Drittes Video
+EOF < /dev/null

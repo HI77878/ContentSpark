@@ -1,0 +1,54 @@
+# Fixed Dockerfile for AuroraCap with compatible dependencies
+FROM pytorch/pytorch:2.1.2-cuda11.8-cudnn8-runtime
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    wget \
+    vim \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libglib2.0-0 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install specific transformers version that supports old rope_scaling format
+RUN pip install --no-cache-dir \
+    transformers==4.36.2 \
+    torch==2.1.2 \
+    torchvision \
+    accelerate \
+    bitsandbytes \
+    sentencepiece \
+    opencv-python \
+    Pillow \
+    numpy \
+    scipy \
+    einops \
+    timm \
+    peft==0.7.1
+
+# Clone aurora repository
+RUN git clone https://github.com/rese1f/aurora.git /app/aurora
+
+# Copy inference scripts
+COPY auroracap_inference.py /app/
+COPY auroracap_simple.py /app/
+COPY video_captioning_detailed.py /app/
+
+# Create directories
+RUN mkdir -p /app/videos /app/output
+
+# Set environment variables
+ENV PYTHONPATH=/app:/app/aurora:$PYTHONPATH
+ENV TRANSFORMERS_CACHE=/app/.cache
+ENV HF_HOME=/app/.cache
+ENV CUDA_VISIBLE_DEVICES=0
+
+CMD ["python", "auroracap_simple.py"]

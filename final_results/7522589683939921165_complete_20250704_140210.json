@@ -1,0 +1,62 @@
+{
+  "workflow_metadata": {
+    "workflow_version": "2.0",
+    "workflow_timestamp": "2025-07-04T14:02:10.918770",
+    "validation_passed": false,
+    "reconstruction_ready": false
+  },
+  "tiktok_metadata": {
+    "tiktok_id": "7522589683939921165",
+    "tiktok_url": "https://www.tiktok.com/@chaseridgewayy/video/7522589683939921165?_r=1",
+    "username": "chaseridgewayy",
+    "user_id": "6650916313349144581",
+    "description": "Season 4, Episode 12: My 5-9 morning routine as a 23 year old (with no music) #5to9 #morningroutine #morning #earlymorning #routine #vlog #running #fyp #fitness #health #active #lifestyle #vlogger ",
+    "title": "Season 4, Episode 12: My 5-9 morning routine as a 23 year old (with n...",
+    "duration": 68,
+    "view_count": 566600,
+    "like_count": 39000,
+    "comment_count": 187,
+    "share_count": 737,
+    "download_path": "/home/user/tiktok_videos/videos/7522589683939921165.mp4",
+    "thumbnail": "https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o0DofADyGmBH6FjxQjkebAkIAI4lCfiI0A8zE5~tplv-tiktokx-origin.image?dr=9636&x-expires=1751810400&x-signature=p6ytYeJrl%2FXiZHPnDDmYReGscEY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+    "upload_date": "20250702",
+    "timestamp": 1751489446,
+    "hashtags": [
+      "#5to9",
+      "#morningroutine",
+      "#morning",
+      "#earlymorning",
+      "#routine",
+      "#vlog",
+      "#running",
+      "#fyp",
+      "#fitness",
+      "#health",
+      "#active",
+      "#lifestyle",
+      "#vlogger"
+    ],
+    "music": {
+      "title": "original sound",
+      "author": "chase ridgeway"
+    },
+    "download_time": 1.0649771690368652,
+    "downloaded_at": "2025-07-04T14:00:10.796841",
+    "priority": 5
+  },
+  "analysis_results": {
+    "metadata": {
+      "video_path": "/home/user/tiktok_videos/videos/7522589683939921165.mp4",
+      "video_filename": "7522589683939921165.mp4",
+      "analysis_timestamp": "2025-07-04 14:02:10",
+      "processing_time_seconds": 120.10907340049744,
+      "total_analyzers": 21,
+      "successful_analyzers": 0,
+      "reconstruction_score": 0.0,
+      "realtime_factor": 1.7546979313440092,
+      "api_version": "3.0-multiprocess",
+      "parallelization": "process-based"
+    },
+    "analyzer_results": {}
+  }
+}

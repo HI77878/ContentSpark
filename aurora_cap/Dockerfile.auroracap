@@ -1,0 +1,83 @@
+# Optimized Dockerfile for AuroraCap with correct dependencies
+FROM pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime
+
+# Prevent interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+ENV TORCH_CUDA_ARCH_LIST="7.5;8.0;8.6;8.9;9.0"
+ENV CUDA_HOME=/usr/local/cuda
+ENV NO_DEEPSPEED=1
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    wget \
+    vim \
+    build-essential \
+    cuda-toolkit-12-1 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set CUDA paths
+ENV PATH=$CUDA_HOME/bin:$PATH
+ENV LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+
+WORKDIR /app
+
+# Upgrade pip
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel
+
+# Install PyTorch 2.2.2 (matching host system)
+RUN pip install --no-cache-dir \
+    torch==2.2.2 \
+    torchvision==0.17.2 \
+    torchaudio==2.2.2 \
+    --index-url https://download.pytorch.org/whl/cu121
+
+# Install specific transformers version to handle rope_scaling
+RUN pip install --no-cache-dir \
+    transformers==4.37.2 \
+    accelerate==0.26.1 \
+    bitsandbytes==0.42.0 \
+    sentencepiece==0.1.99 \
+    protobuf==3.20.3 \
+    einops==0.7.0 \
+    timm==0.9.12 \
+    opencv-python==4.9.0.80 \
+    Pillow==10.2.0 \
+    numpy==1.24.4 \
+    scipy==1.12.0 \
+    huggingface-hub==0.20.3 \
+    safetensors==0.4.2 \
+    peft==0.8.2
+
+# Clone aurora repository
+RUN git clone https://github.com/rese1f/aurora.git /app/aurora
+
+# Install xtuner without deepspeed
+WORKDIR /app/aurora/src/xtuner
+RUN pip install --no-cache-dir -e . --no-deps && \
+    pip install --no-cache-dir $(cat requirements/runtime.txt | grep -v deepspeed) || true
+
+WORKDIR /app
+
+# Copy inference scripts
+COPY auroracap_inference_fixed.py /app/
+COPY run_docker_auroracap.sh /app/
+
+# Create necessary directories
+RUN mkdir -p /app/videos /app/output /app/.cache
+
+# Set environment variables
+ENV PYTHONPATH=/app:/app/aurora:$PYTHONPATH
+ENV HF_HOME=/app/.cache
+ENV TRANSFORMERS_CACHE=/app/.cache
+
+# Default command
+CMD ["python", "auroracap_inference_fixed.py", "/app/videos/input.mp4", "/app/output"]

@@ -1,0 +1,19 @@
+# Example TikTok URLs for testing
+# Add your TikTok URLs here, one per line
+# Lines starting with # are ignored
+
+# Example format:
+# https://www.tiktok.com/@username/video/1234567890123456789
+# https://www.tiktok.com/@anotheruser/video/9876543210987654321
+
+# You can also add comments for organization:
+# Popular videos
+https://www.tiktok.com/@example1/video/1111111111111111111
+https://www.tiktok.com/@example2/video/2222222222222222222
+
+# Dance videos
+https://www.tiktok.com/@dancer1/video/3333333333333333333
+https://www.tiktok.com/@dancer2/video/4444444444444444444
+
+# Comedy content
+https://www.tiktok.com/@comedian/video/5555555555555555555

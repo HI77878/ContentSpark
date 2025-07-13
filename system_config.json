@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "created": "2025-06-29T12:39:46.853285",
+  "description": "TikTok Video Analysis System - Production Ready",
+  "api": {
+    "main_port": 8003,
+    "blip2_port": 8024,
+    "vid2seq_port": 8024
+  },
+  "analyzers": {
+    "total": 29,
+    "disabled": [
+      "trend_analysis",
+      "depth_estimation",
+      "temporal_consistency",
+      "audio_visual_sync",
+      "motion_vectors"
+    ],
+    "gpu_forced": true,
+    "batch_processing": true
+  },
+  "performance": {
+    "target_fps": 1.0,
+    "max_processing_time": 300,
+    "gpu_utilization_target": 0.9,
+    "frame_cache_enabled": true,
+    "frame_cache_size_gb": 4.0
+  },
+  "models": {
+    "whisper_model": "base",
+    "yolo_version": "yolov8x",
+    "blip_version": "blip-image-captioning-large",
+    "force_local": true,
+    "auto_download": false
+  },
+  "storage": {
+    "results_dir": "/home/user/tiktok_production/results",
+    "logs_dir": "/home/user/tiktok_production/logs",
+    "cache_dir": "/home/user/tiktok_production/.cache",
+    "save_with_url": true,
+    "compress_results": false
+  },
+  "env_vars": {
+    "OPENCV_FFMPEG_THREAD_COUNT": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENCV_VIDEOIO_PRIORITY_GSTREAMER": "0",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "TF_CPP_MIN_LOG_LEVEL": "2",
+    "TRANSFORMERS_OFFLINE": "0",
+    "HF_HOME": "/home/user/.cache/huggingface",
+    "TORCH_HOME": "/home/user/.cache/torch"
+  }
+}

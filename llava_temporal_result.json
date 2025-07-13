@@ -1,0 +1,328 @@
+{
+  "segments": [
+    {
+      "timestamp": 0.0,
+      "start_time": 0.0,
+      "end_time": 3.0,
+      "description": "Sampled Timestamps:\n* At 0s: The video begins with a close-up shot of a person brushing their teeth.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 2.0,
+      "start_time": 2.0,
+      "end_time": 5.0,
+      "description": "* At 2s: The camera pans out to reveal a man in a room, possibly a living area, with a casual setting.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 3.0,
+      "start_time": 3.0,
+      "end_time": 6.0,
+      "description": "* At 3s: The man is seen holding a beverage container, possibly a can or bottle, and takes a sip.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 6.0,
+      "start_time": 6.0,
+      "end_time": 9.0,
+      "description": "* At 6s: He sets it down on a table or countertop.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 9.0,
+      "start_time": 9.0,
+      "end_time": 12.0,
+      "description": "* At 9s: The camera focuses on him again, and he appears to be in a different setting, possibly a workspace or office environment.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 13.0,
+      "start_time": 13.0,
+      "end_time": 16.0,
+      "description": "* At 13s: He is using a computer, possibly working or browsing.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 17.0,
+      "start_time": 17.0,
+      "end_time": 20.0,
+      "description": "* At 17s: The camera shifts back to the living area, where he is now sitting and continues drinking his beverage.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 19.0,
+      "start_time": 19.0,
+      "end_time": 22.0,
+      "description": "* At 19s: The scene changes to an outdoor setting, showing a park or public space, where he is riding a bicycle.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 20.0,
+      "start_time": 20.0,
+      "end_time": 23.0,
+      "description": "* At 20s: The camera returns to the indoor setting, where he is now exercising or working out.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 24.0,
+      "start_time": 24.0,
+      "end_time": 27.0,
+      "description": "* At 24s: The scene transitions to a gym or fitness environment, where he is lifting weights.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 27.0,
+      "start_time": 27.0,
+      "end_time": 30.0,
+      "description": "* At 27s: The camera shifts back to the indoor setting, where he is now seated at a desk, possibly working or studying.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30.0,
+      "start_time": 30.0,
+      "end_time": 33.0,
+      "description": "* At 30s: The scene changes to a kitchen or dining area, where he is eating or preparing food.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 32.0,
+      "start_time": 32.0,
+      "end_time": 35.0,
+      "description": "* At 32s: The camera returns to the indoor setting, where he is now in a relaxed position, possibly watching TV or resting.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 35.0,
+      "start_time": 35.0,
+      "end_time": 38.0,
+      "description": "* At 35s: The scene changes to a bathroom or personal care area, where he is brushing his teeth again.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 36.0,
+      "start_time": 36.0,
+      "end_time": 39.0,
+      "description": "* At 36s: The camera shifts back to the indoor setting, where he is now in a workspace or office environment.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 38.0,
+      "start_time": 38.0,
+      "end_time": 41.0,
+      "description": "* At 38s: The scene changes to a public space, possibly a street or sidewalk, where he is walking or running.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 39.0,
+      "start_time": 39.0,
+      "end_time": 42.0,
+      "description": "* At 39s: The camera returns to the indoor setting, where he is now in a relaxed position, possibly reading or resting.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 41.0,
+      "start_time": 41.0,
+      "end_time": 44.0,
+      "description": "* At 41s: The scene changes to a bedroom or sleeping area, where he is lying down.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 43.0,
+      "start_time": 43.0,
+      "end_time": 46.0,
+      "description": "* At 43s: The camera shifts back to the indoor setting, where he is now in a workspace or office environment.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 46.0,
+      "start_time": 46.0,
+      "end_time": 48.96666666666667,
+      "description": "* At 46s: The scene changes to a public space, possibly a park or street, where he is walking or jogging.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 47.0,
+      "start_time": 47.0,
+      "end_time": 48.96666666666667,
+      "description": "* At 47s: The camera shifts back to the indoor setting, where he is now in a relaxed position, possibly watching TV or resting.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 49.0,
+      "start_time": 49.0,
+      "end_time": 48.96666666666667,
+      "description": "* At 49s: The scene changes to a public space, possibly a street or sidewalk, where he is walking or running.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 52.0,
+      "description": "Video continues from 49s to 52s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 52.0,
+      "start_time": 52.0,
+      "end_time": 48.96666666666667,
+      "description": "Flow and Progression:\nThe video has a fluid and dynamic flow, transitioning between various scenes and activities.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 55.0,
+      "description": "Video continues from 49s to 55s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 55.0,
+      "start_time": 55.0,
+      "end_time": 48.96666666666667,
+      "description": "It starts with a mundane daily routine of brushing teeth, then moves to a more casual setting with the man enjoying a drink, followed by a work or study session.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 58.0,
+      "description": "Video continues from 49s to 58s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 58.0,
+      "start_time": 58.0,
+      "end_time": 48.96666666666667,
+      "description": "After that, it shows him engaging in physical activity like cycling and weightlifting, suggesting a balance of work and exercise.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 61.0,
+      "description": "Video continues from 49s to 61s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 61.0,
+      "start_time": 61.0,
+      "end_time": 48.96666666666667,
+      "description": "The video then transitions to a relaxed environment, possibly watching TV or resting, before returning to a work or study setting.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 64.0,
+      "description": "Video continues from 49s to 64s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 64.0,
+      "start_time": 64.0,
+      "end_time": 48.96666666666667,
+      "description": "The final scene shows him in a public space, possibly walking or jogging, which could indicate a mix of leisure and daily life.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 67.0,
+      "description": "Video continues from 49s to 67s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 67.0,
+      "start_time": 67.0,
+      "end_time": 48.96666666666667,
+      "description": "Scene Changes and Transitions:\nThe video features several scene changes, including transitions between indoor and outdoor settings, work and relaxation, and different activities such as drinking, working, and exercising.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 70.0,
+      "description": "Video continues from 49s to 70s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 70.0,
+      "start_time": 70.0,
+      "end_time": 48.96666666666667,
+      "description": "These transitions create a sense of movement and progression throughout the video.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 73.0,
+      "description": "Video continues from 49s to 73s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 73.0,
+      "start_time": 73.0,
+      "end_time": 48.96666666666667,
+      "description": "Overall Narrative:\nThe video follows a day in the life of a person, starting with a routine morning ritual, moving through various activities such as work, exercise, and relaxation, and ending with a public space walk or jog.",
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 48.96666666666667,
+      "start_time": 48.96666666666667,
+      "end_time": 76.0,
+      "description": "Video continues from 49s to 76s",
+      "confidence": 0.7
+    },
+    {
+      "timestamp": 76.0,
+      "start_time": 76.0,
+      "end_time": 48.96666666666667,
+      "description": "It showcases a balance between work, leisure, and personal care, highlighting the diversity of daily life experiences.",
+      "confidence": 0.85
+    }
+  ],
+  "metadata": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-DPO-hf",
+    "video_duration": 48.96666666666667,
+    "frames_analyzed": 32,
+    "frame_timestamps": [
+      0.0,
+      1.5666666666666667,
+      3.1333333333333333,
+      4.733333333333333,
+      6.3,
+      7.866666666666666,
+      9.466666666666667,
+      11.033333333333333,
+      12.6,
+      14.2,
+      15.766666666666667,
+      17.333333333333332,
+      18.933333333333334,
+      20.5,
+      22.066666666666666,
+      23.666666666666668,
+      25.233333333333334,
+      26.833333333333332,
+      28.4,
+      29.966666666666665,
+      31.566666666666666,
+      33.13333333333333,
+      34.7,
+      36.3,
+      37.86666666666667,
+      39.43333333333333,
+      41.03333333333333,
+      42.6,
+      44.166666666666664,
+      45.766666666666666,
+      47.333333333333336,
+      48.93333333333333
+    ],
+    "sampling_rate": "1 FPS",
+    "temporal_coverage": "81.7%",
+    "analysis_type": "temporal",
+    "description_length": 3611
+  },
+  "full_temporal_description": ": 1. Sampled Timestamps:\n* At 0s: The video begins with a close-up shot of a person brushing their teeth.\n* At 2s: The camera pans out to reveal a man in a room, possibly a living area, with a casual setting.\n* At 3s: The man is seen holding a beverage container, possibly a can or bottle, and takes a sip.\n* At 6s: He sets it down on a table or countertop.\n* At 9s: The camera focuses on him again, and he appears to be in a different setting, possibly a workspace or office environment.\n* At 13s: He is using a computer, possibly working or browsing.\n* At 17s: The camera shifts back to the living area, where he is now sitting and continues drinking his beverage.\n* At 19s: The scene changes to an outdoor setting, showing a park or public space, where he is riding a bicycle.\n* At 20s: The camera returns to the indoor setting, where he is now exercising or working out.\n* At 24s: The scene transitions to a gym or fitness environment, where he is lifting weights.\n* At 27s: The camera shifts back to the indoor setting, where he is now seated at a desk, possibly working or studying.\n* At 30s: The scene changes to a kitchen or dining area, where he is eating or preparing food.\n* At 32s: The camera returns to the indoor setting, where he is now in a relaxed position, possibly watching TV or resting.\n* At 35s: The scene changes to a bathroom or personal care area, where he is brushing his teeth again.\n* At 36s: The camera shifts back to the indoor setting, where he is now in a workspace or office environment.\n* At 38s: The scene changes to a public space, possibly a street or sidewalk, where he is walking or running.\n* At 39s: The camera returns to the indoor setting, where he is now in a relaxed position, possibly reading or resting.\n* At 41s: The scene changes to a bedroom or sleeping area, where he is lying down.\n* At 43s: The camera shifts back to the indoor setting, where he is now in a workspace or office environment.\n* At 46s: The scene changes to a public space, possibly a park or street, where he is walking or jogging.\n* At 47s: The camera shifts back to the indoor setting, where he is now in a relaxed position, possibly watching TV or resting.\n* At 49s: The scene changes to a public space, possibly a street or sidewalk, where he is walking or running.\n1. Flow and Progression:\nThe video has a fluid and dynamic flow, transitioning between various scenes and activities. It starts with a mundane daily routine of brushing teeth, then moves to a more casual setting with the man enjoying a drink, followed by a work or study session. After that, it shows him engaging in physical activity like cycling and weightlifting, suggesting a balance of work and exercise. The video then transitions to a relaxed environment, possibly watching TV or resting, before returning to a work or study setting. The final scene shows him in a public space, possibly walking or jogging, which could indicate a mix of leisure and daily life.\n2. Scene Changes and Transitions:\nThe video features several scene changes, including transitions between indoor and outdoor settings, work and relaxation, and different activities such as drinking, working, and exercising. These transitions create a sense of movement and progression throughout the video.\n3. Overall Narrative:\nThe video follows a day in the life of a person, starting with a routine morning ritual, moving through various activities such as work, exercise, and relaxation, and ending with a public space walk or jog. It showcases a balance between work, leisure, and personal care, highlighting the diversity of daily life experiences."
+}

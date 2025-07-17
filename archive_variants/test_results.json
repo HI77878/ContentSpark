@@ -1,0 +1,7 @@
+{
+  "background_segmentation": "SUCCESS: 20 segments",
+  "audio_analysis": "FAILED: 2025-07-16 10:45:10.257815: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You",
+  "audio_environment": "FAILED: 2025-07-16 10:45:24.172130: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You",
+  "speech_emotion": "SUCCESS: 4 segments",
+  "cross_analyzer_intelligence": "FAILED: 2025-07-16 10:45:58.351881: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You"
+}

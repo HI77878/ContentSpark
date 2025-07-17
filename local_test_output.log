@@ -1,0 +1,101 @@
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-07-16 09:24:02.467373: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-16 09:24:02.501796: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752657842.533944 1719782 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752657842.544243 1719782 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752657842.575858 1719782 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752657842.575897 1719782 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752657842.575899 1719782 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752657842.575901 1719782 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 09:24:02.584556: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+🚀 TikTok Production Workflow initialized
+📁 Base directory: /home/user/tiktok_production
+🔍 Loaded 19 analyzers
+
+🚀 TESTING WITH LOCAL VIDEO
+📍 Video: /home/user/tiktok_production/test_local_video.mp4
+🎯 Analyzers: 19
+============================================================
+
+🔍 PHASE 1: ANALYSIS
+🔍 Analyzing video: /home/user/tiktok_production/test_local_video.mp4
+
+🎯 Processing Stage 1: 1 analyzers
+🔄 Starting qwen2_vl_temporal...
+❌ qwen2_vl_temporal failed after 8.2s: No module named 'gpu_force_config'
+✅ Stage 1 completed
+
+🎯 Processing Stage 2: 3 analyzers
+🔄 Starting object_detection...
+🔄 Starting text_overlay...
+❌ text_overlay failed after 0.1s: No module named 'gpu_force_config'
+🔄 Starting speech_transcription...
+❌ object_detection failed after 0.3s: No module named 'gpu_force_config'
+❌ speech_transcription failed after 0.4s: No module named 'gpu_force_config'
+✅ Stage 2 completed
+
+🎯 Processing Stage 3: 9 analyzers
+🔄 Starting body_pose...
+🔄 Starting background_segmentation...
+🔄 Starting camera_analysis...
+🔄 Starting scene_segmentation...
+❌ body_pose failed after 0.0s: No module named 'gpu_force_config'
+🔄 Starting color_analysis...
+❌ camera_analysis failed after 0.0s: cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)
+🔄 Starting content_quality...
+❌ scene_segmentation failed after 0.0s: cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)
+🔄 Starting cut_analysis...
+❌ color_analysis failed after 0.0s: No module named 'gpu_force_config'
+🔄 Starting age_estimation...
+❌ cut_analysis failed after 0.0s: No module named 'gpu_force_config'
+🔄 Starting eye_tracking...
+❌ content_quality failed after 0.0s: cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)
+❌ age_estimation failed after 0.0s: No module named 'gpu_force_config'
+❌ background_segmentation failed after 0.1s: No module named 'gpu_force_config'
+❌ eye_tracking failed after 0.3s: No module named 'gpu_force_config'
+✅ Stage 3 completed
+
+🎯 Processing Stage 4: 5 analyzers
+🔄 Starting audio_analysis...
+🔄 Starting audio_environment...
+🔄 Starting speech_emotion...
+🔄 Starting speech_flow...
+❌ audio_analysis failed after 0.0s: No module named 'gpu_force_config'
+🔄 Starting temporal_flow...
+❌ audio_environment failed after 0.0s: cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)
+❌ temporal_flow failed after 0.0s: No module named 'analyzers.narrative_analysis_advanced'
+❌ speech_flow failed after 0.0s: No module named 'gpu_force_config'
+❌ speech_emotion failed after 0.1s: No module named 'gpu_force_config'
+✅ Stage 4 completed
+
+🎯 Processing Stage 5: 1 analyzers
+🔄 Starting cross_analyzer_intelligence...
+✅ cross_analyzer_intelligence completed in 0.4s
+✅ Stage 5 completed
+
+📊 Analysis Summary:
+   ✅ Successful: 1
+   ❌ Failed: 18
+   ⏱️ Total Time: 11.7s
+   🎯 Performance: 1.2x realtime
+
+💾 PHASE 2: SAVE RESULTS
+💾 Results saved: /home/user/tiktok_production/results/test_local_video_complete_20250716_092408.json (0.0 MB)
+
+============================================================
+✅ WORKFLOW COMPLETE!
+📊 Analyzers: 1/19
+⏱️ Total Time: 11.7s
+🎯 Success Rate: 5.3%
+📁 Results: /home/user/tiktok_production/results/test_local_video_complete_20250716_092408.json
+🏆 TARGET ACHIEVED: <3 minutes!
+
+📊 Quick Results Summary:
+  ❌ qwen2_vl_temporal: No module named 'gpu_force_config'
+  ❌ text_overlay: No module named 'gpu_force_config'
+  ❌ object_detection: No module named 'gpu_force_config'
+  ❌ speech_transcription: No module named 'gpu_force_config'
+  ❌ body_pose: No module named 'gpu_force_config'

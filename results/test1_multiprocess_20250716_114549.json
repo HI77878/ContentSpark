@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "video_path": "/home/user/tiktok_production/test_videos/test1.mp4",
+    "video_filename": "test1.mp4",
+    "tiktok_url": null,
+    "creator_username": null,
+    "analysis_timestamp": "2025-07-16 11:45:49",
+    "processing_time_seconds": 14.629297018051147,
+    "total_analyzers": 24,
+    "successful_analyzers": 0,
+    "reconstruction_score": 0.0,
+    "realtime_factor": 0,
+    "api_version": "3.0-multiprocess",
+    "parallelization": "process-based"
+  },
+  "analyzer_results": {
+    "qwen2_vl_temporal": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "object_detection": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "background_segmentation": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "text_overlay": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "camera_analysis": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "scene_segmentation": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "color_analysis": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "body_pose": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "age_estimation": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "content_quality": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "eye_tracking": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "cut_analysis": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "speech_transcription": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "audio_analysis": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "audio_environment": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "speech_emotion": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "temporal_flow": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "speech_flow": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    },
+    "cross_analyzer_intelligence": {
+      "error": "No module named 'analyzers.qwen2_vl_optimized_analyzer'",
+      "segments": []
+    }
+  }
+}

@@ -1,0 +1,2 @@
+user     1819603  0.0  0.0   7896  1728 ?        S    11:47   0:00 /bin/bash -c -l source /home/user/.claude/shell-snapshots/snapshot-bash-1752654502264-xqdduj.sh && eval 'source fix_ffmpeg_env.sh && nohup python3 api/stable_production_api_multiprocess.py > logs/clean_server_start.log 2>&1 &' \< /dev/null && pwd -P >| /tmp/claude-6c2d-cwd
+user     1819605 79.6 13.3 28277840 5487060 ?    Sl   11:47   5:28 python3 api/stable_production_api_multiprocess.py

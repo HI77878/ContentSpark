@@ -1,0 +1,24 @@
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-07-16 09:31:12.895038: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-16 09:31:12.911980: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752658272.931742 1724933 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752658272.937787 1724933 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752658272.953385 1724933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752658272.953417 1724933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752658272.953419 1724933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752658272.953421 1724933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 09:31:12.958307: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:root:FER not available. Install with: pip install fer
+ERROR:ml_analyzer_registry_complete:Failed to import analyzers: No module named 'utils.gpu_force'
+✅ GPU forced: Quadro RTX 8000
+Traceback (most recent call last):
+  File "/home/user/tiktok_production/single_workflow_staged.py", line 32, in <module>
+    from ml_analyzer_registry_complete import ML_ANALYZERS
+  File "/home/user/tiktok_production/ml_analyzer_registry_complete.py", line 37, in <module>
+    from analyzers.gpu_batch_color_analysis import GPUBatchColorAnalysis
+  File "/home/user/tiktok_production/analyzers/gpu_batch_color_analysis.py", line 34, in <module>
+    from utils.gpu_force import force_gpu_init
+ModuleNotFoundError: No module named 'utils.gpu_force'

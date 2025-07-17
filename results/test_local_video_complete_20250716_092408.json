@@ -1,0 +1,125 @@
+{
+  "video_id": "test_local_video",
+  "video_path": "/home/user/tiktok_production/test_local_video.mp4",
+  "timestamp": "2025-07-16T09:23:57.325266",
+  "video_metadata": {
+    "duration": 10.0,
+    "width": 320,
+    "height": 240,
+    "fps": 30.0
+  },
+  "analyzers": {
+    "qwen2_vl_temporal": {
+      "status": "error",
+      "duration": 8.153672456741333,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "text_overlay": {
+      "status": "error",
+      "duration": 0.09415411949157715,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "object_detection": {
+      "status": "error",
+      "duration": 0.2758138179779053,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "speech_transcription": {
+      "status": "error",
+      "duration": 0.36098289489746094,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "body_pose": {
+      "status": "error",
+      "duration": 0.033032894134521484,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "camera_analysis": {
+      "status": "error",
+      "duration": 0.034320831298828125,
+      "error": "cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)"
+    },
+    "scene_segmentation": {
+      "status": "error",
+      "duration": 0.03994393348693848,
+      "error": "cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)"
+    },
+    "color_analysis": {
+      "status": "error",
+      "duration": 0.01644134521484375,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "cut_analysis": {
+      "status": "error",
+      "duration": 0.019250869750976562,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "content_quality": {
+      "status": "error",
+      "duration": 0.029789447784423828,
+      "error": "cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)"
+    },
+    "age_estimation": {
+      "status": "error",
+      "duration": 0.049024105072021484,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "background_segmentation": {
+      "status": "error",
+      "duration": 0.10647296905517578,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "eye_tracking": {
+      "status": "error",
+      "duration": 0.25664687156677246,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "audio_analysis": {
+      "status": "error",
+      "duration": 0.03890228271484375,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "audio_environment": {
+      "status": "error",
+      "duration": 0.04287528991699219,
+      "error": "cannot import name 'GPUBatchAnalyzer' from 'analyzers.base_analyzer' (/home/user/tiktok_production/analyzers/base_analyzer.py)"
+    },
+    "temporal_flow": {
+      "status": "error",
+      "duration": 0.009451866149902344,
+      "error": "No module named 'analyzers.narrative_analysis_advanced'"
+    },
+    "speech_flow": {
+      "status": "error",
+      "duration": 0.04739975929260254,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "speech_emotion": {
+      "status": "error",
+      "duration": 0.1439952850341797,
+      "error": "No module named 'gpu_force_config'"
+    },
+    "cross_analyzer_intelligence": {
+      "status": "success",
+      "duration": 0.4463956356048584,
+      "result": {
+        "segments": [],
+        "metadata": {
+          "status": "waiting_for_analyzer_outputs",
+          "note": "Cross-analyzer intelligence requires all analyzer outputs"
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_analyzers": 19,
+    "successful": 1,
+    "failed": 18,
+    "total_time": 11.652893543243408
+  },
+  "performance": {
+    "total_seconds": 11.652893543243408,
+    "realtime_ratio": 1.1652893543243408,
+    "analyzers_per_second": 1.6304963166008324
+  }
+}

@@ -1,0 +1,423 @@
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-07-16 11:47:18.805195: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-16 11:47:18.825523: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752666438.850403 1819605 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752666438.858001 1819605 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752666438.877082 1819605 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666438.877114 1819605 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666438.877118 1819605 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666438.877121 1819605 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 11:47:18.883066: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-16 11:47:22,664 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:47:22,819 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:47:22,820 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:47:22,820 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:47:22,835 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:47:22,837 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:47:22,837 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:47:22,837 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:47:22,849 - __main__ - INFO - Starting Stable Production API with Multiprocess Parallelization...
+✅ GPU forced: Quadro RTX 8000
+INFO:     Started server process [1819605]
+INFO:     Waiting for application startup.
+2025-07-16 11:47:22,867 - __main__ - INFO - 🚀 Stable Production API (Multiprocess) starting...
+2025-07-16 11:47:22,867 - __main__ - INFO - 📊 Target: <3x realtime, >90% reconstruction
+2025-07-16 11:47:22,867 - __main__ - INFO - 🔧 Using process-based GPU parallelization
+2025-07-16 11:47:22,867 - __main__ - INFO - 🚀 Using Staged GPU Executor for optimal memory management
+2025-07-16 11:47:22,867 - __main__ - INFO - ✓ cross_analyzer_intelligence is in active_analyzers
+2025-07-16 11:47:22,867 - __main__ - INFO - 🚀 Production Engine initialized with 24 active analyzers
+2025-07-16 11:47:22,867 - __main__ - INFO -    Using multiprocess GPU parallelization
+2025-07-16 11:47:22,867 - __main__ - INFO -    3 GPU processes for true parallel execution
+2025-07-16 11:47:22,867 - __main__ - INFO - ⚠️ Model preloading DISABLED to prevent CUDA OOM
+2025-07-16 11:47:23,285 - __main__ - INFO - ✅ API is ready to accept requests!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+2025-07-16 11:49:26,782 - __main__ - INFO - 🎬 Starting analysis: /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:49:26,784 - utils.staged_gpu_executor - INFO - 🚀 Starting staged analysis for /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:49:26,784 - utils.staged_gpu_executor - INFO - 📊 Target analyzers: 24
+2025-07-16 11:49:26,784 - utils.staged_gpu_executor - INFO - 🎬 Stage 1: Heavy Models (1 analyzers)
+2025-07-16 11:49:26,784 - utils.staged_gpu_executor - INFO - 🧹 Preparing GPU for stage (max 15 GB)
+2025-07-16 11:49:27,405 - utils.staged_gpu_executor - INFO - 📊 GPU Memory: 0.0GB used, 44.5GB free of 44.5GB total
+2025-07-16 11:49:27,406 - utils.staged_gpu_executor - INFO -   🔍 Processing qwen2_vl_temporal...
+2025-07-16 11:49:27,412 - analyzers.qwen2_vl_temporal_analyzer - WARNING - [QWEN2VL v3.0_8BIT_OPTIMIZED] segment_duration=2.0s, frames_per_segment=1
+2025-07-16 11:49:27,412 - analyzers.qwen2_vl_temporal_analyzer - WARNING - [QWEN2VL v3.0_8BIT_OPTIMIZED] FORCED segment_duration=2.0s with 3 frames
+2025-07-16 11:49:27,412 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Loading model: Qwen/Qwen2-VL-7B-Instruct
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2025-07-16 11:49:29,142 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Processor loaded with enhanced resolution settings
+2025-07-16 11:49:29,142 - analyzers.qwen2_vl_temporal_analyzer - INFO - Loading model with 8-bit quantization...
+2025-07-16 11:49:29,142 - analyzers.qwen2_vl_temporal_analyzer - INFO - ⚠️ Using standard attention (Flash Attention not available)
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+[QWEN2VL] Loading Version 3.0_8BIT_OPTIMIZED with 8-bit quantization!
+[QWEN2VL FORCED] segment_duration = 2.0s for COMPLETE reconstruction
+Downloading shards:   0%|          | 0/5 [00:00<?, ?it/s]Downloading shards:  20%|██        | 1/5 [00:07<00:30,  7.51s/it]Downloading shards:  40%|████      | 2/5 [00:15<00:23,  7.99s/it]Downloading shards:  60%|██████    | 3/5 [00:25<00:17,  8.91s/it]Downloading shards:  80%|████████  | 4/5 [00:37<00:10, 10.19s/it]Downloading shards: 100%|██████████| 5/5 [00:42<00:00,  8.22s/it]Downloading shards: 100%|██████████| 5/5 [00:42<00:00,  8.55s/it]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:03<00:13,  3.47s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:06<00:09,  3.24s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:10<00:06,  3.34s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:13<00:03,  3.26s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:14<00:00,  2.54s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:14<00:00,  2.88s/it]
+2025-07-16 11:50:27,162 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] GPU Memory after loading: 0.00GB allocated, 0.00GB reserved
+2025-07-16 11:50:27,162 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Qwen2-VL Temporal model loaded successfully with 8-bit quantization
+2025-07-16 11:50:27,163 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Analyzing video: test1.mp4
+2025-07-16 11:50:27,173 - analyzers.qwen2_vl_temporal_analyzer - INFO - Video: 10.0s at 30.0 FPS
+2025-07-16 11:50:27,173 - analyzers.qwen2_vl_temporal_analyzer - INFO - Processing 5 temporal segments
+2025-07-16 11:50:27,173 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 1/5: 0.0s - 2.0s
+2025-07-16 11:50:48,073 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 0.0s shows a colorful test pattern on a television screen. The pattern consists o...
+2025-07-16 11:50:48,500 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 2/5: 2.0s - 4.0s
+2025-07-16 11:51:08,199 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 2.0s shows a colorful test pattern on a television screen. The pattern consists o...
+2025-07-16 11:51:08,589 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 3/5: 4.0s - 6.0s
+2025-07-16 11:51:28,588 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 4.0 seconds shows a continuation of the colorful test pattern on the television s...
+2025-07-16 11:51:28,994 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 4/5: 6.0s - 8.0s
+2025-07-16 11:51:49,350 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 5/5: 8.0s - 10.0s
+2025-07-16 11:52:09,413 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Temporal analysis complete: 5 segments in 162.0s
+2025-07-16 11:52:09,414 - analyzers.qwen2_vl_temporal_analyzer - INFO -    Realtime factor: 16.20x
+2025-07-16 11:52:09,819 - utils.staged_gpu_executor - INFO -   ✅ qwen2_vl_temporal completed in 162.4s
+2025-07-16 11:52:10,360 - utils.staged_gpu_executor - INFO - 🎯 Stage 1 completed in 163.0s
+2025-07-16 11:52:10,363 - utils.staged_gpu_executor - INFO - 🎭 Stage 2: Medium Models (4 analyzers)
+2025-07-16 11:52:10,363 - utils.staged_gpu_executor - INFO - 🧹 Preparing GPU for stage (max 12 GB)
+2025-07-16 11:52:10,757 - utils.staged_gpu_executor - INFO - 📊 GPU Memory: 0.0GB used, 44.5GB free of 44.5GB total
+2025-07-16 11:52:10,757 - utils.staged_gpu_executor - INFO -   🔍 Processing object_detection...
+2025-07-16 11:52:10,757 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Loading YOLOv8x model...
+2025-07-16 11:52:11,808 - analyzers.gpu_batch_object_detection_yolo - INFO - ✅ YOLOv8x loaded on cuda with FP16
+2025-07-16 11:52:11,810 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Extracting up to 300 frames with interval 15
+2025-07-16 11:52:12,016 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Extracted 20 frames for batch processing
+2025-07-16 11:52:12,017 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Processing 20 frames in batches
+2025-07-16 11:52:12,017 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 1 with 16 frames...
+2025-07-16 11:52:14,104 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 2 with 4 frames...
+2025-07-16 11:52:14,800 - analyzers.gpu_batch_object_detection_yolo - INFO - ✅ Detected 20 objects in 20 frames
+2025-07-16 11:52:14,801 - utils.staged_gpu_executor - INFO -   ✅ object_detection completed in 4.0s
+2025-07-16 11:52:14,801 - utils.staged_gpu_executor - INFO -   🔍 Processing background_segmentation...
+2025-07-16 11:52:14,801 - analyzers.background_segmentation_light - INFO - [BackgroundSeg-Light] Loading SegFormer-B0...
+2025-07-16 11:52:14,953 - analyzers.background_segmentation_light - INFO - ✅ SegFormer-B0 loaded - 8x faster!
+2025-07-16 11:52:15,160 - analyzers.background_segmentation_light - INFO - [BackgroundSeg-Light] Processing 20 frames
+2025-07-16 11:52:18,005 - utils.staged_gpu_executor - INFO -   ✅ background_segmentation completed in 3.2s
+2025-07-16 11:52:18,008 - utils.staged_gpu_executor - INFO -   🔍 Processing text_overlay...
+2025-07-16 11:52:18,008 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text Overlay] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:52:18,220 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text Overlay] Loading EasyOCR with German + English
+2025-07-16 11:52:21,114 - analyzers.text_overlay_tiktok_fixed - INFO - ✅ EasyOCR loaded on GPU for TikTok text detection
+2025-07-16 11:52:23,643 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text] Found 20 segments with text
+2025-07-16 11:52:23,643 - utils.staged_gpu_executor - INFO -   ✅ text_overlay completed in 5.6s
+2025-07-16 11:52:23,646 - utils.staged_gpu_executor - INFO -   🔍 Processing camera_analysis...
+2025-07-16 11:52:23,646 - analyzers.camera_analysis_fixed - INFO - [CameraAnalysis-Fixed] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:52:24,011 - analyzers.camera_analysis_fixed - INFO - [CameraAnalysis-Fixed] Found 7 segments
+2025-07-16 11:52:24,011 - utils.staged_gpu_executor - INFO -   ✅ camera_analysis completed in 0.4s
+2025-07-16 11:52:24,443 - utils.staged_gpu_executor - INFO - 🎯 Stage 2 completed in 13.7s
+2025-07-16 11:52:24,443 - utils.staged_gpu_executor - INFO - 🎨 Stage 3: Light Models (7 analyzers)
+2025-07-16 11:52:24,443 - utils.staged_gpu_executor - INFO - 🧹 Preparing GPU for stage (max 8 GB)
+2025-07-16 11:52:24,852 - utils.staged_gpu_executor - INFO - 📊 GPU Memory: 0.0GB used, 44.5GB free of 44.5GB total
+2025-07-16 11:52:24,852 - utils.staged_gpu_executor - INFO -   🔍 Processing scene_segmentation...
+2025-07-16 11:52:25,225 - utils.staged_gpu_executor - INFO -   ✅ scene_segmentation completed in 0.4s
+2025-07-16 11:52:25,225 - utils.staged_gpu_executor - INFO -   🔍 Processing color_analysis...
+2025-07-16 11:52:25,225 - analyzers.gpu_batch_color_analysis - INFO - [ColorAnalysisOptimized] Starting GPU analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:52:25,876 - utils.staged_gpu_executor - INFO -   ✅ color_analysis completed in 0.7s
+2025-07-16 11:52:25,876 - utils.staged_gpu_executor - INFO -   🔍 Processing body_pose...
+2025-07-16 11:52:25,876 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Initialized with YOLOv8x-pose
+2025-07-16 11:52:25,877 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:52:25,877 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Loading yolov8x-pose.pt...
+2025-07-16 11:52:26,196 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] ✅ YOLOv8-Pose loaded successfully
+2025-07-16 11:52:48,813 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Completed with 30 segments
+2025-07-16 11:52:48,813 - utils.staged_gpu_executor - INFO -   ✅ body_pose completed in 22.9s
+2025-07-16 11:52:48,813 - utils.staged_gpu_executor - INFO -   🔍 Processing age_estimation...
+2025-07-16 11:52:48,813 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Initialized with InsightFace backend
+2025-07-16 11:52:48,814 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:52:48,814 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Loading InsightFace Buffalo_L model...
+2025-07-16 11:52:48,814 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Available ONNX providers: ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'AzureExecutionProvider', 'CPUExecutionProvider']
+2025-07-16 11:52:48,814 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Using CUDA for inference
+2025-07-16 11:52:51,155 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] ✅ InsightFace Buffalo_L loaded successfully
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 75386 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 173690 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 370298 bytes read, 4 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 501370 bytes read, 4 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 665210 bytes read, 4 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 632442 bytes read, 3 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 329560 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 329560 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 329560 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 75386 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 329560 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 329560 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 1353338 bytes read, 9 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:FFMPEG:40] Statistics: 329560 bytes read, 2 seeks
+[OPENCV:FFMPEG:40] Reinit context to 320x240, pix_fmt: yuv444p
+[OPENCV:F2025-07-16 11:52:51,368 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Extracted 30 frames with sample_rate=10, max_frames=150
+2025-07-16 11:52:52,592 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Completed analysis with 30 segments
+2025-07-16 11:52:52,592 - utils.staged_gpu_executor - INFO -   ✅ age_estimation completed in 3.8s
+2025-07-16 11:52:52,612 - utils.staged_gpu_executor - INFO -   🔍 Processing content_quality...
+2025-07-16 11:52:52,612 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality-Fixed] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:52:52,822 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality] Analyzing quality of 30 frames
+2025-07-16 11:52:52,822 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality] Sampled 30 frames down to 20 for faster processing
+2025-07-16 11:52:52,857 - analyzers.gpu_batch_content_quality_fixed - INFO - ✅ Quality analysis completed in 0.03s
+2025-07-16 11:52:52,857 - analyzers.gpu_batch_content_quality_fixed - INFO - 📊 Overall quality score: 6.70/10
+2025-07-16 11:52:52,857 - analyzers.gpu_batch_content_quality_fixed - INFO - ✅ ContentQuality completed: 20 segments
+2025-07-16 11:52:52,857 - utils.staged_gpu_executor - INFO -   ✅ content_quality completed in 0.2s
+2025-07-16 11:52:52,857 - utils.staged_gpu_executor - INFO -   🔍 Processing eye_tracking...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1752666772.884166 1823480 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1752666772.921999 1823479 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+2025-07-16 11:52:53,195 - utils.staged_gpu_executor - INFO -   ✅ eye_tracking completed in 0.3s
+2025-07-16 11:52:53,195 - utils.staged_gpu_executor - INFO -   🔍 Processing cut_analysis...
+2025-07-16 11:52:53,530 - utils.staged_gpu_executor - INFO -   ✅ cut_analysis completed in 0.3s
+2025-07-16 11:52:53,973 - utils.staged_gpu_executor - INFO - 🎯 Stage 3 completed in 29.1s
+2025-07-16 11:52:53,973 - utils.staged_gpu_executor - INFO - 🎵 Stage 4: CPU Parallel (6 analyzers)
+[GPUBatchObjectDetectionYOLO] Loading model...
+[GPUBatchObjectDetectionYOLO] GPU Memory after loading: 0.00GB
+[GPUBatchObjectDetectionYOLO] Extracted 20 frames with pinned memory
+[GPUBatchBackgroundSegmentationLight] Loading model...
+[GPUBatchBackgroundSegmentationLight] GPU Memory after loading: 0.00GB
+[GPUBatchBackgroundSegmentationLight] Extracted 20 frames with pinned memory
+[TikTokTextOverlayAnalyzer] Extracted 20 frames with pinned memory
+[TikTokTextOverlayAnalyzer] Loading model...
+[TikTokTextOverlayAnalyzer] GPU Memory after loading: 0.00GB
+[CameraAnalysis-Fixed] Initializing with enhanced movement detection on cuda:0
+✅ Optical flow and face detection initialized for camera movement detection
+[GPUBatchCameraAnalysisFixed] Extracted 7 frames with pinned memory
+[SceneSegmentation-Fixed] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+[SceneSegmentationFixedAnalyzer] Using sample_rate=10 from config (fps=30.0)
+[SceneSegmentationFixedAnalyzer] Extracted 30 frames with pinned memory
+[SceneSegmentation-Fixed] Extracted 30 frames for analysis
+[BodyPoseYOLOv8] Extracted 30 frames with pinned memory
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'cudnn_conv_use_max_workspace': '1', 'tunable_op_enable': '0'}}
+find model: /home/user/.insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'cudnn_conv_use_max_workspace': '1', 'tunable_op_enable': '0'}}
+find model: /home/user/.insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'cudnn_conv_use_max_workspace': '1', 'tunable_op_enable': '0'}}
+find model: /home/user/.insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'cudnn_conv_use_max_workspace': '1', 'tunable_op_enable': '0'}}
+find model: /home/user/.insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'cudnn_conv_use_max_workspace': '1', 'tunable_op_enable': '0'}}
+find model: /home/user/.insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+[AgeGenderInsightFace] Extracted 30 frames with pinned memory
+[GPUBatchContentQualityFixed] Using sample_rate=10 from config (fps=30.0)
+[GPUBatchContentQualityFixed] Extracted 30 frames with pinned memory
+[EyeTracking] MediaPipe Face Mesh initialized (CPU only, iris tracking enabled)
+[EyeTracking] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+[GPUBatchEyeTracking] Using sample_rate=10 from config (fps=30.0)
+[GPUBatchEyeTracking] Extracted 30 frames with pinned memory
+[EyeTracking] Found 0 eye tracking segments
+[CutAnalysis-Fixed] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+[CutAnalysisFixedAnalyzer] Using sample_rate=10 from config (fps=30.0)
+[CutAnalysisFixedAnalyzer] Extracted 30 frames with pinned memory
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/user/.local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752666779.442858 1823525 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752666779.442858 1823526 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752666779.449943 1823525 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1752666779.449960 1823526 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752666779.470075 1823526 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470076 1823525 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470127 1823526 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470138 1823525 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470138 1823526 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470141 1823525 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470143 1823526 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.470144 1823525 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752666779.513575 1823527 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752666779.521991 1823527 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752666779.539613 1823528 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+W0000 00:00:1752666779.542670 1823527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.542729 1823527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.542732 1823527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.542748 1823527 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+E0000 00:00:1752666779.547701 1823528 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752666779.563761 1823522 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+W0000 00:00:1752666779.567934 1823528 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.567968 1823528 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.567971 1823528 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.567974 1823528 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+E0000 00:00:1752666779.573325 1823522 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752666779.597333 1823522 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.597398 1823522 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.597403 1823522 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.597408 1823522 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752666779.733820 1823529 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752666779.741774 1823529 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752666779.761979 1823529 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.762020 1823529 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.762024 1823529 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752666779.762027 1823529 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 11:53:03,340 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:53:03,432 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:53:03,466 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:53:03,467 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:53:03,467 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:53:03,480 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:53:03,482 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:53:03,482 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:53:03,482 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:53:03,500 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Initializing on cuda
+2025-07-16 11:53:03,500 - analyzers.speech_transcription_ultimate - INFO - [speech_transcription] Loading Whisper base model...
+2025-07-16 11:53:03,513 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:53:03,592 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:53:03,593 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:53:03,593 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:53:03,602 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:53:03,604 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:53:03,604 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:53:03,604 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:53:03,607 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:53:03,618 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:53:03,618 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:53:03,618 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:53:03,619 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Maximum quality mode on cuda
+2025-07-16 11:53:03,619 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Starting comprehensive analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:53:03,621 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:53:03,626 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:53:03,627 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:53:03,627 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:53:03,627 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:53:03,696 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 11:53:03,734 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:53:03,734 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:53:03,734 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:53:03,735 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:53:03,735 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:53:03,735 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:53:03,742 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:53:03,743 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:53:03,743 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:53:03,743 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:53:03,743 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:53:03,744 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:53:03,744 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:53:03,744 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:53:03,757 - analyzers.narrative_analysis_advanced - INFO - [NarrativeAnalysis] Initialized advanced narrative analyzer
+2025-07-16 11:53:03,757 - analyzers.narrative_analysis_wrapper - ERROR - [NarrativeWrapper] Failed to load results from /home/user/tiktok_production/results/test1_mvp_fixed.json: Expecting value: line 1 column 1 (char 0)
+2025-07-16 11:53:03,757 - analyzers.narrative_analysis_wrapper - WARNING - [NarrativeWrapper] No analyzer outputs found for /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:53:03,757 - analyzers.gpu_batch_speech_flow - INFO - [SpeechFlow] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:53:03,758 - utils.staged_gpu_executor - INFO -   ✅ temporal_flow completed
+2025-07-16 11:53:03,800 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 11:53:03,801 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 11:53:03,801 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 11:53:03,808 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 11:53:03,809 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 11:53:03,809 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 11:53:03,809 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 11:53:04,608 - analyzers.speech_transcription_ultimate - INFO - [speech_transcription] Model moved to GPU with FP32
+2025-07-16 11:53:04,609 - analyzers.speech_transcription_ultimate - INFO - [speech_transcription] ✅ Whisper base model loaded with FP32 optimization
+2025-07-16 11:53:04,609 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:53:05,698 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Initializing on cuda
+2025-07-16 11:53:05,699 - analyzers.speech_transcription_ultimate - INFO - [speech_transcription] Loading Whisper base model...
+2025-07-16 11:53:05,710 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Loaded 10.0s at 22050Hz
+2025-07-16 11:53:05,710 - analyzers.audio_analysis_ultimate - INFO - [AudioAnalysis-Ultimate] Extracting global features...
+2025-07-16 11:53:06,552 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Audio duration: 10.0s
+2025-07-16 11:53:06,748 - analyzers.speech_transcription_ultimate - INFO - [speech_transcription] Model moved to GPU with FP32
+2025-07-16 11:53:06,749 - analyzers.speech_transcription_ultimate - INFO - [speech_transcription] ✅ Whisper base model loaded with FP32 optimization
+2025-07-16 11:53:06,749 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 11:53:06,870 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Audio duration: 10.0s
+Some weights of the model checkpoint at ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition were not used when initializing Wav2Vec2ForSequenceClassification: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.output.bias', 'classifier.output.weight']
+- This IS expected if you are initializing Wav2Vec2ForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForSequenceClassification were not initialized from the model checkpoint at ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition and are newly initialized: ['classifier.bias', 'classifier.weight', 'projector.bias', 'projector.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+✅ GPU forced: Quadro RTX 8000
+Detected language: English
+  0%|          | 0/1000 [00:00<?, ?frames/s]Device set to use cuda:0
+✅ GPU forced: Quadro RTX 8000
+Detected language: English
+  0%|          | 0/1000 [00:00<?, ?frames/s]  0%|          | 0/1000 [00:00<?, ?frames/s]
+2025-07-16 11:53:07,759 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Transcribed 0 segments with 0 words
+2025-07-16 11:53:07,816 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Pitch analysis: very_high/child
+2025-07-16 11:53:07,816 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Speaking rate: 0 WPM
+2025-07-16 11:53:07,859 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Found 0 emphasized words
+2025-07-16 11:53:07,868 - utils.staged_gpu_executor - INFO -   ✅ speech_transcription completed
+  0%|          | 0/1000 [00:00<?, ?frames/s]
+2025-07-16 11:53:08,173 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Transcribed 0 segments with 0 words
+2025-07-16 11:53:08,223 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Pitch analysis: very_high/child
+2025-07-16 11:53:08,223 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Speaking rate: 0 WPM
+2025-07-16 11:53:08,263 - analyzers.speech_transcription_ultimate - INFO - [Ultimate Speech] Found 0 emphasized words
+2025-07-16 11:53:08,275 - utils.staged_gpu_executor - INFO -   ✅ speech_flow completed
+2025-07-16 11:53:08,777 - utils.staged_gpu_executor - ERROR -   ❌ audio_analysis failed: A process in the process pool was terminated abruptly while the future was running or pending.
+2025-07-16 11:53:08,779 - utils.staged_gpu_executor - ERROR -   ❌ audio_environment failed: A process in the process pool was terminated abruptly while the future was running or pending.
+2025-07-16 11:53:08,779 - utils.staged_gpu_executor - ERROR -   ❌ speech_emotion failed: A process in the process pool was terminated abruptly while the future was running or pending.
+2025-07-16 11:53:09,898 - utils.staged_gpu_executor - INFO - 🎯 Stage 4 completed in 15.9s
+2025-07-16 11:53:09,898 - utils.staged_gpu_executor - INFO - 🧠 Stage 5: Final Intelligence (1 analyzers)
+2025-07-16 11:53:09,898 - analyzers.cross_analyzer_intelligence - INFO - [CrossAnalyzer] Initialized intelligence system
+2025-07-16 11:53:09,898 - analyzers.cross_analyzer_intelligence - INFO - [CrossAnalyzer] Running analyze_with_context with all analyzer outputs
+2025-07-16 11:53:09,899 - analyzers.cross_analyzer_intelligence - INFO - [CrossAnalyzer] Built timeline with 192 events from 18 analyzers
+2025-07-16 11:53:09,900 - utils.staged_gpu_executor - ERROR -   ❌ cross_analyzer_intelligence failed: 'str' object has no attribute 'get'
+2025-07-16 11:53:09,900 - utils.staged_gpu_executor - INFO - ✅ Staged analysis complete in 223.1s
+2025-07-16 11:53:09,900 - utils.staged_gpu_executor - INFO - 📈 Successful analyzers: 19/24
+2025-07-16 11:53:09,964 - utils.gpu_cleanup - ERROR - nvidia-smi failed: Command '['nvidia-smi', '--query-compute-apps=pid,process_name,used_gpu_memory,gpu_util', '--format=csv,noheader,nounits']' returned non-zero exit status 2.
+2025-07-16 11:53:09,998 - __main__ - INFO - ✅ Analysis complete in 223.2s
+2025-07-16 11:53:09,998 - __main__ - INFO - ⚡ Realtime factor: 0.00x
+2025-07-16 11:53:09,998 - __main__ - INFO - 📊 Reconstruction score: 62.5%
+2025-07-16 11:53:09,998 - __main__ - INFO - 🎯 Successful analyzers: 15/24
+2025-07-16 11:53:10,000 - __main__ - WARNING - Validation errors for text_overlay: ['text_overlay: Segments missing timestamp field']
+2025-07-16 11:53:10,001 - __main__ - INFO - 📊 Normalization complete: 148 fields normalized across 19 analyzers
+2025-07-16 11:53:10,020 - __main__ - INFO - 💾 Results saved to /home/user/tiktok_production/results/test1_multiprocess_20250716_115309.json
+2025-07-16 11:53:10,021 - utils.auto_cleanup - INFO - Starting cleanup for video test1
+2025-07-16 11:53:10,531 - utils.auto_cleanup - INFO - Cleanup completed
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-07-16 12:18:38,611 - __main__ - INFO - Shutting down...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1819605]
+/usr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 4 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

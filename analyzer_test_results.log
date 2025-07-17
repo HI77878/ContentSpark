@@ -1,0 +1,94 @@
+2025-07-16 10:07:23.347760: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-16 10:07:23.366321: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752660443.389985 1750042 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752660443.397123 1750042 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752660443.414130 1750042 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752660443.414162 1750042 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752660443.414165 1750042 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752660443.414167 1750042 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 10:07:23.419984: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[QWEN2VL v3.0_8BIT_OPTIMIZED] segment_duration=2.0s, frames_per_segment=1
+[QWEN2VL v3.0_8BIT_OPTIMIZED] FORCED segment_duration=2.0s with 3 frames
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+
+==================================================
+Testing: qwen2_vl_temporal
+==================================================
+✅ GPU forced: Quadro RTX 8000
+[QWEN2VL] Loading Version 3.0_8BIT_OPTIMIZED with 8-bit quantization!
+[QWEN2VL FORCED] segment_duration = 2.0s for COMPLETE reconstruction
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.01s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:17,  5.96s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.73s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.64s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.26s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.94s/it]
+Traceback (most recent call last):
+  File "/home/user/tiktok_production/test_all_analyzers_individually.py", line 96, in <module>
+    result = analyzer.analyze(test_video)
+  File "/home/user/tiktok_production/analyzers/qwen2_vl_temporal_analyzer.py", line 377, in analyze
+    self._load_model_impl()
+  File "/home/user/tiktok_production/analyzers/qwen2_vl_temporal_analyzer.py", line 119, in _load_model_impl
+    self.model = Qwen2VLForConditionalGeneration.from_pretrained(
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 262, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4391, in from_pretrained
+    dispatch_model(model, **device_map_kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/accelerate/big_modeling.py", line 502, in dispatch_model
+    model.to(device)
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3152, in to
+    raise ValueError(
+ValueError: Calling `to()` is not supported for `4-bit` quantized models with the installed version of bitsandbytes. The current device is `cuda:0`. If you intended to move the model, please install bitsandbytes >= 0.43.2.
+/home/user/tiktok_production/analyzers/speech_transcription_ultimate.py:399: UserWarning: PySoundFile failed. Trying audioread instead.
+  audio, sr = librosa.load(video_path, sr=16000)
+/home/user/.local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+Transcription error: expected scalar type Float but found Half
+Traceback (most recent call last):
+  File "/home/user/tiktok_production/test_all_analyzers_individually.py", line 96, in <module>
+    result = analyzer.analyze(test_video)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/user/tiktok_production/analyzers/base_analyzer.py", line 189, in analyze
+    return self._analyze_impl(video_path)
+  File "/home/user/tiktok_production/analyzers/background_segmentation_light.py", line 59, in _analyze_impl
+    return self.process_batch_gpu(frames, frame_times)
+  File "/home/user/tiktok_production/analyzers/background_segmentation_light.py", line 89, in process_batch_gpu
+    outputs = self.model(**inputs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/models/segformer/modeling_segformer.py", line 790, in forward
+    outputs = self.segformer(
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/models/segformer/modeling_segformer.py", line 544, in forward
+    encoder_outputs = self.encoder(
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/models/segformer/modeling_segformer.py", line 418, in forward
+    hidden_states, height, width = embedding_layer(hidden_states)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/transformers/models/segformer/modeling_segformer.py", line 133, in forward
+    embeddings = self.proj(pixel_values)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/user/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Input type (float) and bias type (c10::Half) should be the same
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1752660521.847213 1751159 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1752660521.888895 1751152 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.

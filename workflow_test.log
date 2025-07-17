@@ -1,0 +1,19 @@
+[TikTok] Extracting URL: https://www.tiktok.com/@leon_schliebach/video/7446489995663117590?q=vlog&t=1750908402121
+🚀 TikTok Production Workflow initialized
+📁 Base directory: /home/user/tiktok_production
+🔍 Loaded 19 analyzers
+
+🚀 STARTING TIKTOK ANALYSIS WORKFLOW
+📍 URL: https://www.tiktok.com/@leon_schliebach/video/7446489995663117590?q=vlog&t=1750908402121
+⏰ Target: <3 minutes
+🎯 Analyzers: 19
+============================================================
+
+📥 PHASE 1: DOWNLOAD
+📥 Downloading: https://www.tiktok.com/@leon_schliebach/video/7446489995663117590?q=vlog&t=1750908402121
+[TikTok] 7446489995663117590: Downloading webpage
+ERROR: [TikTok] 7446489995663117590: Your IP address is blocked from accessing this post
+❌ Download failed: ERROR: [TikTok] 7446489995663117590: Your IP address is blocked from accessing this post
+
+❌ WORKFLOW FAILED after 1.0s
+Error: Download error: ERROR: [TikTok] 7446489995663117590: Your IP address is blocked from accessing this post

@@ -1,0 +1,528 @@
+2025-07-16 14:32:22.395511: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-16 14:32:22.420966: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676342.443820 1938665 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676342.450672 1938665 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676342.472645 1938665 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676342.472676 1938665 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676342.472679 1938665 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676342.472682 1938665 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 14:32:22.479140: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-16 14:32:26,308 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:32:26,400 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:32:26,400 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:32:26,400 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:32:26,410 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:32:26,411 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:32:26,411 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:32:26,411 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:32:26,420 - __main__ - INFO - Starting Stable Production API with Multiprocess Parallelization...
+✅ GPU forced: Quadro RTX 8000
+INFO:     Started server process [1938665]
+INFO:     Waiting for application startup.
+2025-07-16 14:32:26,484 - __main__ - INFO - 🚀 Stable Production API (Multiprocess) starting...
+2025-07-16 14:32:26,484 - __main__ - INFO - 📊 Target: <3x realtime, >90% reconstruction
+2025-07-16 14:32:26,484 - __main__ - INFO - 🔧 Using process-based GPU parallelization
+2025-07-16 14:32:26,484 - __main__ - INFO - 🚀 Using Staged GPU Executor for optimal memory management
+2025-07-16 14:32:26,484 - __main__ - INFO - ✓ cross_analyzer_intelligence is in active_analyzers
+2025-07-16 14:32:26,484 - __main__ - INFO - 🚀 Production Engine initialized with 24 active analyzers
+2025-07-16 14:32:26,484 - __main__ - INFO -    Using multiprocess GPU parallelization
+2025-07-16 14:32:26,484 - __main__ - INFO -    3 GPU processes for true parallel execution
+2025-07-16 14:32:26,484 - __main__ - INFO - ⚠️ Model preloading DISABLED to prevent CUDA OOM
+2025-07-16 14:32:26,928 - __main__ - INFO - ✅ API is ready to accept requests!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8003 (Press CTRL+C to quit)
+2025-07-16 14:40:46,288 - __main__ - INFO - 🎬 Starting analysis: /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:40:46,290 - utils.staged_gpu_executor - INFO - 🚀 Starting staged analysis for /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:40:46,290 - utils.staged_gpu_executor - INFO - 📊 Target analyzers: 24
+2025-07-16 14:40:46,291 - utils.staged_gpu_executor - INFO - 🔥 GPU Memory before: 0.0GB
+2025-07-16 14:40:46,291 - utils.staged_gpu_executor - INFO - 🎬 Stage 1: Heavy Models (1 analyzers)
+2025-07-16 14:40:46,291 - utils.staged_gpu_executor - INFO - 🧹 Preparing GPU for stage (max 15 GB)
+2025-07-16 14:40:46,918 - utils.staged_gpu_executor - INFO - 📊 GPU Memory: 0.0GB used, 44.5GB free of 44.5GB total
+2025-07-16 14:40:46,918 - utils.staged_gpu_executor - INFO -   🔍 Processing qwen2_vl_temporal...
+2025-07-16 14:40:46,922 - analyzers.qwen2_vl_temporal_analyzer - INFO - 🚀 Loading Qwen2-VL OPTIMIZED - ONLY ONCE!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:11,  2.96s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:05<00:08,  2.88s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:08<00:05,  2.86s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:11<00:02,  2.83s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:12<00:00,  2.27s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:12<00:00,  2.54s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2025-07-16 14:41:01,639 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Qwen2-VL loaded on GPU - ready for BATCH processing!
+2025-07-16 14:41:01,647 - analyzers.qwen2_vl_temporal_analyzer - INFO - 🔥 BATCH processing 5 segments on GPU
+2025-07-16 14:41:01,764 - analyzers.qwen2_vl_temporal_analyzer - INFO - 🚀 Running BATCH inference for 5 frames...
+2025-07-16 14:41:12,791 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ BATCH inference complete in 11.0s!
+2025-07-16 14:41:12,792 - analyzers.qwen2_vl_temporal_analyzer - INFO - 🎯 Qwen2-VL OPTIMIZED complete: 5 segments in 11.2s
+2025-07-16 14:41:12,792 - utils.staged_gpu_executor - INFO -   ✅ qwen2_vl_temporal completed in 25.9s
+2025-07-16 14:41:13,244 - utils.staged_gpu_executor - INFO - 🎯 Stage 1 completed in 26.3s
+2025-07-16 14:41:13,245 - utils.staged_gpu_executor - INFO - 🎭 Stage 2: Medium Models (4 analyzers)
+2025-07-16 14:41:13,245 - utils.staged_gpu_executor - INFO - 🧹 Preparing GPU for stage (max 12 GB)
+2025-07-16 14:41:13,690 - utils.staged_gpu_executor - INFO - 📊 GPU Memory: 15.5GB used, 29.0GB free of 44.5GB total
+2025-07-16 14:41:13,690 - utils.staged_gpu_executor - WARNING - ⚠️ Memory usage 15.5GB exceeds stage limit 12GB
+2025-07-16 14:41:13,690 - utils.staged_gpu_executor - INFO -   🔍 Processing object_detection...
+2025-07-16 14:41:13,690 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Loading YOLOv8x model...
+2025-07-16 14:41:14,744 - analyzers.gpu_batch_object_detection_yolo - INFO - ✅ YOLOv8x loaded on cuda with FP16
+2025-07-16 14:41:14,746 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Extracting up to 300 frames with interval 15
+2025-07-16 14:41:14,957 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Extracted 20 frames for batch processing
+2025-07-16 14:41:14,957 - analyzers.gpu_batch_object_detection_yolo - INFO - [ObjectDetection-YOLO] Processing 20 frames in batches
+2025-07-16 14:41:14,957 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 1 with 16 frames...
+2025-07-16 14:41:16,843 - analyzers.gpu_batch_object_detection_yolo - INFO - 🚀 Processing batch 2 with 4 frames...
+2025-07-16 14:41:17,505 - analyzers.gpu_batch_object_detection_yolo - INFO - ✅ Detected 20 objects in 20 frames
+2025-07-16 14:41:17,506 - utils.staged_gpu_executor - INFO -   ✅ object_detection completed in 3.8s
+2025-07-16 14:41:17,506 - utils.staged_gpu_executor - INFO -   🔍 Processing background_segmentation...
+2025-07-16 14:41:17,506 - analyzers.background_segmentation_light - INFO - [BackgroundSeg-Light] Loading SegFormer-B0...
+2025-07-16 14:41:17,776 - analyzers.background_segmentation_light - INFO - ✅ SegFormer-B0 loaded - 8x faster!
+2025-07-16 14:41:17,986 - analyzers.background_segmentation_light - INFO - [BackgroundSeg-Light] Processing 20 frames
+2025-07-16 14:41:20,568 - utils.staged_gpu_executor - INFO -   ✅ background_segmentation completed in 3.1s
+2025-07-16 14:41:20,571 - utils.staged_gpu_executor - INFO -   🔍 Processing text_overlay...
+2025-07-16 14:41:20,572 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text Overlay] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:41:20,781 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text Overlay] Loading EasyOCR with German + English
+2025-07-16 14:41:23,382 - analyzers.text_overlay_tiktok_fixed - INFO - ✅ EasyOCR loaded on GPU for TikTok text detection
+2025-07-16 14:41:24,332 - analyzers.text_overlay_tiktok_fixed - INFO - [TikTok Text] Found 20 segments with text
+2025-07-16 14:41:24,333 - utils.staged_gpu_executor - INFO -   ✅ text_overlay completed in 3.8s
+2025-07-16 14:41:24,334 - utils.staged_gpu_executor - INFO -   🔍 Processing camera_analysis...
+2025-07-16 14:41:24,335 - analyzers.camera_analysis_fixed - INFO - [CameraAnalysis-Fixed] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:41:24,706 - analyzers.camera_analysis_fixed - INFO - [CameraAnalysis-Fixed] Found 7 segments
+2025-07-16 14:41:24,707 - utils.staged_gpu_executor - INFO -   ✅ camera_analysis completed in 0.4s
+2025-07-16 14:41:25,165 - utils.staged_gpu_executor - INFO - 🎯 Stage 2 completed in 11.5s
+2025-07-16 14:41:25,165 - utils.staged_gpu_executor - INFO - 🎨 Stage 3: Light Models (7 analyzers)
+2025-07-16 14:41:25,165 - utils.staged_gpu_executor - INFO - 🧹 Preparing GPU for stage (max 8 GB)
+2025-07-16 14:41:25,727 - utils.staged_gpu_executor - INFO - 📊 GPU Memory: 15.5GB used, 29.0GB free of 44.5GB total
+2025-07-16 14:41:25,727 - utils.staged_gpu_executor - WARNING - ⚠️ Memory usage 15.5GB exceeds stage limit 8GB
+2025-07-16 14:41:25,727 - utils.staged_gpu_executor - INFO -   🔍 Processing scene_segmentation...
+2025-07-16 14:41:26,133 - utils.staged_gpu_executor - INFO -   ✅ scene_segmentation completed in 0.4s
+2025-07-16 14:41:26,133 - utils.staged_gpu_executor - INFO -   🔍 Processing color_analysis...
+2025-07-16 14:41:26,133 - analyzers.gpu_batch_color_analysis - INFO - [ColorAnalysisOptimized] Starting GPU analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:41:28,263 - utils.staged_gpu_executor - INFO -   ✅ color_analysis completed in 2.1s
+2025-07-16 14:41:28,263 - utils.staged_gpu_executor - INFO -   🔍 Processing body_pose...
+2025-07-16 14:41:28,263 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Initialized with YOLOv8x-pose
+2025-07-16 14:41:28,264 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:41:28,264 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Loading yolov8x-pose.pt...
+2025-07-16 14:41:28,648 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] ✅ YOLOv8-Pose loaded successfully
+2025-07-16 14:41:33,680 - analyzers.body_pose_yolov8 - INFO - [BodyPoseYOLOv8] Completed with 30 segments
+2025-07-16 14:41:33,680 - utils.staged_gpu_executor - INFO -   ✅ body_pose completed in 5.4s
+2025-07-16 14:41:33,680 - utils.staged_gpu_executor - INFO -   🔍 Processing age_estimation...
+2025-07-16 14:41:33,681 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Initialized with InsightFace backend
+2025-07-16 14:41:33,681 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:41:33,681 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Loading InsightFace Buffalo_L model...
+2025-07-16 14:41:33,681 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Available ONNX providers: ['AzureExecutionProvider', 'CPUExecutionProvider']
+2025-07-16 14:41:33,681 - analyzers.age_gender_insightface - WARNING - [AgeGenderInsightFace] CUDA not available, using CPU
+2025-07-16 14:41:35,714 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] ✅ InsightFace Buffalo_L loaded successfully
+2025-07-16 14:41:35,992 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Extracted 30 frames with sample_rate=10, max_frames=150
+2025-07-16 14:41:38,184 - analyzers.age_gender_insightface - INFO - [AgeGenderInsightFace] Completed analysis with 30 segments
+2025-07-16 14:41:38,185 - utils.staged_gpu_executor - INFO -   ✅ age_estimation completed in 4.5s
+2025-07-16 14:41:38,213 - utils.staged_gpu_executor - INFO -   🔍 Processing content_quality...
+2025-07-16 14:41:38,214 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality-Fixed] Starting analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:41:38,517 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality] Analyzing quality of 30 frames
+2025-07-16 14:41:38,517 - analyzers.gpu_batch_content_quality_fixed - INFO - [ContentQuality] Sampled 30 frames down to 20 for faster processing
+2025-07-16 14:41:38,552 - analyzers.gpu_batch_content_quality_fixed - INFO - ✅ Quality analysis completed in 0.03s
+2025-07-16 14:41:38,553 - analyzers.gpu_batch_content_quality_fixed - INFO - 📊 Overall quality score: 6.70/10
+2025-07-16 14:41:38,553 - analyzers.gpu_batch_content_quality_fixed - INFO - ✅ ContentQuality completed: 20 segments
+2025-07-16 14:41:38,553 - utils.staged_gpu_executor - INFO -   ✅ content_quality completed in 0.3s
+2025-07-16 14:41:38,553 - utils.staged_gpu_executor - INFO -   🔍 Processing eye_tracking...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1752676898.587642 1944930 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1752676898.621524 1944931 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+2025-07-16 14:41:38,973 - utils.staged_gpu_executor - INFO -   ✅ eye_tracking completed in 0.4s
+2025-07-16 14:41:38,973 - utils.staged_gpu_executor - INFO -   🔍 Processing cut_analysis...
+2025-07-16 14:41:39,281 - utils.staged_gpu_executor - INFO -   ✅ cut_analysis completed in 0.3s
+2025-07-16 14:41:39,735 - utils.staged_gpu_executor - INFO - 🎯 Stage 3 completed in 14.0s
+2025-07-16 14:41:39,736 - utils.staged_gpu_executor - INFO - 🎵 Stage 4: CPU Parallel (6 analyzers)
+2025-07-16 14:41:39,736 - utils.staged_gpu_executor - INFO - 🎵 Processing speech_transcription DIRECTLY (no ProcessPool)
+2025-07-16 14:41:41,147 - utils.audio_processing_fix - INFO - Processing 10 audio segments with forkserver
+[GPUBatchObjectDetectionYOLO] Loading model...
+[GPUBatchObjectDetectionYOLO] GPU Memory after loading: 15.58GB
+[GPUBatchObjectDetectionYOLO] Extracted 20 frames with pinned memory
+[GPUBatchBackgroundSegmentationLight] Loading model...
+[GPUBatchBackgroundSegmentationLight] GPU Memory after loading: 15.53GB
+[GPUBatchBackgroundSegmentationLight] Extracted 20 frames with pinned memory
+[TikTokTextOverlayAnalyzer] Extracted 20 frames with pinned memory
+[TikTokTextOverlayAnalyzer] Loading model...
+[TikTokTextOverlayAnalyzer] GPU Memory after loading: 15.61GB
+[CameraAnalysis-Fixed] Initializing with enhanced movement detection on cuda:0
+✅ Optical flow and face detection initialized for camera movement detection
+[GPUBatchCameraAnalysisFixed] Extracted 7 frames with pinned memory
+[SceneSegmentation-Fixed] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+[SceneSegmentationFixedAnalyzer] Using sample_rate=10 from config (fps=30.0)
+[SceneSegmentationFixedAnalyzer] Extracted 30 frames with pinned memory
+[SceneSegmentation-Fixed] Extracted 30 frames for analysis
+[BodyPoseYOLOv8] Extracted 30 frames with pinned memory
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /home/user/.insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /home/user/.insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /home/user/.insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /home/user/.insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /home/user/.insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+[AgeGenderInsightFace] Extracted 30 frames with pinned memory
+[GPUBatchContentQualityFixed] Using sample_rate=10 from config (fps=30.0)
+[GPUBatchContentQualityFixed] Extracted 30 frames with pinned memory
+[EyeTracking] MediaPipe Face Mesh initialized (CPU only, iris tracking enabled)
+[EyeTracking] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+[GPUBatchEyeTracking] Using sample_rate=10 from config (fps=30.0)
+[GPUBatchEyeTracking] Extracted 30 frames with pinned memory
+[EyeTracking] Found 0 eye tracking segments
+[EyeTracking] No segments found, creating dummy segment
+[CutAnalysis-Fixed] Analyzing /home/user/tiktok_production/test_videos/test1.mp4
+[CutAnalysisFixedAnalyzer] Using sample_rate=10 from config (fps=30.0)
+[CutAnalysisFixedAnalyzer] Extracted 30 frames with pinned memory
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676906.846894 1945008 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676906.846914 1945007 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676906.846983 1945006 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676906.854849 1945006 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1752676906.854840 1945007 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1752676906.854857 1945008 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676906.874850 1945007 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874858 1945006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874851 1945008 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874901 1945007 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874913 1945006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874923 1945008 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874944 1945007 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874946 1945006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874949 1945008 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874951 1945007 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874955 1945008 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676906.874954 1945006 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676907.039337 1945003 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676907.046745 1945003 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676907.066952 1945003 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676907.066997 1945003 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676907.067001 1945003 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676907.067004 1945003 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 14:41:50,935 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:41:50,937 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:41:50,982 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:41:51,032 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:41:51,046 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:41:51,046 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:41:51,046 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:41:51,054 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:41:51,055 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:41:51,055 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:41:51,055 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:41:51,072 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:41:51,072 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:41:51,072 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:41:51,073 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:41:51,074 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:41:51,074 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:41:51,080 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:41:51,081 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:41:51,081 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:41:51,081 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:41:51,083 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:41:51,084 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:41:51,084 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:41:51,084 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:41:51,142 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:41:51,143 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:41:51,143 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:41:51,151 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:41:51,152 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:41:51,153 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:41:51,153 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+2025-07-16 14:41:52,955 - utils.audio_processing_fix - INFO - ✅ Audio analysis complete: 10 segments in 13.2s
+2025-07-16 14:41:52,956 - utils.staged_gpu_executor - INFO -   ✅ speech_transcription completed with 10 segments
+2025-07-16 14:41:52,956 - utils.staged_gpu_executor - INFO - 🎵 Processing audio_analysis DIRECTLY (no ProcessPool)
+2025-07-16 14:41:53,073 - utils.audio_processing_fix - INFO - Processing 10 audio segments with forkserver
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676918.083196 1945318 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676918.089195 1945318 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676918.104247 1945318 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.104279 1945318 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.104282 1945318 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.104285 1945318 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676918.523993 1945319 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676918.523993 1945313 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676918.529656 1945313 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1752676918.529656 1945319 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676918.544410 1945313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544410 1945319 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544443 1945313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544452 1945319 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544453 1945313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544455 1945319 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544457 1945313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.544459 1945319 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676918.615348 1945317 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676918.622667 1945317 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676918.640889 1945317 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.640921 1945317 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.640925 1945317 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676918.640928 1945317 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 14:42:01,734 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:01,843 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:01,844 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:01,844 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:01,853 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:01,854 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:01,854 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:01,854 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:01,868 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:02,012 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:02,012 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:02,012 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:02,024 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:02,025 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:02,025 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:02,025 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:02,396 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:02,405 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:02,510 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:02,511 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:02,511 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:02,520 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:02,521 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:02,521 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:02,521 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:02,535 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:02,536 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:02,536 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:02,545 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:02,547 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:02,547 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:02,547 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+2025-07-16 14:42:04,573 - utils.audio_processing_fix - INFO - ✅ Audio analysis complete: 10 segments in 11.6s
+2025-07-16 14:42:04,573 - utils.staged_gpu_executor - INFO -   ✅ audio_analysis completed with 10 segments
+2025-07-16 14:42:04,573 - utils.staged_gpu_executor - INFO - 🎵 Processing audio_environment DIRECTLY (no ProcessPool)
+2025-07-16 14:42:04,656 - utils.audio_processing_fix - INFO - Processing 10 audio segments with forkserver
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676929.850013 1945623 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676929.856026 1945623 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676929.871299 1945623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676929.871368 1945623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676929.871371 1945623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676929.871374 1945623 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676929.974331 1945618 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676929.980334 1945618 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676929.995524 1945618 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676929.995565 1945618 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676929.995567 1945618 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676929.995570 1945618 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676930.025077 1945621 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676930.031011 1945621 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676930.046240 1945621 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676930.046279 1945621 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676930.046281 1945621 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676930.046284 1945621 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676930.173983 1945622 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676930.181410 1945622 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676930.199872 1945622 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676930.199918 1945622 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676930.199922 1945622 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676930.199925 1945622 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 14:42:13,783 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:13,797 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:13,856 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:13,872 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:13,916 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:13,917 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:13,917 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:13,923 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:13,923 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:13,923 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:13,925 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:13,926 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:13,926 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:13,927 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:13,932 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:13,933 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:13,933 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:13,933 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:13,954 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:13,954 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:13,954 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:13,963 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:13,964 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:13,964 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:13,964 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:13,970 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:13,971 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:13,971 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:13,979 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:13,980 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:13,981 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:13,981 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+2025-07-16 14:42:15,872 - utils.audio_processing_fix - INFO - ✅ Audio analysis complete: 10 segments in 11.3s
+2025-07-16 14:42:15,872 - utils.staged_gpu_executor - INFO -   ✅ audio_environment completed with 10 segments
+2025-07-16 14:42:15,872 - utils.staged_gpu_executor - INFO - 🎵 Processing speech_emotion DIRECTLY (no ProcessPool)
+2025-07-16 14:42:15,997 - utils.audio_processing_fix - INFO - Processing 10 audio segments with forkserver
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676940.991575 1945911 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676940.997698 1945911 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676941.013152 1945911 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.013191 1945911 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.013194 1945911 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.013213 1945911 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676941.019149 1945916 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676941.025223 1945916 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676941.040500 1945916 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.040537 1945916 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.040540 1945916 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.040542 1945916 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676941.237944 1945914 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676941.244054 1945914 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676941.259453 1945914 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.259496 1945914 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.259498 1945914 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.259501 1945914 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676941.372933 1945915 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676941.380063 1945915 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676941.398009 1945915 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.398039 1945915 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.398042 1945915 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676941.398045 1945915 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 14:42:24,629 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:24,654 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:24,713 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:24,713 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:24,713 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:24,720 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:24,721 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:24,721 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:24,721 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:24,745 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:24,746 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:24,746 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:24,753 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:24,754 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:24,754 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:24,754 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:24,839 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:24,897 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:24,940 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:24,940 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:24,940 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:24,948 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:24,949 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:24,949 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:24,949 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:24,997 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:24,998 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:24,998 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:25,014 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:25,015 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:25,016 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:25,016 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+2025-07-16 14:42:28,526 - utils.audio_processing_fix - INFO - ✅ Audio analysis complete: 10 segments in 12.7s
+2025-07-16 14:42:28,526 - utils.staged_gpu_executor - INFO -   ✅ speech_emotion completed with 10 segments
+2025-07-16 14:42:28,527 - analyzers.narrative_analysis_advanced - INFO - [NarrativeAnalysis] Initialized advanced narrative analyzer
+2025-07-16 14:42:28,532 - analyzers.narrative_analysis_advanced - INFO - [NarrativeAnalysis] Starting narrative analysis of /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 14:42:28,534 - analyzers.temporal_flow_safe - WARNING - [TemporalFlowSafe] Original analyzer failed: 'dominant_emotion'
+2025-07-16 14:42:28,534 - utils.staged_gpu_executor - INFO -   ✅ temporal_flow completed
+2025-07-16 14:42:28,535 - utils.staged_gpu_executor - INFO - 🎵 Processing speech_flow DIRECTLY (no ProcessPool)
+2025-07-16 14:42:28,648 - utils.audio_processing_fix - INFO - Processing 10 audio segments with forkserver
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676953.879885 1946253 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676953.885969 1946253 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676953.901302 1946253 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676953.901340 1946253 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676953.901343 1946253 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676953.901345 1946253 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676953.922231 1946247 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676953.928219 1946247 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676953.943431 1946247 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676953.943467 1946247 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676953.943470 1946247 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676953.943473 1946247 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676954.239663 1946252 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676954.246798 1946252 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676954.264553 1946252 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676954.264587 1946252 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676954.264590 1946252 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676954.264593 1946252 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752676954.266316 1946251 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752676954.273685 1946251 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1752676954.291567 1946251 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676954.291602 1946251 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676954.291618 1946251 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1752676954.291622 1946251 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-16 14:42:37,497 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:37,522 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:37,627 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:37,628 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:37,628 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:37,637 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:37,638 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:37,638 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:37,638 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:37,648 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:37,649 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:37,649 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:37,660 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:37,662 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:37,662 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:37,662 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:37,807 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:37,917 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 14:42:37,917 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:37,917 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:37,917 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:37,926 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:37,927 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:37,927 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:37,927 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+2025-07-16 14:42:38,022 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 14:42:38,023 - registry_loader - WARNING - Could not load qwen2_vl_ultra_detailed.Qwen2VLUltraDetailedAnalyzer: No module named 'analyzers.qwen2_vl_ultra_detailed'
+2025-07-16 14:42:38,023 - registry_loader - INFO - Successfully loaded 27 analyzers
+2025-07-16 14:42:38,031 - utils.model_preloader - INFO - ModelPreloader initialized with device: cuda
+2025-07-16 14:42:38,032 - utils.parallel_video_processor - INFO - ParallelVideoProcessor initialized:
+2025-07-16 14:42:38,032 - utils.parallel_video_processor - INFO -   - Max concurrent videos: 3
+2025-07-16 14:42:38,033 - utils.parallel_video_processor - INFO -   - Memory per video: 3333 MB
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+✅ GPU forced: Quadro RTX 8000
+2025-07-16 14:42:39,964 - utils.audio_processing_fix - INFO - ✅ Audio analysis complete: 10 segments in 11.4s
+2025-07-16 14:42:39,964 - utils.staged_gpu_executor - INFO -   ✅ speech_flow completed with 10 segments
+2025-07-16 14:42:39,964 - utils.staged_gpu_executor - INFO - 🎯 Stage 4 completed in 60.2s
+2025-07-16 14:42:39,964 - utils.staged_gpu_executor - INFO - 🧠 Stage 5: Final Intelligence (1 analyzers)
+2025-07-16 14:42:39,964 - utils.staged_gpu_executor - ERROR -   ❌ cross_analyzer_intelligence failed: 'CrossAnalyzerIntelligenceSafe' object has no attribute 'analyze_with_context'
+2025-07-16 14:42:39,965 - utils.staged_gpu_executor - INFO - ✅ Staged analysis complete in 113.7s
+2025-07-16 14:42:39,965 - utils.staged_gpu_executor - INFO - 📈 Successful analyzers: 19/24
+2025-07-16 14:42:40,016 - utils.gpu_cleanup - ERROR - nvidia-smi failed: Command '['nvidia-smi', '--query-compute-apps=pid,process_name,used_gpu_memory,gpu_util', '--format=csv,noheader,nounits']' returned non-zero exit status 2.
+2025-07-16 14:42:40,048 - __main__ - INFO - ✅ Analysis complete in 113.8s
+2025-07-16 14:42:40,048 - __main__ - INFO - ⚡ Realtime factor: 0.00x
+2025-07-16 14:42:40,048 - __main__ - INFO - 📊 Reconstruction score: 75.0%
+2025-07-16 14:42:40,048 - __main__ - INFO - 🎯 Successful analyzers: 18/24
+2025-07-16 14:42:40,049 - __main__ - WARNING - Validation errors for text_overlay: ['text_overlay: Segments missing timestamp field']
+2025-07-16 14:42:40,049 - __main__ - INFO - 📊 Normalization complete: 151 fields normalized across 19 analyzers
+2025-07-16 14:42:40,061 - __main__ - INFO - 💾 Results saved to /home/user/tiktok_production/results/test1_multiprocess_20250716_144240.json
+2025-07-16 14:42:40,061 - utils.auto_cleanup - INFO - Starting cleanup for video test1
+2025-07-16 14:42:41,857 - utils.auto_cleanup - INFO - Cleanup completed
+/usr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

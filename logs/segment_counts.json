@@ -1,0 +1,21 @@
+{
+  "qwen2_vl_temporal": 5,
+  "object_detection": 20,
+  "background_segmentation": 20,
+  "text_overlay": 20,
+  "camera_analysis": 7,
+  "scene_segmentation": 1,
+  "color_analysis": 10,
+  "body_pose": 30,
+  "age_estimation": 30,
+  "content_quality": 20,
+  "eye_tracking": 0,
+  "cut_analysis": 29,
+  "temporal_flow": 0,
+  "speech_transcription": 0,
+  "speech_flow": 0,
+  "audio_analysis": 0,
+  "audio_environment": 0,
+  "speech_emotion": 0,
+  "cross_analyzer_intelligence": 0
+}

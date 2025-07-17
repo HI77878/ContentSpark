@@ -1,0 +1,52 @@
+2025-07-16 12:39:00,950 - __main__ - INFO - 🎬 Video: /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 12:39:08,862 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 12:39:09,754 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 12:39:10,671 - __main__ - INFO - 🚀 STARTING SEQUENTIAL ANALYSIS: /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 12:39:10,672 - __main__ - INFO - 📊 Total Analyzers: 24
+2025-07-16 12:39:10,672 - __main__ - INFO - 
+🔄 Processing qwen2_vl_temporal...
+2025-07-16 12:39:10,672 - analyzers.qwen2_vl_temporal_analyzer - WARNING - [QWEN2VL v3.0_8BIT_OPTIMIZED] segment_duration=2.0s, frames_per_segment=1
+2025-07-16 12:39:10,672 - analyzers.qwen2_vl_temporal_analyzer - WARNING - [QWEN2VL v3.0_8BIT_OPTIMIZED] FORCED segment_duration=2.0s with 3 frames
+2025-07-16 12:39:10,672 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Loading model: Qwen/Qwen2-VL-7B-Instruct
+2025-07-16 12:39:13,252 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Processor loaded with enhanced resolution settings
+2025-07-16 12:39:13,252 - analyzers.qwen2_vl_temporal_analyzer - INFO - Loading model with 8-bit quantization...
+2025-07-16 12:39:13,253 - analyzers.qwen2_vl_temporal_analyzer - INFO - ⚠️ Using standard attention (Flash Attention not available)
+2025-07-16 12:39:23,171 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] GPU Memory after loading: 0.00GB allocated, 0.00GB reserved
+2025-07-16 12:39:23,171 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Qwen2-VL Temporal model loaded successfully with 8-bit quantization
+2025-07-16 12:39:23,172 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Analyzing video: test1.mp4
+2025-07-16 12:39:23,183 - analyzers.qwen2_vl_temporal_analyzer - INFO - Video: 10.0s at 30.0 FPS
+2025-07-16 12:39:23,183 - analyzers.qwen2_vl_temporal_analyzer - INFO - Processing 5 temporal segments
+2025-07-16 12:39:23,183 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 1/5: 0.0s - 2.0s
+2025-07-16 12:39:46,897 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 0.0s shows a colorful test pattern on a television screen. The pattern consists o...
+2025-07-16 12:39:47,230 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 2/5: 2.0s - 4.0s
+2025-07-16 12:40:09,871 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 2.0s shows a colorful test pattern on a television screen. The pattern consists o...
+2025-07-16 12:40:10,323 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 3/5: 4.0s - 6.0s
+2025-07-16 12:40:33,856 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 4.0 seconds shows a continuation of the colorful test pattern on the television s...
+2025-07-16 12:40:34,187 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 4/5: 6.0s - 8.0s
+2025-07-16 12:40:57,544 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 5/5: 8.0s - 10.0s
+2025-07-16 12:42:45,691 - __main__ - INFO - 🎬 Video: /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 12:42:52,554 - qwen_vl_utils.vision_process - INFO - set VIDEO_TOTAL_PIXELS: 90316800
+2025-07-16 12:42:53,286 - root - WARNING - FER not available. Install with: pip install fer
+2025-07-16 12:42:54,056 - __main__ - INFO - 🚀 STARTING SEQUENTIAL ANALYSIS: /home/user/tiktok_production/test_videos/test1.mp4
+2025-07-16 12:42:54,057 - __main__ - INFO - 📊 Total Analyzers: 24
+2025-07-16 12:42:54,057 - __main__ - INFO - 
+🔄 Processing qwen2_vl_temporal...
+2025-07-16 12:42:54,057 - analyzers.qwen2_vl_temporal_analyzer - WARNING - [QWEN2VL v3.0_8BIT_OPTIMIZED] segment_duration=2.0s, frames_per_segment=1
+2025-07-16 12:42:54,057 - analyzers.qwen2_vl_temporal_analyzer - WARNING - [QWEN2VL v3.0_8BIT_OPTIMIZED] FORCED segment_duration=2.0s with 3 frames
+2025-07-16 12:42:54,057 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Loading model: Qwen/Qwen2-VL-7B-Instruct
+2025-07-16 12:42:55,524 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Processor loaded with enhanced resolution settings
+2025-07-16 12:42:55,525 - analyzers.qwen2_vl_temporal_analyzer - INFO - Loading model with 8-bit quantization...
+2025-07-16 12:42:55,525 - analyzers.qwen2_vl_temporal_analyzer - INFO - ⚠️ Using standard attention (Flash Attention not available)
+2025-07-16 12:43:03,998 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] GPU Memory after loading: 0.00GB allocated, 0.00GB reserved
+2025-07-16 12:43:03,998 - analyzers.qwen2_vl_temporal_analyzer - INFO - ✅ Qwen2-VL Temporal model loaded successfully with 8-bit quantization
+2025-07-16 12:43:03,998 - analyzers.qwen2_vl_temporal_analyzer - INFO - [Qwen2VLTemporal] Analyzing video: test1.mp4
+2025-07-16 12:43:04,007 - analyzers.qwen2_vl_temporal_analyzer - INFO - Video: 10.0s at 30.0 FPS
+2025-07-16 12:43:04,007 - analyzers.qwen2_vl_temporal_analyzer - INFO - Processing 5 temporal segments
+2025-07-16 12:43:04,007 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 1/5: 0.0s - 2.0s
+2025-07-16 12:43:28,348 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 0.0s shows a colorful test pattern on a television screen. The pattern consists o...
+2025-07-16 12:43:28,670 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 2/5: 2.0s - 4.0s
+2025-07-16 12:43:50,957 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 2.0s shows a colorful test pattern on a television screen. The pattern consists o...
+2025-07-16 12:43:51,241 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 3/5: 4.0s - 6.0s
+2025-07-16 12:44:14,341 - analyzers.qwen2_vl_temporal_analyzer - INFO -    -> The video frame at 4.0 seconds shows a continuation of the colorful test pattern on the television s...
+2025-07-16 12:44:14,780 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 4/5: 6.0s - 8.0s
+2025-07-16 12:44:38,212 - analyzers.qwen2_vl_temporal_analyzer - INFO - Segment 5/5: 8.0s - 10.0s

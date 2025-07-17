@@ -1,0 +1,17 @@
+[Unit]
+Description=TikTok Analyzer Production API
+After=network.target
+
+[Service]
+Type=simple
+User=user
+Group=user
+WorkingDirectory=/home/user/tiktok_production
+ExecStart=/home/user/tiktok_production/start.sh
+Restart=always
+RestartSec=10
+Environment=PYTHONPATH=/home/user/tiktok_production
+Environment=CUDA_VISIBLE_DEVICES=0
+
+[Install]
+WantedBy=multi-user.target

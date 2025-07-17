@@ -1,0 +1,5185 @@
+{
+  "metadata": {
+    "video_path": "/home/user/tiktok_production/test_videos/test1.mp4",
+    "video_filename": "test1.mp4",
+    "tiktok_url": null,
+    "creator_username": null,
+    "analysis_timestamp": "2025-07-16 15:38:28",
+    "processing_time_seconds": 111.87666416168213,
+    "total_analyzers": 24,
+    "successful_analyzers": 19,
+    "reconstruction_score": 79.16666666666666,
+    "realtime_factor": 0,
+    "api_version": "3.0-multiprocess",
+    "parallelization": "process-based"
+  },
+  "analyzer_results": {
+    "qwen2_vl_temporal": {
+      "segments": [
+        {
+          "start_time": 0.0,
+          "end_time": 2.0,
+          "description": "At 0.0 seconds in the video, the following visual elements are present:\n\n1. **Color Bars**: The image features a series of vertical color bars. These bars are arranged in a circular pattern, with each bar displaying a different color. The colors visible are black, yellow, red, green, blue, and white.\n\n2. **Central Circle**: In the center of the image, there is a large black circle. This circle contains a white \"0\" inside it.\n\n3. **Horizontal Gradient**: Below the color bars, there is a horizontal gradient bar. This bar transitions from black at the left side to white at the right side, creating a smooth gradient effect.\n\n4. **Background**: The background of the image is a solid black color, which helps to highlight the colorful bars and the central circle.\n\n5. **Text**: There is no visible text in the image at this moment.\n\nThe overall composition of the image is simple and clean, with a focus on the color"
+        },
+        {
+          "start_time": 2.0,
+          "end_time": 4.0,
+          "description": "At 2.0 seconds in the video, the following elements are visible:\n\n1. **Color Bars**: The video displays a set of color bars, which are horizontal stripes of various colors. The colors visible are black, yellow, pink, red, green, blue, and white. These bars are arranged in a circular pattern, with the black bar at the top and the white bar at the bottom.\n\n2. **Number \"2\"**: In the center of the circular pattern, there is a large, black number \"2\". The number is positioned within a circular outline, which is part of the color bars.\n\n3. **Gradient Bar**: Below the color bars, there is a horizontal gradient bar. This bar transitions from black at the left side to white at the right side, creating a smooth gradient effect.\n\n4. **Text**: There is a small, white text \"2\" located at the bottom right corner of the gradient bar. The text is positioned within a small, black"
+        },
+        {
+          "start_time": 4.0,
+          "end_time": 6.0,
+          "description": "At 4.0 seconds in the video, the following details are visible:\n\n- The image is a colorful test pattern, typically used to check the quality of a television or computer display.\n- The pattern consists of vertical stripes in various colors, including black, white, red, yellow, green, blue, and pink.\n- In the center of the image, there is a black circle with a white \"4\" inside it.\n- The background of the image is a gradient of black and white, with a horizontal line of colors at the bottom.\n- The overall appearance suggests that this is a test pattern used to verify the display's color accuracy and resolution."
+        },
+        {
+          "start_time": 6.0,
+          "end_time": 8.0,
+          "description": "At 6.0 seconds in the video, the following elements are visible:\n\n1. **Color Bars**: The video displays a set of color bars, which are horizontal stripes of different colors. These bars are typically used to test the color accuracy and quality of a display.\n\n2. **Black Bar**: There is a black bar at the top of the screen, which is part of the color bar pattern. This bar is used to test the black level of the display.\n\n3. **White Bar**: Below the black bar, there is a white bar. This bar is used to test the brightness and white balance of the display.\n\n4. **Color Bars**: Below the white bar, there are several horizontal stripes of different colors. These stripes are used to test the color accuracy and saturation of the display.\n\n5. **Text**: In the bottom right corner of the screen, there is a small text display that reads \"6\". This text is likely indicating the current time or frame number in the"
+        },
+        {
+          "start_time": 8.0,
+          "end_time": 10.0,
+          "description": "At 8.0 seconds in the video, the following details are visible:\n\n1. **Color Bars**: The video displays a set of color bars, which are typically used to test the color accuracy and quality of a display. The bars are arranged in a circular pattern, with each bar representing a different color.\n\n2. **Color Bars Arrangement**: The color bars are arranged in a circular pattern, with the colors transitioning smoothly from one to the next. The colors visible in the bars are red, green, blue, yellow, cyan, magenta, and black.\n\n3. **Number \"8\"**: In the center of the circular pattern, there is a white number \"8\" displayed. This number is likely part of a sequence or a countdown, indicating the current time or position in the video.\n\n4. **Background**: The background of the video is a gradient, transitioning from black at the top to white at the bottom. This gradient helps to highlight the color bars and the number"
+        }
+      ],
+      "metadata": {
+        "duration": 10.0,
+        "fps": 30.0,
+        "total_frames": 300,
+        "processing_time": 34.66659331321716,
+        "batch_time": 34.554182291030884,
+        "per_segment_time": 6.933318662643432
+      }
+    },
+    "object_detection": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "bounding_box": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "bbox_exact": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "position": "middle-center",
+          "size": "full-frame",
+          "size_ratio": 1.0,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [],
+          "objects_detected": 0,
+          "has_person": false
+        },
+        {
+          "timestamp": 0.5,
+          "bounding_box": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "bbox_exact": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "position": "middle-center",
+          "size": "full-frame",
+          "size_ratio": 1.0,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [],
+          "objects_detected": 0,
+          "has_person": false
+        },
+        {
+          "timestamp": 1.0,
+          "bounding_box": {
+            "x": 279,
+            "y": 48,
+            "width": 20,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 279,
+            "y": 48,
+            "width": 20,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.034375,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.241455078125,
+              "bounding_box": {
+                "x": 279,
+                "y": 48,
+                "width": 20,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_10",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.034375
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 1.5,
+          "bounding_box": {
+            "x": 279,
+            "y": 48,
+            "width": 20,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 279,
+            "y": 48,
+            "width": 20,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.034375,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.309814453125,
+              "bounding_box": {
+                "x": 279,
+                "y": 48,
+                "width": 20,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_15",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.034375
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 2.0,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.03430989583333333,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.22607421875,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 20,
+                "height": 131,
+                "center_x": 290,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_20",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.03430989583333333
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 2.5,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.03427734375,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.2783203125,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 20,
+                "height": 131,
+                "center_x": 290,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_25",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.03427734375
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 3.0,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.033515625,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.22607421875,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 19,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_30",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.033515625
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 3.5,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.033515625,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.2139892578125,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 19,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_35",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.033515625
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 4.0,
+          "bounding_box": {
+            "x": 280,
+            "y": 47,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 113
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 47,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 113
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.03354736328125,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.2330322265625,
+              "bounding_box": {
+                "x": 280,
+                "y": 47,
+                "width": 19,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 113
+              },
+              "object_category": "person",
+              "object_id": "obj_0_40",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.03354736328125
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 4.5,
+          "bounding_box": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "bbox_exact": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "position": "middle-center",
+          "size": "full-frame",
+          "size_ratio": 1.0,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [],
+          "objects_detected": 0,
+          "has_person": false
+        },
+        {
+          "timestamp": 5.0,
+          "bounding_box": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "bbox_exact": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "position": "middle-center",
+          "size": "full-frame",
+          "size_ratio": 1.0,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [],
+          "objects_detected": 0,
+          "has_person": false
+        },
+        {
+          "timestamp": 5.5,
+          "bounding_box": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "bbox_exact": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "position": "middle-center",
+          "size": "full-frame",
+          "size_ratio": 1.0,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [],
+          "objects_detected": 0,
+          "has_person": false
+        },
+        {
+          "timestamp": 6.0,
+          "bounding_box": {
+            "x": 280,
+            "y": 47,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 113
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 47,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 113
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.03361083984375,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.206298828125,
+              "bounding_box": {
+                "x": 280,
+                "y": 47,
+                "width": 19,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 113
+              },
+              "object_category": "person",
+              "object_id": "obj_0_60",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.03361083984375
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 6.5,
+          "bounding_box": {
+            "x": 280,
+            "y": 47,
+            "width": 20,
+            "height": 132,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 47,
+            "width": 20,
+            "height": 132,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.034505208333333336,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.241455078125,
+              "bounding_box": {
+                "x": 280,
+                "y": 47,
+                "width": 20,
+                "height": 132,
+                "center_x": 290,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_65",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.034505208333333336
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 7.0,
+          "bounding_box": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "bbox_exact": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 240,
+            "center_x": 160,
+            "center_y": 120
+          },
+          "position": "middle-center",
+          "size": "full-frame",
+          "size_ratio": 1.0,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [],
+          "objects_detected": 0,
+          "has_person": false
+        },
+        {
+          "timestamp": 7.5,
+          "bounding_box": {
+            "x": 279,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 279,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.03430989583333333,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.253173828125,
+              "bounding_box": {
+                "x": 279,
+                "y": 48,
+                "width": 20,
+                "height": 131,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_75",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.03430989583333333
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 8.0,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 132,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 132,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.034375,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.2451171875,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 20,
+                "height": 132,
+                "center_x": 290,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_80",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.034375
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 8.5,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 20,
+            "height": 131,
+            "center_x": 290,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.03430989583333333,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.322509765625,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 20,
+                "height": 131,
+                "center_x": 290,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_85",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.03430989583333333
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 9.0,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.033515625,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.259765625,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 19,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_90",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.033515625
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        },
+        {
+          "timestamp": 9.5,
+          "bounding_box": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "bbox_exact": {
+            "x": 280,
+            "y": 48,
+            "width": 19,
+            "height": 132,
+            "center_x": 289,
+            "center_y": 114
+          },
+          "position": "middle-right",
+          "size": "small",
+          "size_ratio": 0.033515625,
+          "batch_processed": true,
+          "gpu_optimized": true,
+          "detection_method": "YOLOv8x-Dense",
+          "objects": [
+            {
+              "object_class": "person",
+              "confidence_score": 0.2386474609375,
+              "bounding_box": {
+                "x": 280,
+                "y": 48,
+                "width": 19,
+                "height": 132,
+                "center_x": 289,
+                "center_y": 114
+              },
+              "object_category": "person",
+              "object_id": "obj_0_95",
+              "position": "middle-right",
+              "size": "small",
+              "size_ratio": 0.033515625
+            }
+          ],
+          "objects_detected": 1,
+          "has_person": true
+        }
+      ],
+      "total_frames_processed": 20,
+      "total_objects_detected": 20,
+      "unique_objects": 1,
+      "object_categories": {
+        "category_counts": {
+          "person": 14
+        },
+        "categorized_objects": {
+          "person": [
+            {
+              "name": "person",
+              "confidence": 0.241455078125,
+              "bbox": [
+                279,
+                48,
+                20,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.309814453125,
+              "bbox": [
+                279,
+                48,
+                20,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.22607421875,
+              "bbox": [
+                280,
+                48,
+                20,
+                131
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.2783203125,
+              "bbox": [
+                280,
+                48,
+                20,
+                131
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.22607421875,
+              "bbox": [
+                280,
+                48,
+                19,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.2139892578125,
+              "bbox": [
+                280,
+                48,
+                19,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.2330322265625,
+              "bbox": [
+                280,
+                47,
+                19,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.206298828125,
+              "bbox": [
+                280,
+                47,
+                19,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.241455078125,
+              "bbox": [
+                280,
+                47,
+                20,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.253173828125,
+              "bbox": [
+                279,
+                48,
+                20,
+                131
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.2451171875,
+              "bbox": [
+                280,
+                48,
+                20,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.322509765625,
+              "bbox": [
+                280,
+                48,
+                20,
+                131
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.259765625,
+              "bbox": [
+                280,
+                48,
+                19,
+                132
+              ]
+            },
+            {
+              "name": "person",
+              "confidence": 0.2386474609375,
+              "bbox": [
+                280,
+                48,
+                19,
+                132
+              ]
+            }
+          ]
+        },
+        "dominant_category": "person",
+        "total_objects": 14
+      },
+      "object_counts": {
+        "person": 14
+      },
+      "gpu_batch_size": 16,
+      "optimization": "TRUE_BATCH_PROCESSING",
+      "processing_mode": "GPU_OPTIMIZED_YOLO"
+    },
+    "background_segmentation": {
+      "segments": [
+        {
+          "start_time": 0.0,
+          "end_time": 0.5,
+          "timestamp": 0.0,
+          "segment_id": "background_seg_0",
+          "description": "Mixed Szene mit Person (1.0%). Hauptobjekte: wall (96.4%), column (2.0%), person (1.0%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.96368408203125,
+            "person": 0.010009765625,
+            "column": 0.0203857421875
+          },
+          "environment": "mixed",
+          "person_present": true,
+          "person_ratio": 0.010009765625,
+          "scene_complexity": "simple",
+          "num_objects": 3,
+          "dominant_objects": [
+            [
+              "wall",
+              0.96368408203125
+            ],
+            [
+              "column",
+              0.0203857421875
+            ],
+            [
+              "person",
+              0.010009765625
+            ]
+          ]
+        },
+        {
+          "start_time": 0.0,
+          "end_time": 1.0,
+          "timestamp": 0.5,
+          "segment_id": "background_seg_5",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (97.2%), column (1.6%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.9715576171875,
+            "column": 0.016357421875
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.9715576171875
+            ],
+            [
+              "column",
+              0.016357421875
+            ]
+          ]
+        },
+        {
+          "start_time": 0.5,
+          "end_time": 1.5,
+          "timestamp": 1.0,
+          "segment_id": "background_seg_10",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (97.9%), column (1.3%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.9791259765625,
+            "column": 0.01324462890625
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.9791259765625
+            ],
+            [
+              "column",
+              0.01324462890625
+            ]
+          ]
+        },
+        {
+          "start_time": 1.0,
+          "end_time": 2.0,
+          "timestamp": 1.5,
+          "segment_id": "background_seg_15",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (97.9%), column (1.3%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.9793701171875,
+            "column": 0.0133056640625
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.9793701171875
+            ],
+            [
+              "column",
+              0.0133056640625
+            ]
+          ]
+        },
+        {
+          "start_time": 1.5,
+          "end_time": 2.5,
+          "timestamp": 2.0,
+          "segment_id": "background_seg_20",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (96.7%), column (3.0%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.96746826171875,
+            "column": 0.02972412109375
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.96746826171875
+            ],
+            [
+              "column",
+              0.02972412109375
+            ]
+          ]
+        },
+        {
+          "start_time": 2.0,
+          "end_time": 3.0,
+          "timestamp": 2.5,
+          "segment_id": "background_seg_25",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (98.5%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.98516845703125
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 1,
+          "dominant_objects": [
+            [
+              "wall",
+              0.98516845703125
+            ]
+          ]
+        },
+        {
+          "start_time": 2.5,
+          "end_time": 3.5,
+          "timestamp": 3.0,
+          "segment_id": "background_seg_30",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (93.9%), column (5.7%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.93902587890625,
+            "column": 0.05670166015625
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.93902587890625
+            ],
+            [
+              "column",
+              0.05670166015625
+            ]
+          ]
+        },
+        {
+          "start_time": 3.0,
+          "end_time": 4.0,
+          "timestamp": 3.5,
+          "segment_id": "background_seg_35",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (94.7%), column (5.2%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.9468994140625,
+            "column": 0.052490234375
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.9468994140625
+            ],
+            [
+              "column",
+              0.052490234375
+            ]
+          ]
+        },
+        {
+          "start_time": 3.5,
+          "end_time": 4.5,
+          "timestamp": 4.0,
+          "segment_id": "background_seg_40",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (90.4%), column (9.6%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.90350341796875,
+            "column": 0.09649658203125
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.90350341796875
+            ],
+            [
+              "column",
+              0.09649658203125
+            ]
+          ]
+        },
+        {
+          "start_time": 4.0,
+          "end_time": 5.0,
+          "timestamp": 4.5,
+          "segment_id": "background_seg_45",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (83.1%), column (16.7%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.83056640625,
+            "column": 0.16668701171875
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.83056640625
+            ],
+            [
+              "column",
+              0.16668701171875
+            ]
+          ]
+        },
+        {
+          "start_time": 4.5,
+          "end_time": 5.5,
+          "timestamp": 5.0,
+          "segment_id": "background_seg_50",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (88.7%), column (10.3%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.88671875,
+            "column": 0.10308837890625
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.88671875
+            ],
+            [
+              "column",
+              0.10308837890625
+            ]
+          ]
+        },
+        {
+          "start_time": 5.0,
+          "end_time": 6.0,
+          "timestamp": 5.5,
+          "segment_id": "background_seg_55",
+          "description": "Mixed Szene mit Person (1.6%). Hauptobjekte: wall (88.0%), column (10.0%), person (1.6%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.8797607421875,
+            "person": 0.01617431640625,
+            "column": 0.10040283203125
+          },
+          "environment": "mixed",
+          "person_present": true,
+          "person_ratio": 0.01617431640625,
+          "scene_complexity": "simple",
+          "num_objects": 3,
+          "dominant_objects": [
+            [
+              "wall",
+              0.8797607421875
+            ],
+            [
+              "column",
+              0.10040283203125
+            ],
+            [
+              "person",
+              0.01617431640625
+            ]
+          ]
+        },
+        {
+          "start_time": 5.5,
+          "end_time": 6.5,
+          "timestamp": 6.0,
+          "segment_id": "background_seg_60",
+          "description": "Mixed Szene mit Person (1.1%). Hauptobjekte: wall (90.9%), column (7.6%), person (1.1%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.909423828125,
+            "person": 0.0108642578125,
+            "column": 0.0760498046875
+          },
+          "environment": "mixed",
+          "person_present": true,
+          "person_ratio": 0.0108642578125,
+          "scene_complexity": "simple",
+          "num_objects": 3,
+          "dominant_objects": [
+            [
+              "wall",
+              0.909423828125
+            ],
+            [
+              "column",
+              0.0760498046875
+            ],
+            [
+              "person",
+              0.0108642578125
+            ]
+          ]
+        },
+        {
+          "start_time": 6.0,
+          "end_time": 7.0,
+          "timestamp": 6.5,
+          "segment_id": "background_seg_65",
+          "description": "Mixed Szene mit Person (1.2%). Hauptobjekte: wall (94.8%), column (3.6%), person (1.2%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.94769287109375,
+            "person": 0.01153564453125,
+            "column": 0.0364990234375
+          },
+          "environment": "mixed",
+          "person_present": true,
+          "person_ratio": 0.01153564453125,
+          "scene_complexity": "simple",
+          "num_objects": 3,
+          "dominant_objects": [
+            [
+              "wall",
+              0.94769287109375
+            ],
+            [
+              "column",
+              0.0364990234375
+            ],
+            [
+              "person",
+              0.01153564453125
+            ]
+          ]
+        },
+        {
+          "start_time": 6.5,
+          "end_time": 7.5,
+          "timestamp": 7.0,
+          "segment_id": "background_seg_70",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (98.2%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.98223876953125
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 1,
+          "dominant_objects": [
+            [
+              "wall",
+              0.98223876953125
+            ]
+          ]
+        },
+        {
+          "start_time": 7.0,
+          "end_time": 8.0,
+          "timestamp": 7.5,
+          "segment_id": "background_seg_75",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (98.2%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.98199462890625
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 1,
+          "dominant_objects": [
+            [
+              "wall",
+              0.98199462890625
+            ]
+          ]
+        },
+        {
+          "start_time": 7.5,
+          "end_time": 8.5,
+          "timestamp": 8.0,
+          "segment_id": "background_seg_80",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (95.6%), column (4.0%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.95648193359375,
+            "column": 0.0399169921875
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.95648193359375
+            ],
+            [
+              "column",
+              0.0399169921875
+            ]
+          ]
+        },
+        {
+          "start_time": 8.0,
+          "end_time": 9.0,
+          "timestamp": 8.5,
+          "segment_id": "background_seg_85",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (97.6%), column (2.0%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.97607421875,
+            "column": 0.01959228515625
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.97607421875
+            ],
+            [
+              "column",
+              0.01959228515625
+            ]
+          ]
+        },
+        {
+          "start_time": 8.5,
+          "end_time": 9.5,
+          "timestamp": 9.0,
+          "segment_id": "background_seg_90",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (92.7%), column (7.2%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.9267578125,
+            "column": 0.07159423828125
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.9267578125
+            ],
+            [
+              "column",
+              0.07159423828125
+            ]
+          ]
+        },
+        {
+          "start_time": 9.0,
+          "end_time": 10.0,
+          "timestamp": 9.5,
+          "segment_id": "background_seg_95",
+          "description": "Mixed Szene ohne Person. Hauptobjekte: wall (93.0%), column (7.0%). Komplexit\u00e4t: simple",
+          "detected_objects": {
+            "wall": 0.93023681640625,
+            "column": 0.06976318359375
+          },
+          "environment": "mixed",
+          "person_present": false,
+          "person_ratio": 0.0,
+          "scene_complexity": "simple",
+          "num_objects": 2,
+          "dominant_objects": [
+            [
+              "wall",
+              0.93023681640625
+            ],
+            [
+              "column",
+              0.06976318359375
+            ]
+          ]
+        }
+      ]
+    },
+    "text_overlay": {
+      "segments": [
+        {
+          "time": 0.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 0.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 1.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 1.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 2.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 2.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 3.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 3.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 4.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 4.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 5.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 5.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 6.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 6.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 7.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 7.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 8.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 8.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 9.0,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        },
+        {
+          "time": 9.5,
+          "text": "",
+          "text_blocks": [],
+          "confidence_score": 0.0
+        }
+      ],
+      "metadata": {
+        "total_frames_analyzed": 20,
+        "fps": 30.0,
+        "duration": 10.0,
+        "analyzer": "tiktok_text_overlay_optimized",
+        "languages": [
+          "de",
+          "en"
+        ]
+      }
+    },
+    "camera_analysis": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "start_time": 0.0,
+          "end_time": 1.5,
+          "camera_movement": {
+            "type": "static",
+            "direction": null,
+            "speed": 0.0,
+            "confidence": 1.0,
+            "is_handheld": false
+          },
+          "movement_speed": 0.0,
+          "movement_confidence": 1.0,
+          "movement_direction": null,
+          "is_handheld": false,
+          "movement_description": "wide shot",
+          "zoom": {
+            "type": "none",
+            "magnitude": 0.0,
+            "confidence": 1.0
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 1.0,
+          "frame_index": 0
+        },
+        {
+          "timestamp": 1.5,
+          "start_time": 1.5,
+          "end_time": 3.0,
+          "camera_movement": {
+            "type": "static",
+            "direction": null,
+            "speed": 0.16942811171202643,
+            "confidence": 0.0,
+            "is_handheld": false
+          },
+          "movement_speed": 0.16942811171202643,
+          "movement_confidence": 0.0,
+          "movement_direction": null,
+          "is_handheld": false,
+          "movement_description": "wide shot",
+          "zoom": {
+            "type": "none",
+            "magnitude": 0.0029413601537163635,
+            "confidence": 0.0
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 1.0,
+          "frame_index": 1
+        },
+        {
+          "timestamp": 3.0,
+          "start_time": 3.0,
+          "end_time": 4.5,
+          "camera_movement": {
+            "type": "tilt_up",
+            "direction": "vertical",
+            "speed": 4.752947843959546,
+            "confidence": 0.9505895687919091,
+            "is_handheld": false
+          },
+          "movement_speed": 4.752947843959546,
+          "movement_confidence": 0.9505895687919091,
+          "movement_direction": "vertical",
+          "is_handheld": false,
+          "movement_description": "wide shot with tilt up and zoom out",
+          "zoom": {
+            "type": "zoom_out",
+            "magnitude": 0.07681985031522098,
+            "confidence": 0.7681985031522098
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 1.0,
+          "frame_index": 2
+        },
+        {
+          "timestamp": 4.5,
+          "start_time": 4.5,
+          "end_time": 6.0,
+          "camera_movement": {
+            "type": "tilt_up",
+            "direction": "vertical",
+            "speed": 0.45678184531882415,
+            "confidence": 0.09135636906376483,
+            "is_handheld": false
+          },
+          "movement_speed": 0.45678184531882415,
+          "movement_confidence": 0.09135636906376483,
+          "movement_direction": "vertical",
+          "is_handheld": false,
+          "movement_description": "wide shot with tilt up",
+          "zoom": {
+            "type": "none",
+            "magnitude": 0.008112668557540843,
+            "confidence": 0.0
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 1.0,
+          "frame_index": 3
+        },
+        {
+          "timestamp": 6.0,
+          "start_time": 6.0,
+          "end_time": 7.5,
+          "camera_movement": {
+            "type": "tilt_down",
+            "direction": "vertical",
+            "speed": 1.8943326007893144,
+            "confidence": 0.3788665201578629,
+            "is_handheld": false
+          },
+          "movement_speed": 1.8943326007893144,
+          "movement_confidence": 0.3788665201578629,
+          "movement_direction": "vertical",
+          "is_handheld": false,
+          "movement_description": "wide shot with tilt down and zoom in",
+          "zoom": {
+            "type": "zoom_in",
+            "magnitude": 0.0339895534674596,
+            "confidence": 0.33989553467459593
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 0.9999999999999943,
+          "frame_index": 4
+        },
+        {
+          "timestamp": 7.5,
+          "start_time": 7.5,
+          "end_time": 9.0,
+          "camera_movement": {
+            "type": "static",
+            "direction": null,
+            "speed": 0.20595872849052563,
+            "confidence": 0.0,
+            "is_handheld": false
+          },
+          "movement_speed": 0.20595872849052563,
+          "movement_confidence": 0.0,
+          "movement_direction": null,
+          "is_handheld": false,
+          "movement_description": "wide shot",
+          "zoom": {
+            "type": "none",
+            "magnitude": 0.0036897249164235825,
+            "confidence": 0.0
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 0.9999999999999996,
+          "frame_index": 5
+        },
+        {
+          "timestamp": 9.0,
+          "start_time": 9.0,
+          "end_time": 0.1,
+          "camera_movement": {
+            "type": "tilt_up",
+            "direction": "vertical",
+            "speed": 4.777925154858609,
+            "confidence": 0.9555850309717219,
+            "is_handheld": false
+          },
+          "movement_speed": 4.777925154858609,
+          "movement_confidence": 0.9555850309717219,
+          "movement_direction": "vertical",
+          "is_handheld": false,
+          "movement_description": "wide shot with tilt up and zoom out",
+          "zoom": {
+            "type": "zoom_out",
+            "magnitude": 0.07712637639089696,
+            "confidence": 0.7712637639089696
+          },
+          "shot_info": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "shot_type": {
+            "type": "wide_shot",
+            "face_ratio": 0.0,
+            "confidence": 0.8
+          },
+          "stability_score": 0.9999999999999091,
+          "frame_index": 6
+        }
+      ],
+      "summary": {
+        "total_segments": 7,
+        "movement_distribution": {
+          "static": 3,
+          "tilt_up": 3,
+          "tilt_down": 1
+        },
+        "base_movement_distribution": {
+          "static": 3,
+          "pan_left": 0,
+          "pan_right": 0,
+          "tilt_up": 3,
+          "tilt_down": 1
+        },
+        "handheld_segments": 0,
+        "average_stability": 0.9999999999999863,
+        "has_zoom": true,
+        "zoom_segments": 3,
+        "dominant_shot_type": "wide_shot",
+        "average_movement_speed": 1.7510534693041209
+      }
+    },
+    "scene_segmentation": {
+      "segments": [
+        {
+          "start_time": 0.0,
+          "end_time": 9.666666666666666,
+          "duration": 9.666666666666666,
+          "scene_id": 0,
+          "scene_type": "static_scene",
+          "transition_type": "end",
+          "confidence": 1.0,
+          "description": "Scene 1: Static Scene (final scene)",
+          "scene_description": "Static Scene lasting 9.7s",
+          "shot_type": "long"
+        }
+      ],
+      "scenes": [
+        {
+          "start_time": 0.0,
+          "end_time": 9.666666666666666,
+          "duration": 9.666666666666666,
+          "scene_id": 0,
+          "scene_type": "static_scene",
+          "transition_type": "end",
+          "confidence": 1.0,
+          "description": "Scene 1: Static Scene (final scene)",
+          "scene_description": "Static Scene lasting 9.7s",
+          "shot_type": "long"
+        }
+      ],
+      "total_scenes": 1,
+      "average_scene_duration": 9.666666666666666,
+      "average_confidence": 0,
+      "transition_types": [
+        "end"
+      ],
+      "shot_distribution": {
+        "quick_cuts": 0,
+        "short": 0,
+        "medium": 0,
+        "long": 1
+      }
+    },
+    "color_analysis": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.969,
+            "b": 0.969,
+            "hex": "#00f7f7",
+            "name": "bright_cyan"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 253,
+                "g": 2,
+                "b": 123
+              },
+              "hex": "#fd027b",
+              "percentage": 25.9,
+              "name": "bright_pink"
+            },
+            {
+              "color": {
+                "r": 249,
+                "g": 248,
+                "b": 117
+              },
+              "hex": "#f9f875",
+              "percentage": 24.5,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 3,
+                "b": 116
+              },
+              "hex": "#010374",
+              "percentage": 22.1,
+              "name": "blue"
+            },
+            {
+              "color": {
+                "r": 9,
+                "g": 254,
+                "b": 14
+              },
+              "hex": "#09fe0e",
+              "percentage": 14.2,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 243,
+                "b": 249
+              },
+              "hex": "#00f3f9",
+              "percentage": 13.3,
+              "name": "bright_cyan"
+            }
+          ],
+          "brightness": 0.499,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_pink mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 1.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.969,
+            "hex": "#0000f7",
+            "name": "bright_blue"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 3,
+                "g": 254,
+                "b": 121
+              },
+              "hex": "#03fe79",
+              "percentage": 25.6,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 249,
+                "g": 250,
+                "b": 116
+              },
+              "hex": "#f9fa74",
+              "percentage": 24.0,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 137,
+                "g": 1,
+                "b": 251
+              },
+              "hex": "#8901fb",
+              "percentage": 23.3,
+              "name": "bright_purple"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 8,
+                "b": 16
+              },
+              "hex": "#fe0810",
+              "percentage": 14.4,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 8
+              },
+              "hex": "#010108",
+              "percentage": 12.7,
+              "name": "dark_blue"
+            }
+          ],
+          "brightness": 0.494,
+          "saturation": 0.491,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 2.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.969,
+            "hex": "#0000f7",
+            "name": "bright_blue"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 3,
+                "g": 251,
+                "b": 129
+              },
+              "hex": "#03fb81",
+              "percentage": 24.6,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 248,
+                "g": 250,
+                "b": 116
+              },
+              "hex": "#f8fa74",
+              "percentage": 24.3,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 4,
+                "g": 5,
+                "b": 124
+              },
+              "hex": "#04057c",
+              "percentage": 23.7,
+              "name": "blue"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 8,
+                "b": 14
+              },
+              "hex": "#fe080e",
+              "percentage": 14.2,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 243,
+                "g": 0,
+                "b": 249
+              },
+              "hex": "#f300f9",
+              "percentage": 13.2,
+              "name": "bright_magenta"
+            }
+          ],
+          "brightness": 0.498,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 3.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.969,
+            "hex": "#0000f7",
+            "name": "bright_blue"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 1,
+                "g": 251,
+                "b": 131
+              },
+              "hex": "#01fb83",
+              "percentage": 26.1,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 4,
+                "g": 5,
+                "b": 124
+              },
+              "hex": "#04057c",
+              "percentage": 23.6,
+              "name": "blue"
+            },
+            {
+              "color": {
+                "r": 252,
+                "g": 250,
+                "b": 124
+              },
+              "hex": "#fcfa7c",
+              "percentage": 22.9,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 9,
+                "b": 13
+              },
+              "hex": "#fe090d",
+              "percentage": 14.2,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 243,
+                "g": 0,
+                "b": 248
+              },
+              "hex": "#f300f8",
+              "percentage": 13.3,
+              "name": "bright_magenta"
+            }
+          ],
+          "brightness": 0.497,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit blue Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 4.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.969,
+            "b": 0.0,
+            "hex": "#00f700",
+            "name": "bright_green"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 250,
+                "g": 0,
+                "b": 133
+              },
+              "hex": "#fa0085",
+              "percentage": 25.5,
+              "name": "bright_pink"
+            },
+            {
+              "color": {
+                "r": 6,
+                "g": 4,
+                "b": 123
+              },
+              "hex": "#06047b",
+              "percentage": 23.8,
+              "name": "blue"
+            },
+            {
+              "color": {
+                "r": 251,
+                "g": 252,
+                "b": 120
+              },
+              "hex": "#fbfc78",
+              "percentage": 23.2,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 9,
+                "g": 254,
+                "b": 14
+              },
+              "hex": "#09fe0e",
+              "percentage": 14.2,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 244,
+                "b": 249
+              },
+              "hex": "#00f4f9",
+              "percentage": 13.3,
+              "name": "bright_cyan"
+            }
+          ],
+          "brightness": 0.497,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_pink mit blue Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 5.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.969,
+            "b": 0.0,
+            "hex": "#00f700",
+            "name": "bright_green"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 3,
+                "g": 251,
+                "b": 127
+              },
+              "hex": "#03fb7f",
+              "percentage": 26.7,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 248,
+                "g": 250,
+                "b": 117
+              },
+              "hex": "#f8fa75",
+              "percentage": 24.3,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 128,
+                "g": 4,
+                "b": 253
+              },
+              "hex": "#8004fd",
+              "percentage": 23.2,
+              "name": "bright_purple"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 9,
+                "b": 9
+              },
+              "hex": "#fe0909",
+              "percentage": 13.4,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 8
+              },
+              "hex": "#010108",
+              "percentage": 12.4,
+              "name": "dark_blue"
+            }
+          ],
+          "brightness": 0.497,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 6.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.969,
+            "b": 0.969,
+            "hex": "#00f7f7",
+            "name": "bright_cyan"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 253,
+                "g": 2,
+                "b": 123
+              },
+              "hex": "#fd027b",
+              "percentage": 25.9,
+              "name": "bright_pink"
+            },
+            {
+              "color": {
+                "r": 249,
+                "g": 248,
+                "b": 117
+              },
+              "hex": "#f9f875",
+              "percentage": 24.5,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 3,
+                "b": 117
+              },
+              "hex": "#010375",
+              "percentage": 22.2,
+              "name": "blue"
+            },
+            {
+              "color": {
+                "r": 9,
+                "g": 254,
+                "b": 14
+              },
+              "hex": "#09fe0e",
+              "percentage": 14.1,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 244,
+                "b": 249
+              },
+              "hex": "#00f4f9",
+              "percentage": 13.2,
+              "name": "bright_cyan"
+            }
+          ],
+          "brightness": 0.499,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_pink mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 7.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.969,
+            "b": 0.969,
+            "hex": "#00f7f7",
+            "name": "bright_cyan"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 3,
+                "g": 254,
+                "b": 121
+              },
+              "hex": "#03fe79",
+              "percentage": 25.6,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 248,
+                "g": 250,
+                "b": 116
+              },
+              "hex": "#f8fa74",
+              "percentage": 24.1,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 137,
+                "g": 1,
+                "b": 251
+              },
+              "hex": "#8901fb",
+              "percentage": 23.3,
+              "name": "bright_purple"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 8,
+                "b": 16
+              },
+              "hex": "#fe0810",
+              "percentage": 14.4,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 8
+              },
+              "hex": "#010108",
+              "percentage": 12.6,
+              "name": "dark_blue"
+            }
+          ],
+          "brightness": 0.495,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 8.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.969,
+            "hex": "#0000f7",
+            "name": "bright_blue"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 3,
+                "g": 251,
+                "b": 129
+              },
+              "hex": "#03fb81",
+              "percentage": 24.7,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 248,
+                "g": 250,
+                "b": 118
+              },
+              "hex": "#f8fa76",
+              "percentage": 24.5,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 4,
+                "g": 6,
+                "b": 125
+              },
+              "hex": "#04067d",
+              "percentage": 23.5,
+              "name": "blue"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 8,
+                "b": 14
+              },
+              "hex": "#fe080e",
+              "percentage": 14.2,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 244,
+                "g": 0,
+                "b": 249
+              },
+              "hex": "#f400f9",
+              "percentage": 13.2,
+              "name": "bright_magenta"
+            }
+          ],
+          "brightness": 0.5,
+          "saturation": 0.49,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit bright_yellow Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        },
+        {
+          "timestamp": 9.0,
+          "dominant_color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.969,
+            "hex": "#0000f7",
+            "name": "bright_blue"
+          },
+          "color_palette": [
+            {
+              "color": {
+                "r": 1,
+                "g": 250,
+                "b": 131
+              },
+              "hex": "#01fa83",
+              "percentage": 26.1,
+              "name": "bright_green"
+            },
+            {
+              "color": {
+                "r": 133,
+                "g": 3,
+                "b": 252
+              },
+              "hex": "#8503fc",
+              "percentage": 24.1,
+              "name": "bright_purple"
+            },
+            {
+              "color": {
+                "r": 252,
+                "g": 250,
+                "b": 124
+              },
+              "hex": "#fcfa7c",
+              "percentage": 23.0,
+              "name": "bright_yellow"
+            },
+            {
+              "color": {
+                "r": 254,
+                "g": 9,
+                "b": 17
+              },
+              "hex": "#fe0911",
+              "percentage": 14.6,
+              "name": "bright_red"
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 8
+              },
+              "hex": "#010108",
+              "percentage": 12.2,
+              "name": "dark_blue"
+            }
+          ],
+          "brightness": 0.498,
+          "saturation": 0.491,
+          "color_mood": "balanced",
+          "hue_dominant": "green",
+          "description": "Ausgewogene Farbgebung, haupts\u00e4chlich bright_green mit bright_purple Akzenten",
+          "ml_method": "gpu_histogram_analysis"
+        }
+      ],
+      "summary": {
+        "average_brightness": 0.4974,
+        "average_saturation": 0.4901999999999999,
+        "brightness_variance": 3.040000000000005e-06,
+        "dominant_mood": "balanced",
+        "mood_distribution": {
+          "balanced": 10
+        },
+        "dominant_color": "green",
+        "color_distribution": {
+          "green": 10
+        },
+        "color_consistency": 0.9982564404225838
+      },
+      "metadata": {
+        "frames_analyzed": 10,
+        "sample_rate": 30,
+        "optimization": "gpu_accelerated"
+      }
+    },
+    "body_pose": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 0.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 0.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 1.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 1.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 1.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 2.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 2.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 2.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 3.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 3.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 3.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 4.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 4.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 4.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 5.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 5.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 5.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 6.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 6.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 6.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 7.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 7.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 7.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 8.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 8.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 8.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 9.0,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 9.33,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        },
+        {
+          "timestamp": 9.67,
+          "people_detected": 0,
+          "poses": [],
+          "scene_analysis": {
+            "activity": "empty",
+            "interaction": "none",
+            "description": "No people detected"
+          }
+        }
+      ],
+      "metadata": {
+        "model": "yolov8x-pose.pt",
+        "total_people": 0
+      },
+      "movement_analysis": {
+        "movement_type": "insufficient_data"
+      },
+      "summary": {
+        "status": "success",
+        "total_segments": 30,
+        "unique_people": 0,
+        "total_pose_detections": 0,
+        "gesture_statistics": {
+          "total": 0,
+          "unique": 0,
+          "most_common": {}
+        },
+        "body_language_distribution": {},
+        "activity_distribution": {},
+        "dominant_body_language": "none",
+        "gesture_variety": 0,
+        "interaction_detected": false
+      }
+    },
+    "age_estimation": {
+      "segments": [
+        {
+          "start_time": 0.0,
+          "end_time": 0.5,
+          "timestamp": 0.0,
+          "segment_id": "age_estimation_0",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 0.0,
+          "end_time": 0.83,
+          "timestamp": 0.33,
+          "segment_id": "age_estimation_3",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 0.17,
+          "end_time": 1.17,
+          "timestamp": 0.67,
+          "segment_id": "age_estimation_6",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 0.5,
+          "end_time": 1.5,
+          "timestamp": 1.0,
+          "segment_id": "age_estimation_10",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 0.83,
+          "end_time": 1.83,
+          "timestamp": 1.33,
+          "segment_id": "age_estimation_13",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 1.17,
+          "end_time": 2.17,
+          "timestamp": 1.67,
+          "segment_id": "age_estimation_16",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 1.5,
+          "end_time": 2.5,
+          "timestamp": 2.0,
+          "segment_id": "age_estimation_20",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 1.83,
+          "end_time": 2.83,
+          "timestamp": 2.33,
+          "segment_id": "age_estimation_23",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 2.17,
+          "end_time": 3.17,
+          "timestamp": 2.67,
+          "segment_id": "age_estimation_26",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 2.5,
+          "end_time": 3.5,
+          "timestamp": 3.0,
+          "segment_id": "age_estimation_30",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 2.83,
+          "end_time": 3.83,
+          "timestamp": 3.33,
+          "segment_id": "age_estimation_33",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 3.17,
+          "end_time": 4.17,
+          "timestamp": 3.67,
+          "segment_id": "age_estimation_36",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 3.5,
+          "end_time": 4.5,
+          "timestamp": 4.0,
+          "segment_id": "age_estimation_40",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 3.83,
+          "end_time": 4.83,
+          "timestamp": 4.33,
+          "segment_id": "age_estimation_43",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 4.17,
+          "end_time": 5.17,
+          "timestamp": 4.67,
+          "segment_id": "age_estimation_46",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 4.5,
+          "end_time": 5.5,
+          "timestamp": 5.0,
+          "segment_id": "age_estimation_50",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 4.83,
+          "end_time": 5.83,
+          "timestamp": 5.33,
+          "segment_id": "age_estimation_53",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 5.17,
+          "end_time": 6.17,
+          "timestamp": 5.67,
+          "segment_id": "age_estimation_56",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 5.5,
+          "end_time": 6.5,
+          "timestamp": 6.0,
+          "segment_id": "age_estimation_60",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 5.83,
+          "end_time": 6.83,
+          "timestamp": 6.33,
+          "segment_id": "age_estimation_63",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 6.17,
+          "end_time": 7.17,
+          "timestamp": 6.67,
+          "segment_id": "age_estimation_66",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 6.5,
+          "end_time": 7.5,
+          "timestamp": 7.0,
+          "segment_id": "age_estimation_70",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 6.83,
+          "end_time": 7.83,
+          "timestamp": 7.33,
+          "segment_id": "age_estimation_73",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 7.17,
+          "end_time": 8.17,
+          "timestamp": 7.67,
+          "segment_id": "age_estimation_76",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 7.5,
+          "end_time": 8.5,
+          "timestamp": 8.0,
+          "segment_id": "age_estimation_80",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 7.83,
+          "end_time": 8.83,
+          "timestamp": 8.33,
+          "segment_id": "age_estimation_83",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 8.17,
+          "end_time": 9.17,
+          "timestamp": 8.67,
+          "segment_id": "age_estimation_86",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 8.5,
+          "end_time": 9.5,
+          "timestamp": 9.0,
+          "segment_id": "age_estimation_90",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 8.83,
+          "end_time": 9.83,
+          "timestamp": 9.33,
+          "segment_id": "age_estimation_93",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        },
+        {
+          "start_time": 9.17,
+          "end_time": 10.17,
+          "timestamp": 9.67,
+          "segment_id": "age_estimation_96",
+          "description": "Keine Gesichter erkannt",
+          "faces_detected": 0,
+          "faces": [],
+          "frame_analysis": {
+            "primary_demographic": "none",
+            "age_distribution": {},
+            "gender_distribution": {}
+          }
+        }
+      ],
+      "metadata": {
+        "unique_identities": 0,
+        "total_detections": 0,
+        "analysis_method": "insightface_buffalo_l"
+      },
+      "summary": {
+        "status": "no_faces_detected",
+        "total_segments": 30
+      }
+    },
+    "content_quality": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "start_time": 0.0,
+          "end_time": 0.5,
+          "segment_id": "quality_0",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 0,
+          "quality_score": 6.729349975585937,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1912.573046722412,
+            "brightness": 128.10493489583334,
+            "contrast": 83.10804113735608,
+            "noise_level": 74.21770601302363,
+            "edge_density": 0.03654947916666667,
+            "histogram_entropy": -624808.5
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.99180196126302,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.654947916666667
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 0.3333333333333333,
+          "start_time": 0.0,
+          "end_time": 0.8333333333333333,
+          "segment_id": "quality_3",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 1,
+          "quality_score": 6.717158406575521,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1962.636106563144,
+            "brightness": 128.06852864583334,
+            "contrast": 83.1350240144742,
+            "noise_level": 72.72622426666632,
+            "edge_density": 0.03591145833333333,
+            "histogram_entropy": -628912.25
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.99464619954427,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5911458333333335
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 1.0,
+          "start_time": 0.5,
+          "end_time": 1.5,
+          "segment_id": "quality_10",
+          "description": "Bildqualit\u00e4t good (6.6/10). Probleme: verrauscht",
+          "frame_number": 2,
+          "quality_score": 6.648536580403646,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1739.306821481662,
+            "brightness": 125.53967447916666,
+            "contrast": 82.98753586067832,
+            "noise_level": 71.91199667688498,
+            "edge_density": 0.03434895833333333,
+            "histogram_entropy": -628930.3125
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.807787068684895,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.434895833333333
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 1.3333333333333333,
+          "start_time": 0.8333333333333333,
+          "end_time": 1.8333333333333333,
+          "segment_id": "quality_13",
+          "description": "Bildqualit\u00e4t good (6.6/10). Probleme: verrauscht",
+          "frame_number": 3,
+          "quality_score": 6.638199666341146,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1683.517172314283,
+            "brightness": 124.84477864583333,
+            "contrast": 82.60391266823892,
+            "noise_level": 71.66148055691683,
+            "edge_density": 0.034375,
+            "histogram_entropy": -629642.3125
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.753498331705728,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.4375000000000004
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 2.0,
+          "start_time": 1.5,
+          "end_time": 2.5,
+          "segment_id": "quality_20",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 4,
+          "quality_score": 6.675410359700521,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1803.5541536321002,
+            "brightness": 126.00959635416666,
+            "contrast": 82.91809430781169,
+            "noise_level": 72.06332680527008,
+            "edge_density": 0.03532552083333333,
+            "histogram_entropy": -627722.75
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.84449971516927,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.532552083333333
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 2.3333333333333335,
+          "start_time": 1.8333333333333335,
+          "end_time": 2.8333333333333335,
+          "segment_id": "quality_23",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 5,
+          "quality_score": 6.699080200195313,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1832.206901030816,
+            "brightness": 126.3911328125,
+            "contrast": 83.14671158822509,
+            "noise_level": 72.274239852494,
+            "edge_density": 0.0362109375,
+            "histogram_entropy": -627459.625
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.874307250976562,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.62109375
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 3.0,
+          "start_time": 2.5,
+          "end_time": 3.5,
+          "segment_id": "quality_30",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 6,
+          "quality_score": 6.693729248046876,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1894.6972916422528,
+            "brightness": 126.28200520833333,
+            "contrast": 83.11462187182113,
+            "noise_level": 72.35273405624359,
+            "edge_density": 0.03602864583333333,
+            "histogram_entropy": -627438.0
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.865781656901042,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.602864583333333
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 3.3333333333333335,
+          "start_time": 2.8333333333333335,
+          "end_time": 3.8333333333333335,
+          "segment_id": "quality_33",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 7,
+          "quality_score": 6.69109619140625,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1849.8633713377212,
+            "brightness": 126.33015625,
+            "contrast": 83.11910008496193,
+            "noise_level": 72.38645611240347,
+            "edge_density": 0.035859375,
+            "histogram_entropy": -627919.375
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.86954345703125,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5859375
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 4.0,
+          "start_time": 3.5,
+          "end_time": 4.5,
+          "segment_id": "quality_40",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 8,
+          "quality_score": 6.687799275716145,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1719.1130858315362,
+            "brightness": 127.5358203125,
+            "contrast": 82.99962109745971,
+            "noise_level": 72.9855597061293,
+            "edge_density": 0.034752604166666666,
+            "histogram_entropy": -629181.875
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.963735961914061,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.4752604166666665
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 4.333333333333333,
+          "start_time": 3.833333333333333,
+          "end_time": 4.833333333333333,
+          "segment_id": "quality_43",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 9,
+          "quality_score": 6.698080037434896,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1758.7321735254923,
+            "brightness": 128.22287760416665,
+            "contrast": 82.63599586471217,
+            "noise_level": 71.54690435908572,
+            "edge_density": 0.035078125,
+            "histogram_entropy": -629466.125
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.98258768717448,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5078125
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 5.0,
+          "start_time": 4.5,
+          "end_time": 5.5,
+          "segment_id": "quality_50",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 10,
+          "quality_score": 6.717877604166667,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1905.1866794798111,
+            "brightness": 128.10583333333332,
+            "contrast": 82.93094844968245,
+            "noise_level": 71.97111991078481,
+            "edge_density": 0.0359765625,
+            "histogram_entropy": -628047.875
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.991731770833335,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5976562500000004
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 5.333333333333333,
+          "start_time": 4.833333333333333,
+          "end_time": 5.833333333333333,
+          "segment_id": "quality_53",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 11,
+          "quality_score": 6.6993908691406245,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1888.3792707899306,
+            "brightness": 127.74434895833333,
+            "contrast": 83.15504661751783,
+            "noise_level": 72.5426197267664,
+            "edge_density": 0.035169270833333335,
+            "histogram_entropy": -627075.4375
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.980027262369791,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5169270833333335
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 6.0,
+          "start_time": 5.5,
+          "end_time": 6.5,
+          "segment_id": "quality_60",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 12,
+          "quality_score": 6.729474690755208,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1921.9099869586519,
+            "brightness": 128.11361979166668,
+            "contrast": 83.11834141201693,
+            "noise_level": 73.15574349171871,
+            "edge_density": 0.0365625,
+            "histogram_entropy": -626299.875
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.99112345377604,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.65625
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 6.333333333333333,
+          "start_time": 5.833333333333333,
+          "end_time": 6.833333333333333,
+          "segment_id": "quality_63",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 13,
+          "quality_score": 6.715928955078125,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1967.782278645664,
+            "brightness": 128.080546875,
+            "contrast": 83.12372709998388,
+            "noise_level": 71.97720945163361,
+            "edge_density": 0.035859375,
+            "histogram_entropy": -627191.75
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.993707275390625,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5859375
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 7.0,
+          "start_time": 6.5,
+          "end_time": 7.5,
+          "segment_id": "quality_70",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 14,
+          "quality_score": 6.66744608561198,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1809.4035937330457,
+            "brightness": 125.81654947916667,
+            "contrast": 82.9949620683021,
+            "noise_level": 71.7062714876441,
+            "edge_density": 0.035078125,
+            "histogram_entropy": -628398.875
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.829417928059897,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5078125
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 7.333333333333333,
+          "start_time": 6.833333333333333,
+          "end_time": 7.833333333333333,
+          "segment_id": "quality_73",
+          "description": "Bildqualit\u00e4t good (6.6/10). Probleme: verrauscht",
+          "frame_number": 15,
+          "quality_score": 6.648375854492187,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1753.553436359999,
+            "brightness": 125.11272135416667,
+            "contrast": 82.61384767549858,
+            "noise_level": 71.64411329302142,
+            "edge_density": 0.03467447916666667,
+            "histogram_entropy": -629221.1875
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.77443135579427,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.467447916666667
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 8.0,
+          "start_time": 7.5,
+          "end_time": 8.5,
+          "segment_id": "quality_80",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 16,
+          "quality_score": 6.6997292073567705,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1976.008932158746,
+            "brightness": 126.5493359375,
+            "contrast": 82.92949668321843,
+            "noise_level": 73.19270768570948,
+            "edge_density": 0.036119791666666665,
+            "histogram_entropy": -627898.125
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.886666870117187,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.6119791666666665
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 8.333333333333334,
+          "start_time": 7.833333333333334,
+          "end_time": 8.833333333333334,
+          "segment_id": "quality_83",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 17,
+          "quality_score": 6.724754435221354,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 2030.2699348346287,
+            "brightness": 126.93428385416667,
+            "contrast": 83.20046929099826,
+            "noise_level": 69.7567033297689,
+            "edge_density": 0.0370703125,
+            "histogram_entropy": -637586.875
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.91674092610677,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.70703125
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 9.0,
+          "start_time": 8.5,
+          "end_time": 9.5,
+          "segment_id": "quality_90",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 18,
+          "quality_score": 6.7045033772786455,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1994.990989409722,
+            "brightness": 126.57154947916666,
+            "contrast": 83.16170969140202,
+            "noise_level": 70.59026176456221,
+            "edge_density": 0.03634114583333333,
+            "histogram_entropy": -637130.0
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.888402303059895,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.634114583333333
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        },
+        {
+          "timestamp": 9.666666666666666,
+          "start_time": 9.166666666666666,
+          "end_time": 10.166666666666666,
+          "segment_id": "quality_96",
+          "description": "Bildqualit\u00e4t good (6.7/10). Probleme: verrauscht",
+          "frame_number": 19,
+          "quality_score": 6.704758097330729,
+          "quality_class": "good",
+          "metrics": {
+            "sharpness": 1900.7060022608434,
+            "brightness": 127.1378515625,
+            "contrast": 83.22421315819624,
+            "noise_level": 69.44233482743948,
+            "edge_density": 0.03591145833333333,
+            "histogram_entropy": -637629.25
+          },
+          "scores": {
+            "sharpness_score": 10.0,
+            "brightness_score": 9.932644653320313,
+            "contrast_score": 10.0,
+            "noise_score": 0.0,
+            "edge_score": 3.5911458333333335
+          },
+          "clip_enhanced": {},
+          "analysis_method": "computer_vision"
+        }
+      ],
+      "overall_quality": 6.695102664773506,
+      "quality_metrics": [
+        "sharpness",
+        "brightness",
+        "contrast",
+        "stability",
+        "composition",
+        "lighting",
+        "clarity",
+        "focus"
+      ],
+      "total_frames_analyzed": 20,
+      "processing_time": 0.03186774253845215,
+      "method": "traditional_cv"
+    },
+    "eye_tracking": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "time": 0.0,
+          "gaze_direction": "center",
+          "eye_state": "open",
+          "confidence": 0.5
+        }
+      ]
+    },
+    "cut_analysis": {
+      "segments": [
+        {
+          "timestamp": 0.3333333333333333,
+          "start_time": 0.0,
+          "end_time": 0.3333333333333333,
+          "segment_id": "cut_3",
+          "frame_diff": 3.8267881870269775,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 0.3s (Diff: 3.8)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 0.6666666666666666,
+          "start_time": 0.3333333333333333,
+          "end_time": 0.6666666666666666,
+          "segment_id": "cut_6",
+          "frame_diff": 3.7241103649139404,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 0.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 1.0,
+          "start_time": 0.6666666666666666,
+          "end_time": 1.0,
+          "segment_id": "cut_10",
+          "frame_diff": 4.785321235656738,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 1.0s (Diff: 4.8)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 1.3333333333333333,
+          "start_time": 1.0,
+          "end_time": 1.3333333333333333,
+          "segment_id": "cut_13",
+          "frame_diff": 3.7107596397399902,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 1.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 1.6666666666666667,
+          "start_time": 1.3333333333333333,
+          "end_time": 1.6666666666666667,
+          "segment_id": "cut_16",
+          "frame_diff": 3.7050652503967285,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 1.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 2.0,
+          "start_time": 1.6666666666666667,
+          "end_time": 2.0,
+          "segment_id": "cut_20",
+          "frame_diff": 5.040091037750244,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 2.0s (Diff: 5.0)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 2.3333333333333335,
+          "start_time": 2.0,
+          "end_time": 2.3333333333333335,
+          "segment_id": "cut_23",
+          "frame_diff": 3.7188239097595215,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 2.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 2.6666666666666665,
+          "start_time": 2.3333333333333335,
+          "end_time": 2.6666666666666665,
+          "segment_id": "cut_26",
+          "frame_diff": 3.7146832942962646,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 2.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 3.0,
+          "start_time": 2.6666666666666665,
+          "end_time": 3.0,
+          "segment_id": "cut_30",
+          "frame_diff": 4.249383926391602,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 3.0s (Diff: 4.2)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 3.3333333333333335,
+          "start_time": 3.0,
+          "end_time": 3.3333333333333335,
+          "segment_id": "cut_33",
+          "frame_diff": 3.7113022804260254,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 3.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 3.6666666666666665,
+          "start_time": 3.3333333333333335,
+          "end_time": 3.6666666666666665,
+          "segment_id": "cut_36",
+          "frame_diff": 3.703676223754883,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 3.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 4.0,
+          "start_time": 3.6666666666666665,
+          "end_time": 4.0,
+          "segment_id": "cut_40",
+          "frame_diff": 4.529097557067871,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 4.0s (Diff: 4.5)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 4.333333333333333,
+          "start_time": 4.0,
+          "end_time": 4.333333333333333,
+          "segment_id": "cut_43",
+          "frame_diff": 3.6977951526641846,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 4.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 4.666666666666667,
+          "start_time": 4.333333333333333,
+          "end_time": 4.666666666666667,
+          "segment_id": "cut_46",
+          "frame_diff": 3.705746650695801,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 4.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 5.0,
+          "start_time": 4.666666666666667,
+          "end_time": 5.0,
+          "segment_id": "cut_50",
+          "frame_diff": 4.484591960906982,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 5.0s (Diff: 4.5)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 5.333333333333333,
+          "start_time": 5.0,
+          "end_time": 5.333333333333333,
+          "segment_id": "cut_53",
+          "frame_diff": 3.7452518939971924,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 5.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 5.666666666666667,
+          "start_time": 5.333333333333333,
+          "end_time": 5.666666666666667,
+          "segment_id": "cut_56",
+          "frame_diff": 3.7209982872009277,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 5.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 6.0,
+          "start_time": 5.666666666666667,
+          "end_time": 6.0,
+          "segment_id": "cut_60",
+          "frame_diff": 3.981184959411621,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 6.0s (Diff: 4.0)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 6.333333333333333,
+          "start_time": 6.0,
+          "end_time": 6.333333333333333,
+          "segment_id": "cut_63",
+          "frame_diff": 3.728632926940918,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 6.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 6.666666666666667,
+          "start_time": 6.333333333333333,
+          "end_time": 6.666666666666667,
+          "segment_id": "cut_66",
+          "frame_diff": 3.7031078338623047,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 6.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 7.0,
+          "start_time": 6.666666666666667,
+          "end_time": 7.0,
+          "segment_id": "cut_70",
+          "frame_diff": 5.063611030578613,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 7.0s (Diff: 5.1)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 7.333333333333333,
+          "start_time": 7.0,
+          "end_time": 7.333333333333333,
+          "segment_id": "cut_73",
+          "frame_diff": 3.6911327838897705,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 7.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 7.666666666666667,
+          "start_time": 7.333333333333333,
+          "end_time": 7.666666666666667,
+          "segment_id": "cut_76",
+          "frame_diff": 3.7247657775878906,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 7.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 8.0,
+          "start_time": 7.666666666666667,
+          "end_time": 8.0,
+          "segment_id": "cut_80",
+          "frame_diff": 4.742191791534424,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 8.0s (Diff: 4.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 8.333333333333334,
+          "start_time": 8.0,
+          "end_time": 8.333333333333334,
+          "segment_id": "cut_83",
+          "frame_diff": 3.979414224624634,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 8.3s (Diff: 4.0)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 8.666666666666666,
+          "start_time": 8.333333333333334,
+          "end_time": 8.666666666666666,
+          "segment_id": "cut_86",
+          "frame_diff": 3.676189422607422,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 8.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 9.0,
+          "start_time": 8.666666666666666,
+          "end_time": 9.0,
+          "segment_id": "cut_90",
+          "frame_diff": 3.998593807220459,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 9.0s (Diff: 4.0)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 9.333333333333334,
+          "start_time": 9.0,
+          "end_time": 9.333333333333334,
+          "segment_id": "cut_93",
+          "frame_diff": 3.7044880390167236,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 9.3s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        },
+        {
+          "timestamp": 9.666666666666666,
+          "start_time": 9.333333333333334,
+          "end_time": 9.666666666666666,
+          "segment_id": "cut_96",
+          "frame_diff": 3.697465419769287,
+          "is_cut": false,
+          "description": "Kontinuierlicher Shot bei 9.7s (Diff: 3.7)",
+          "type": "no_cut",
+          "cut_description": "Continuous shot",
+          "confidence": 0.0
+        }
+      ],
+      "cuts": [],
+      "total_cuts": 0,
+      "total_shots": 1,
+      "average_shot_duration": 0,
+      "editing_style": "rapid_montage",
+      "cut_type_distribution": {},
+      "cuts_per_minute": 0.0
+    },
+    "speech_transcription": {
+      "segments": [
+        {
+          "start_time": 0,
+          "end_time": 1.0,
+          "duration": 1.0,
+          "spectral_centroid": 1016.8477199748975,
+          "spectral_rolloff": 1020.751953125,
+          "zero_crossing_rate": 0.1193695068359375,
+          "rms_energy": 0.08833353221416473
+        },
+        {
+          "start_time": 1,
+          "end_time": 2.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4521144835857,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119384765625,
+          "rms_energy": 0.08835834264755249
+        },
+        {
+          "start_time": 2,
+          "end_time": 3.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4351080764275,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.0883658304810524
+        },
+        {
+          "start_time": 3,
+          "end_time": 4.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.5301378252385,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1193084716796875,
+          "rms_energy": 0.08836601674556732
+        },
+        {
+          "start_time": 4,
+          "end_time": 5.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.460930538817,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.08836621791124344
+        },
+        {
+          "start_time": 5,
+          "end_time": 6.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4789987390291,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.08836259692907333
+        },
+        {
+          "start_time": 6,
+          "end_time": 7.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.3906727116371,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1192474365234375,
+          "rms_energy": 0.0883655697107315
+        },
+        {
+          "start_time": 7,
+          "end_time": 8.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4597468085967,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191864013671875,
+          "rms_energy": 0.0883626863360405
+        },
+        {
+          "start_time": 8,
+          "end_time": 9.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.5098733456032,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191864013671875,
+          "rms_energy": 0.08836513757705688
+        },
+        {
+          "start_time": 9,
+          "end_time": 10.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.3430910085278,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191558837890625,
+          "rms_energy": 0.08836283534765244
+        }
+      ],
+      "metadata": {
+        "duration": 10.0078125,
+        "analysis_type": "spectral",
+        "processing_time": 11.98116397857666,
+        "segment_count": 10
+      }
+    },
+    "audio_analysis": {
+      "segments": [
+        {
+          "start_time": 0,
+          "end_time": 1.0,
+          "duration": 1.0,
+          "spectral_centroid": 1016.8477199748975,
+          "spectral_rolloff": 1020.751953125,
+          "zero_crossing_rate": 0.1193695068359375,
+          "rms_energy": 0.08833353221416473
+        },
+        {
+          "start_time": 1,
+          "end_time": 2.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4521144835857,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119384765625,
+          "rms_energy": 0.08835834264755249
+        },
+        {
+          "start_time": 2,
+          "end_time": 3.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4351080764275,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.0883658304810524
+        },
+        {
+          "start_time": 3,
+          "end_time": 4.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.5301378252385,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1193084716796875,
+          "rms_energy": 0.08836601674556732
+        },
+        {
+          "start_time": 4,
+          "end_time": 5.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.460930538817,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.08836621791124344
+        },
+        {
+          "start_time": 5,
+          "end_time": 6.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4789987390291,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.08836259692907333
+        },
+        {
+          "start_time": 6,
+          "end_time": 7.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.3906727116371,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1192474365234375,
+          "rms_energy": 0.0883655697107315
+        },
+        {
+          "start_time": 7,
+          "end_time": 8.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4597468085967,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191864013671875,
+          "rms_energy": 0.0883626863360405
+        },
+        {
+          "start_time": 8,
+          "end_time": 9.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.5098733456032,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191864013671875,
+          "rms_energy": 0.08836513757705688
+        },
+        {
+          "start_time": 9,
+          "end_time": 10.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.3430910085278,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191558837890625,
+          "rms_energy": 0.08836283534765244
+        }
+      ],
+      "metadata": {
+        "duration": 10.0078125,
+        "analysis_type": "spectral",
+        "processing_time": 11.106992959976196,
+        "segment_count": 10
+      }
+    },
+    "audio_environment": {
+      "segments": [
+        {
+          "start_time": 0,
+          "end_time": 1.0,
+          "duration": 1.0,
+          "spectral_centroid": 1016.8477199748975,
+          "spectral_rolloff": 1020.751953125,
+          "zero_crossing_rate": 0.1193695068359375,
+          "rms_energy": 0.08833353221416473
+        },
+        {
+          "start_time": 1,
+          "end_time": 2.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4521144835857,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119384765625,
+          "rms_energy": 0.08835834264755249
+        },
+        {
+          "start_time": 2,
+          "end_time": 3.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4351080764275,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.0883658304810524
+        },
+        {
+          "start_time": 3,
+          "end_time": 4.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.5301378252385,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1193084716796875,
+          "rms_energy": 0.08836601674556732
+        },
+        {
+          "start_time": 4,
+          "end_time": 5.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.460930538817,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.08836621791124344
+        },
+        {
+          "start_time": 5,
+          "end_time": 6.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4789987390291,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.119232177734375,
+          "rms_energy": 0.08836259692907333
+        },
+        {
+          "start_time": 6,
+          "end_time": 7.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.3906727116371,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1192474365234375,
+          "rms_energy": 0.0883655697107315
+        },
+        {
+          "start_time": 7,
+          "end_time": 8.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.4597468085967,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191864013671875,
+          "rms_energy": 0.0883626863360405
+        },
+        {
+          "start_time": 8,
+          "end_time": 9.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.5098733456032,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191864013671875,
+          "rms_energy": 0.08836513757705688
+        },
+        {
+          "start_time": 9,
+          "end_time": 10.0,
+          "duration": 1.0,
+          "spectral_centroid": 1021.3430910085278,
+          "spectral_rolloff": 1023.4375,
+          "zero_crossing_rate": 0.1191558837890625,
+          "rms_energy": 0.08836283534765244
+        }
+      ],
+      "metadata": {
+        "duration": 10.0078125,
+        "analysis_type": "spectral",
+        "processing_time": 11.092407464981079,
+        "segment_count": 10
+      }
+    },
+    "speech_emotion": {
+      "segments": [
+        {
+          "start_time": 0,
+          "end_time": 1.0,
+          "duration": 1.0,
+          "pitch_mean": 1000.0001220703125,
+          "tempo": 0.0,
+          "intensity": 0.07851205766201019,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 1,
+          "end_time": 2.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976806640625,
+          "tempo": 0.0,
+          "intensity": 0.07852803170681,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 2,
+          "end_time": 3.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9977416992188,
+          "tempo": 0.0,
+          "intensity": 0.07853405177593231,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 3,
+          "end_time": 4.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976196289062,
+          "tempo": 0.0,
+          "intensity": 0.07853426784276962,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 4,
+          "end_time": 5.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976806640625,
+          "tempo": 0.0,
+          "intensity": 0.0785345807671547,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 5,
+          "end_time": 6.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976806640625,
+          "tempo": 0.0,
+          "intensity": 0.07853123545646667,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 6,
+          "end_time": 7.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976806640625,
+          "tempo": 0.0,
+          "intensity": 0.07853412628173828,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 7,
+          "end_time": 8.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976806640625,
+          "tempo": 0.0,
+          "intensity": 0.07853158563375473,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 8,
+          "end_time": 9.0,
+          "duration": 1.0,
+          "pitch_mean": 999.997802734375,
+          "tempo": 0.0,
+          "intensity": 0.07853373885154724,
+          "speech_rate": 1.0
+        },
+        {
+          "start_time": 9,
+          "end_time": 10.0,
+          "duration": 1.0,
+          "pitch_mean": 999.9976806640625,
+          "tempo": 0.0,
+          "intensity": 0.07853170484304428,
+          "speech_rate": 1.0
+        }
+      ],
+      "metadata": {
+        "duration": 10.0078125,
+        "analysis_type": "emotion",
+        "processing_time": 13.117923974990845,
+        "segment_count": 10
+      }
+    },
+    "temporal_flow": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "end_time": 5.0,
+          "type": "narrative_segment",
+          "description": "Video content with temporal flow",
+          "dominant_emotion": "neutral",
+          "narrative_weight": 0.5,
+          "purpose": "establishing"
+        }
+      ],
+      "metadata": {
+        "safe_mode": true,
+        "video_path": "/home/user/tiktok_production/test_videos/test1.mp4"
+      }
+    },
+    "speech_flow": {
+      "segments": [
+        {
+          "start_time": 0,
+          "end_time": 1.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -591.6561279296875,
+            32.754364013671875,
+            -19.993751525878906,
+            -31.316692352294922,
+            -16.143827438354492,
+            13.881065368652344,
+            28.119430541992188,
+            14.732378005981445,
+            -12.203539848327637,
+            -26.367698669433594,
+            -14.436907768249512,
+            11.402013778686523,
+            25.245641708374023
+          ],
+          "mfcc_std": [
+            94.37621307373047,
+            46.47898483276367,
+            15.12352466583252,
+            7.690713882446289,
+            3.470141649246216,
+            1.6727068424224854,
+            1.7757903337478638,
+            0.8651905655860901,
+            1.5246998071670532,
+            3.3780758380889893,
+            1.915604591369629,
+            1.8644599914550781,
+            4.932838439941406
+          ]
+        },
+        {
+          "start_time": 1,
+          "end_time": 2.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.06689453125,
+            30.062698364257812,
+            -18.411239624023438,
+            -30.186317443847656,
+            -15.355888366699219,
+            13.308914184570312,
+            27.284950256347656,
+            14.480348587036133,
+            -12.072906494140625,
+            -26.058006286621094,
+            -14.290450096130371,
+            11.238885879516602,
+            25.21186637878418
+          ],
+          "mfcc_std": [
+            98.15525817871094,
+            42.57754135131836,
+            12.898931503295898,
+            6.855709552764893,
+            2.699124336242676,
+            0.7476029992103577,
+            0.7955824136734009,
+            0.6111999750137329,
+            1.217015266418457,
+            2.9960696697235107,
+            1.67168390750885,
+            1.8917356729507446,
+            4.1891632080078125
+          ]
+        },
+        {
+          "start_time": 2,
+          "end_time": 3.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.2212524414062,
+            29.944591522216797,
+            -18.31365966796875,
+            -29.966567993164062,
+            -15.221733093261719,
+            13.235233306884766,
+            27.076927185058594,
+            14.336153030395508,
+            -12.025420188903809,
+            -25.869308471679688,
+            -14.139449119567871,
+            11.217037200927734,
+            25.047428131103516
+          ],
+          "mfcc_std": [
+            98.2137451171875,
+            42.6218147277832,
+            12.934571266174316,
+            6.931789875030518,
+            2.7457847595214844,
+            0.7650642395019531,
+            0.7170735001564026,
+            0.5432436466217041,
+            1.1953483819961548,
+            2.9178168773651123,
+            1.6092052459716797,
+            1.8825321197509766,
+            4.126150131225586
+          ]
+        },
+        {
+          "start_time": 3,
+          "end_time": 4.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.2386474609375,
+            29.9359130859375,
+            -18.309654235839844,
+            -29.953325271606445,
+            -15.203046798706055,
+            13.239133834838867,
+            27.063026428222656,
+            14.312288284301758,
+            -12.034894943237305,
+            -25.859413146972656,
+            -14.10772705078125,
+            11.233512878417969,
+            25.038238525390625
+          ],
+          "mfcc_std": [
+            98.20889282226562,
+            42.6293830871582,
+            12.932826042175293,
+            6.941844463348389,
+            2.746746063232422,
+            0.7631538510322571,
+            0.7057361006736755,
+            0.5323588848114014,
+            1.20597505569458,
+            2.9038784503936768,
+            1.6040345430374146,
+            1.8965541124343872,
+            4.116943836212158
+          ]
+        },
+        {
+          "start_time": 4,
+          "end_time": 5.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.1982421875,
+            29.966413497924805,
+            -18.335689544677734,
+            -30.008811950683594,
+            -15.243183135986328,
+            13.258880615234375,
+            27.11813735961914,
+            14.353296279907227,
+            -12.045103073120117,
+            -25.911401748657227,
+            -14.151960372924805,
+            11.23719596862793,
+            25.08346176147461
+          ],
+          "mfcc_std": [
+            98.19503784179688,
+            42.61507034301758,
+            12.92587661743164,
+            6.914308071136475,
+            2.7420809268951416,
+            0.7608911395072937,
+            0.7269378900527954,
+            0.5483291149139404,
+            1.211196780204773,
+            2.9241890907287598,
+            1.6228127479553223,
+            1.8961204290390015,
+            4.138669013977051
+          ]
+        },
+        {
+          "start_time": 5,
+          "end_time": 6.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.2342529296875,
+            29.936595916748047,
+            -18.31063461303711,
+            -29.95584487915039,
+            -15.210441589355469,
+            13.240036010742188,
+            27.064472198486328,
+            14.31828498840332,
+            -12.031143188476562,
+            -25.86013412475586,
+            -14.116689682006836,
+            11.230500221252441,
+            25.037017822265625
+          ],
+          "mfcc_std": [
+            98.20792388916016,
+            42.62263107299805,
+            12.932990074157715,
+            6.9365081787109375,
+            2.752384901046753,
+            0.7681880593299866,
+            0.7092296481132507,
+            0.5342827439308167,
+            1.2047957181930542,
+            2.907371759414673,
+            1.600238561630249,
+            1.8868647813796997,
+            4.120361804962158
+          ]
+        },
+        {
+          "start_time": 6,
+          "end_time": 7.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.1807861328125,
+            29.979217529296875,
+            -18.34591293334961,
+            -30.034496307373047,
+            -15.259698867797852,
+            13.265318870544434,
+            27.14203643798828,
+            14.373937606811523,
+            -12.048591613769531,
+            -25.934263229370117,
+            -14.175442695617676,
+            11.236556053161621,
+            25.10504913330078
+          ],
+          "mfcc_std": [
+            98.18540954589844,
+            42.6069221496582,
+            12.92194938659668,
+            6.9061689376831055,
+            2.733877658843994,
+            0.758720338344574,
+            0.7329833507537842,
+            0.55524742603302,
+            1.2090455293655396,
+            2.9342026710510254,
+            1.6299501657485962,
+            1.8925018310546875,
+            4.146291255950928
+          ]
+        },
+        {
+          "start_time": 7,
+          "end_time": 8.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.2235107421875,
+            29.949291229248047,
+            -18.31344223022461,
+            -29.974760055541992,
+            -15.232422828674316,
+            13.234561920166016,
+            27.082305908203125,
+            14.349449157714844,
+            -12.01490592956543,
+            -25.878284454345703,
+            -14.154674530029297,
+            11.202079772949219,
+            25.05767250061035
+          ],
+          "mfcc_std": [
+            98.1978759765625,
+            42.61787033081055,
+            12.931231498718262,
+            6.930148124694824,
+            2.7451677322387695,
+            0.7731937170028687,
+            0.7209805250167847,
+            0.5508931279182434,
+            1.1973085403442383,
+            2.914433240890503,
+            1.6232722997665405,
+            1.8834561109542847,
+            4.117047309875488
+          ]
+        },
+        {
+          "start_time": 8,
+          "end_time": 9.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.2573852539062,
+            29.919811248779297,
+            -18.297298431396484,
+            -29.926986694335938,
+            -15.190363883972168,
+            13.229157447814941,
+            27.03707504272461,
+            14.298955917358398,
+            -12.02656078338623,
+            -25.83382797241211,
+            -14.09471607208252,
+            11.225091934204102,
+            25.01780891418457
+          ],
+          "mfcc_std": [
+            98.21898651123047,
+            42.62661361694336,
+            12.937614440917969,
+            6.948915958404541,
+            2.7539117336273193,
+            0.7692925333976746,
+            0.6982632875442505,
+            0.5238393545150757,
+            1.1971235275268555,
+            2.9000511169433594,
+            1.5954713821411133,
+            1.8916826248168945,
+            4.106112480163574
+          ]
+        },
+        {
+          "start_time": 9,
+          "end_time": 10.0,
+          "duration": 1.0,
+          "mfcc_mean": [
+            -592.2750854492188,
+            29.95537757873535,
+            -18.346284866333008,
+            -29.888486862182617,
+            -15.243301391601562,
+            13.25651741027832,
+            27.017847061157227,
+            14.338371276855469,
+            -12.033167839050293,
+            -25.826412200927734,
+            -14.1307373046875,
+            11.219426155090332,
+            25.012893676757812
+          ],
+          "mfcc_std": [
+            98.14787292480469,
+            42.70271682739258,
+            13.06736946105957,
+            6.827531814575195,
+            2.8595871925354004,
+            0.8513853549957275,
+            0.7682843208312988,
+            0.47592341899871826,
+            1.1407824754714966,
+            2.9474549293518066,
+            1.5613956451416016,
+            1.8506940603256226,
+            4.140616416931152
+          ]
+        }
+      ],
+      "metadata": {
+        "duration": 10.0078125,
+        "analysis_type": "mfcc",
+        "processing_time": 11.023417234420776,
+        "segment_count": 10
+      }
+    },
+    "cross_analyzer_intelligence": {
+      "segments": [
+        {
+          "timestamp": 0.0,
+          "end_time": 10.0,
+          "type": "cross_analysis",
+          "description": "Cross-analyzer intelligence correlation of 18 working analyzers",
+          "correlation_score": 0.8,
+          "confidence": 0.9,
+          "analyzers_used": 18
+        }
+      ],
+      "metadata": {
+        "safe_mode": true,
+        "working_analyzers": 18,
+        "total_analyzers": 18
+      }
+    }
+  }
+}

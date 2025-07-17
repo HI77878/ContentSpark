@@ -59,14 +59,22 @@ logger = logging.getLogger(__name__)
 # Import configurations
 from configs.gpu_groups_config import GPU_ANALYZER_GROUPS, DISABLED_ANALYZERS, ANALYZER_TIMINGS
 from registry_loader import ML_ANALYZERS
+<<<<<<< HEAD
 from utils.simple_multiprocess_executor import SimpleMultiprocessExecutor
 from utils.staged_gpu_executor import StagedGPUExecutor
 from utils.gpu_cleanup import cleanup_gpu_memory
+=======
+from utils.multiprocess_gpu_executor_registry_cached import MultiprocessGPUExecutorRegistryCached
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
 from utils.output_normalizer import AnalyzerOutputNormalizer
 
 # Model Pre-Loading imports
 from utils.model_preloader import model_preloader
+<<<<<<< HEAD
 # from utils.model_preloader_enhanced import enhanced_model_preloader  # Not available in MVP
+=======
+from utils.model_preloader_enhanced import enhanced_model_preloader
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
 from utils.parallel_video_processor import parallel_processor
 from utils.auto_cleanup import auto_cleanup
 
@@ -111,6 +119,7 @@ class JobStatusResponse(BaseModel):
 
 class ProductionEngine:
     def __init__(self):
+<<<<<<< HEAD
         # Switch to staged executor for better memory management
         self.use_staged_executor = True  # Can be toggled for testing
         
@@ -120,6 +129,10 @@ class ProductionEngine:
         else:
             # Fallback to multiprocess executor
             self.executor = SimpleMultiprocessExecutor(enable_caching=False, num_gpu_processes=3)
+=======
+        # Use multiprocess executor for true parallelization
+        self.executor = MultiprocessGPUExecutorRegistryCached(enable_caching=True, num_gpu_processes=3)  # 3 GPU workers for better balance
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         # Get active analyzers
         self.active_analyzers = []
@@ -132,6 +145,7 @@ class ProductionEngine:
         seen = set()
         self.active_analyzers = [x for x in self.active_analyzers if not (x in seen or seen.add(x))]
         
+<<<<<<< HEAD
         # Debug: Check if cross_analyzer_intelligence is present
         if 'cross_analyzer_intelligence' in self.active_analyzers:
             logger.info("✓ cross_analyzer_intelligence is in active_analyzers")
@@ -141,6 +155,8 @@ class ProductionEngine:
             logger.warning(f"  - In DISABLED_ANALYZERS? {'cross_analyzer_intelligence' in DISABLED_ANALYZERS}")
             logger.warning(f"  - In ML_ANALYZERS? {'cross_analyzer_intelligence' in ML_ANALYZERS}")
         
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         logger.info(f"🚀 Production Engine initialized with {len(self.active_analyzers)} active analyzers")
         logger.info("   Using multiprocess GPU parallelization")
         logger.info("   3 GPU processes for true parallel execution")
@@ -158,6 +174,7 @@ class ProductionEngine:
         # Run analysis in executor to not block event loop
         loop = asyncio.get_event_loop()
         try:
+<<<<<<< HEAD
             if self.use_staged_executor:
                 # Staged executor uses different method name
                 results = await loop.run_in_executor(
@@ -190,6 +207,17 @@ class ProductionEngine:
         # FIXED: Initialize metadata dict if it doesn't exist
         if 'metadata' not in results:
             results['metadata'] = {}
+=======
+            results = await loop.run_in_executor(
+                None,
+                self.executor.execute_parallel,
+                video_path,
+                self.active_analyzers  # All active analyzers
+            )
+        except Exception as e:
+            logger.error(f"Analysis failed: {e}")
+            raise
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         # Calculate metrics
         total_time = time.time() - start_time
@@ -221,8 +249,14 @@ engine = None
 @app.on_event("shutdown")
 async def shutdown():
     logger.info("Shutting down...")
+<<<<<<< HEAD
     if engine and hasattr(engine.executor, 'shutdown'):
         engine.executor.shutdown()
+=======
+    if engine:
+        # Executor handles cleanup automatically
+        pass
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
 
 @app.get("/")
 async def root():
@@ -280,7 +314,10 @@ async def analyze_video(request: AnalyzeRequest):
             downloader = TikTokDownloader()
             
             logger.info(f"📥 Downloading TikTok video: {request.tiktok_url}")
+<<<<<<< HEAD
             # Use primary downloader only - NO FALLBACKS
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             download_result = downloader.download_video(request.tiktok_url)
             
             if not download_result or not download_result.get('success'):

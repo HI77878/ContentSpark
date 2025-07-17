@@ -1,0 +1,40 @@
+# Mass Processing Requirements
+celery[redis]==5.3.4
+redis==5.0.1
+flower==2.0.1
+yt-dlp==2024.1.14
+flask==3.0.0
+flask-cors==4.0.0
+click==8.1.7
+requests==2.31.0
+psutil==5.9.6
+GPUtil==1.4.0
+kombu==5.3.4
+
+# Existing requirements from main system
+torch>=2.0.0
+numpy
+opencv-python
+transformers
+Pillow
+scipy
+scikit-learn
+librosa
+soundfile
+easyocr
+ultralytics
+matplotlib
+seaborn
+pandas
+tqdm
+ffmpeg-python
+pytesseract
+mediapipe
+sentencepiece
+tensorboard
+moviepy
+imageio
+imageio-ffmpeg
+
+# Supabase
+supabase==2.3.0

@@ -43,6 +43,7 @@ class UltimateSpeechTranscription(GPUBatchAnalyzer):
             self.model = whisper.load_model(
                 "base",
                 device=self.device,
+<<<<<<< HEAD
                 download_root=os.path.expanduser("~/.cache/whisper"),
                 in_memory=True
             )
@@ -52,6 +53,15 @@ class UltimateSpeechTranscription(GPUBatchAnalyzer):
                 self.model = self.model.float()  # Use FP32 for stability
                 logger.info(f"[{self.analyzer_name}] Model moved to GPU with FP32")
                 logger.info(f"[{self.analyzer_name}] ✅ Whisper base model loaded with FP32 optimization")
+=======
+                download_root="/home/user/.cache/whisper"
+            )
+            
+            # Ensure FP16 mode on GPU
+            if self.device == 'cuda' and torch.cuda.is_available():
+                # Model already uses FP16 internally when on CUDA
+                logger.info(f"[{self.analyzer_name}] ✅ Whisper base model loaded with automatic FP16 optimization")
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             else:
                 logger.info(f"[{self.analyzer_name}] ✅ Whisper base model loaded on CPU")
                 
@@ -382,11 +392,14 @@ class UltimateSpeechTranscription(GPUBatchAnalyzer):
     
     def analyze(self, video_path: str) -> Dict[str, Any]:
         """Ultimate speech analysis with maximum accuracy"""
+<<<<<<< HEAD
         # FFmpeg Environment Fix
         import os
         os.environ['LD_LIBRARY_PATH'] = '/home/user/ffmpeg-install/lib:' + os.environ.get('LD_LIBRARY_PATH', '')
         os.environ['PATH'] = '/home/user/ffmpeg-install/bin:' + os.environ.get('PATH', '')
         
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         # Ensure models are loaded
         if not self.model_loaded:
             self._load_model_impl()
@@ -424,7 +437,11 @@ class UltimateSpeechTranscription(GPUBatchAnalyzer):
                 compression_ratio_threshold=2.4,
                 logprob_threshold=-1.0,
                 initial_prompt="Transcribe this video accurately, including all spoken words, informal language, and vocal expressions.",
+<<<<<<< HEAD
                 fp16=False,  # FIXED: Force FP32 to avoid tensor type errors
+=======
+                fp16=True if self.device == 'cuda' else False,  # Use FP16 on GPU
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 patience=1.0,  # Better timestamp alignment
                 length_penalty=1.0,  # Neutral length penalty
                 suppress_tokens=[],  # Don't suppress any tokens

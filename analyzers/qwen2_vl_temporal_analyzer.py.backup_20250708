@@ -1,0 +1,471 @@
+#!/usr/bin/env python3
+"""
+Qwen2-VL Temporal Video Analyzer - Echtes Video-Verständnis mit Multi-Frame Analysis
+Analysiert Video-Segmente mit mehreren Frames für akkurate Aktionserkennung
+"""
+
+import os
+import warnings
+# Unterdrücke Flash Attention Warnungen
+warnings.filterwarnings("ignore", message=".*flash_attn.*")
+warnings.filterwarnings("ignore", message=".*Flash Attention.*")
+os.environ['CUDA_HOME'] = '/usr/local/cuda' if os.path.exists('/usr/local/cuda') else '/usr'
+
+import torch
+import numpy as np
+from typing import List, Dict, Any, Optional, Tuple
+import cv2
+from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
+from PIL import Image, ImageDraw, ImageFont
+import logging
+import time
+from pathlib import Path
+from qwen_vl_utils import process_vision_info
+import gc
+
+# Import base analyzer
+import sys
+sys.path.append('/home/user/tiktok_production')
+from analyzers.base_analyzer import GPUBatchAnalyzer
+
+logger = logging.getLogger(__name__)
+
+class Qwen2VLTemporalAnalyzer(GPUBatchAnalyzer):
+    """
+    Temporal-aware Qwen2-VL analyzer mit Multi-Frame Grid Analysis
+    
+    Hauptverbesserungen:
+    - Analysiert 3-5 Frames zusammen für Bewegungserkennung
+    - Action-fokussierte Prompts für lebendige Beschreibungen
+    - Präzise Detail-Erkennung (keine Halluzinationen)
+    - Temporaler Kontext zwischen Segmenten
+    """
+    
+    def __init__(self):
+        super().__init__()
+        self.model_name = "Qwen/Qwen2-VL-7B-Instruct"
+        self.model = None
+        self.processor = None
+        self.tokenizer = None
+        self.device = "cuda:0" if torch.cuda.is_available() else "cpu"
+        
+        # Temporal settings - optimiert für Bewegungserkennung
+        self.frames_per_segment = 3      # 3 Frames pro Analyse (schneller)
+        self.segment_duration = 1.0      # 1 Sekunde pro Segment
+        self.overlap_ratio = 0.0         # Keine Überlappung für Geschwindigkeit
+        
+        # Optimierte Auflösung für Multi-Frame-Grids (basierend auf Qwen2-VL Empfehlungen)
+        self.min_pixels = 256 * 28 * 28     # ~200k pixels (empfohlenes Minimum)
+        self.max_pixels = 512 * 28 * 28     # ~400k pixels (Balance zwischen Qualität und Speed)
+        self.target_resolution = (224, 224)  # Moderate Auflösung pro Frame
+        
+        # Context tracking für kohärente Narrative
+        self.scene_context = None
+        self.previous_descriptions = []
+        self.detected_person_attributes = {}
+        
+    def _load_model_impl(self):
+        """Lade Qwen2-VL Modell mit optimalen Einstellungen"""
+        logger.info(f"[Qwen2VLTemporal] Loading model: {self.model_name}")
+        
+        # Processor mit höherer Auflösung
+        self.processor = AutoProcessor.from_pretrained(
+            self.model_name,
+            trust_remote_code=True,
+            min_pixels=self.min_pixels,
+            max_pixels=self.max_pixels
+        )
+        
+        logger.info("✅ Processor loaded with enhanced resolution settings")
+        
+        # Model loading mit explizitem GPU placement
+        logger.info("Loading model with GPU optimizations...")
+        
+        model_kwargs = {
+            "torch_dtype": torch.float16,
+            "device_map": {"": 0},  # Explizit auf GPU 0
+            "trust_remote_code": True,
+        }
+        
+        # Versuche Flash Attention
+        try:
+            import flash_attn
+            model_kwargs["attn_implementation"] = "flash_attention_2"
+            logger.info("✅ Flash Attention 2 enabled")
+        except ImportError:
+            model_kwargs["attn_implementation"] = "eager"
+            logger.info("⚠️ Using standard attention (Flash Attention not available)")
+        
+        # Lade Modell
+        self.model = Qwen2VLForConditionalGeneration.from_pretrained(
+            self.model_name,
+            **model_kwargs
+        )
+        
+        self.model.eval()
+        
+        # Tokenizer für bessere Text-Generierung
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_name,
+            trust_remote_code=True
+        )
+        
+        # Log GPU Memory
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
+            allocated = torch.cuda.memory_allocated() / 1024**3
+            reserved = torch.cuda.memory_reserved() / 1024**3
+            logger.info(f"[Qwen2VLTemporal] GPU Memory after loading: {allocated:.2f}GB allocated, {reserved:.2f}GB reserved")
+        
+        logger.info("✅ Qwen2-VL Temporal model loaded successfully")
+        
+        # Warmup für bessere Performance
+        self._warmup_model()
+    
+    def _warmup_model(self):
+        """Warmup mit einem Test-Frame Grid"""
+        logger.info("Warming up model...")
+        try:
+            # Erstelle Test-Frames
+            test_frames = [Image.new('RGB', (336, 336), color=(i*50, i*50, i*50)) for i in range(3)]
+            test_grid = self.create_frame_grid(test_frames)
+            
+            # Test-Nachricht
+            messages = [{
+                "role": "user",
+                "content": [
+                    {"type": "image", "image": test_grid},
+                    {"type": "text", "text": "Test warmup"}
+                ]
+            }]
+            
+            # Prozessiere
+            text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+            image_inputs, _ = process_vision_info(messages)
+            inputs = self.processor(
+                text=[text],
+                images=image_inputs,
+                return_tensors="pt"
+            ).to(self.device)
+            
+            # Generiere kurz
+            with torch.inference_mode():
+                _ = self.model.generate(**inputs, max_new_tokens=10)
+            
+            logger.info("✅ Model warmed up")
+        except Exception as e:
+            logger.warning(f"Warmup failed (not critical): {e}")
+    
+    def create_frame_grid(self, frames: List[Image.Image], add_timestamps: bool = True) -> Image.Image:
+        """
+        Erstelle ein horizontales Grid aus mehreren Frames
+        Fügt Zeitstempel hinzu für bessere temporale Orientierung
+        """
+        if not frames:
+            return None
+        
+        # Resize alle Frames auf einheitliche Größe
+        target_size = self.target_resolution
+        resized_frames = []
+        
+        for frame in frames:
+            # Behalte Aspect Ratio
+            frame.thumbnail(target_size, Image.Resampling.LANCZOS)
+            # Erstelle neues Bild mit target size und zentriere
+            new_frame = Image.new('RGB', target_size, (0, 0, 0))
+            paste_x = (target_size[0] - frame.width) // 2
+            paste_y = (target_size[1] - frame.height) // 2
+            new_frame.paste(frame, (paste_x, paste_y))
+            resized_frames.append(new_frame)
+        
+        # Erstelle Grid (horizontal)
+        grid_width = target_size[0] * len(resized_frames)
+        grid_height = target_size[1]
+        grid = Image.new('RGB', (grid_width, grid_height))
+        
+        # Füge Frames zusammen
+        for i, frame in enumerate(resized_frames):
+            x_offset = i * target_size[0]
+            grid.paste(frame, (x_offset, 0))
+            
+            # Optional: Füge Frame-Nummer hinzu
+            if add_timestamps:
+                draw = ImageDraw.Draw(grid)
+                text = f"F{i+1}"
+                # Weißer Text mit schwarzem Hintergrund
+                draw.rectangle([x_offset + 5, 5, x_offset + 35, 25], fill='black')
+                draw.text((x_offset + 10, 8), text, fill='white')
+        
+        return grid
+    
+    def create_temporal_prompt(self, 
+                             start_time: float, 
+                             end_time: float, 
+                             num_frames: int,
+                             previous_description: Optional[str] = None,
+                             scene_info: Optional[str] = None) -> str:
+        """
+        Erstelle einen präzisen Action-fokussierten Prompt
+        """
+        
+        prompt = f"""Analyze this {num_frames}-frame sequence from {start_time:.1f}s to {end_time:.1f}s.
+
+Look at all {num_frames} frames together to understand the MOVEMENT and ACTION.
+
+BE PRECISE AND ACCURATE:
+- If person has no shirt, say "shirtless man" NOT "wearing orange shirt"
+- If in bathroom (sink/mirror visible), say "bathroom" NOT "kitchen"
+- Describe what the person is DOING (brushing teeth, flexing, moving) NOT static poses
+
+Focus on: What specific action is happening across these frames?
+
+Keep description under 50 words, vivid and accurate."""
+        
+        if previous_description:
+            prompt += f"\nPREVIOUS ACTION: {previous_description[:100]}...\n"
+            prompt += "Continue the narrative - what happens next in this sequence?\n"
+        
+        if scene_info:
+            prompt += f"\nSCENE CONTEXT: {scene_info}\n"
+        
+        prompt += "\nDescribe the action in this segment with precision and detail:"
+        
+        return prompt
+    
+    def extract_frames_for_segment(self, video_path: str, start_time: float, duration: float) -> List[Image.Image]:
+        """Extrahiere Frames für ein spezifisches Zeitsegment"""
+        cap = cv2.VideoCapture(video_path)
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        
+        # Berechne Frame-Positionen
+        start_frame = int(start_time * fps)
+        end_frame = int((start_time + duration) * fps)
+        total_frames = end_frame - start_frame
+        
+        # Wähle gleichmäßig verteilte Frames
+        if total_frames <= self.frames_per_segment:
+            frame_indices = list(range(start_frame, end_frame))
+        else:
+            # Gleichmäßige Verteilung
+            step = total_frames / self.frames_per_segment
+            frame_indices = [int(start_frame + i * step) for i in range(self.frames_per_segment)]
+        
+        frames = []
+        for idx in frame_indices:
+            cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
+            ret, frame = cap.read()
+            if ret:
+                # Convert BGR to RGB
+                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                pil_frame = Image.fromarray(frame_rgb)
+                frames.append(pil_frame)
+        
+        cap.release()
+        return frames
+    
+    def analyze_segment(self, 
+                       frames: List[Image.Image], 
+                       start_time: float,
+                       end_time: float,
+                       previous_description: Optional[str] = None) -> Dict[str, Any]:
+        """Analysiere ein Video-Segment mit Multi-Frame Grid"""
+        
+        if not frames:
+            return None
+        
+        # Erstelle Frame Grid
+        grid_image = self.create_frame_grid(frames, add_timestamps=True)
+        
+        # Erstelle optimierten Prompt
+        prompt = self.create_temporal_prompt(
+            start_time,
+            end_time,
+            len(frames),
+            previous_description,
+            self.scene_context
+        )
+        
+        # Bereite Nachricht vor
+        messages = [{
+            "role": "user",
+            "content": [
+                {"type": "image", "image": grid_image},
+                {"type": "text", "text": prompt}
+            ]
+        }]
+        
+        try:
+            # Prozessiere mit Model
+            text = self.processor.apply_chat_template(
+                messages, 
+                tokenize=False, 
+                add_generation_prompt=True
+            )
+            
+            image_inputs, _ = process_vision_info(messages)
+            
+            inputs = self.processor(
+                text=[text],
+                images=image_inputs,
+                padding=True,
+                return_tensors="pt"
+            ).to(self.device)
+            
+            # Generiere mit optimierten Parametern
+            with torch.inference_mode():
+                with torch.cuda.amp.autocast(dtype=torch.float16):
+                    generated_ids = self.model.generate(
+                        **inputs,
+                        max_new_tokens=80,   # Reduziert für 50-Wort-Limit
+                        do_sample=False,     # Greedy für Geschwindigkeit und Konsistenz
+                        temperature=1.0,
+                        use_cache=True
+                    )
+            
+            # Decode
+            generated_text = self.processor.decode(
+                generated_ids[0][len(inputs.input_ids[0]):],
+                skip_special_tokens=True,
+                clean_up_tokenization_spaces=False
+            )
+            
+            # Analysiere Beschreibung für Scene Context
+            desc_lower = generated_text.lower()
+            if not self.scene_context:
+                if any(word in desc_lower for word in ['bathroom', 'sink', 'mirror', 'shower']):
+                    self.scene_context = "bathroom"
+                elif any(word in desc_lower for word in ['kitchen', 'stove', 'refrigerator', 'cooking']):
+                    self.scene_context = "kitchen"
+                elif any(word in desc_lower for word in ['pool', 'swimming', 'water']):
+                    self.scene_context = "pool area"
+                elif any(word in desc_lower for word in ['living room', 'couch', 'television']):
+                    self.scene_context = "living room"
+            
+            # Speichere Person-Attribute
+            if 'shirtless' in desc_lower:
+                self.detected_person_attributes['shirtless'] = True
+            
+            return {
+                'segment_id': f"temporal_{int(start_time)}",
+                'start_time': start_time,
+                'end_time': end_time,
+                'timestamp': start_time,
+                'description': generated_text.strip(),
+                'frames_analyzed': len(frames),
+                'confidence': 0.95,
+                'analyzer': 'qwen2_vl_temporal',
+                'scene_context': self.scene_context
+            }
+            
+        except Exception as e:
+            logger.error(f"Error analyzing segment at {start_time}s: {e}")
+            return None
+    
+    def analyze(self, video_path: str) -> Dict[str, Any]:
+        """Hauptanalyse-Methode mit temporalem Verständnis"""
+        start_time = time.time()
+        
+        # Stelle sicher dass Model geladen ist
+        if self.model is None:
+            self._load_model_impl()
+        
+        logger.info(f"[Qwen2VLTemporal] Analyzing video: {Path(video_path).name}")
+        
+        # Video Info
+        cap = cv2.VideoCapture(video_path)
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        duration = total_frames / fps
+        cap.release()
+        
+        logger.info(f"Video: {duration:.1f}s at {fps:.1f} FPS")
+        
+        # Reset context
+        self.scene_context = None
+        self.previous_descriptions = []
+        self.detected_person_attributes = {}
+        
+        # Analysiere in 1-Sekunden-Segmenten
+        segments = []
+        previous_desc = None
+        
+        # Berechne Segmente mit kleiner Überlappung
+        segment_starts = []
+        current_time = 0.0
+        while current_time < duration:
+            segment_starts.append(current_time)
+            current_time += self.segment_duration * (1 - self.overlap_ratio)
+            if current_time + self.segment_duration > duration:
+                break
+        
+        logger.info(f"Processing {len(segment_starts)} temporal segments")
+        
+        for i, seg_start in enumerate(segment_starts):
+            seg_end = min(seg_start + self.segment_duration, duration)
+            
+            logger.info(f"Segment {i+1}/{len(segment_starts)}: {seg_start:.1f}s - {seg_end:.1f}s")
+            
+            # Extrahiere Frames für dieses Segment
+            frames = self.extract_frames_for_segment(video_path, seg_start, seg_end - seg_start)
+            
+            if frames:
+                # Analysiere Segment
+                result = self.analyze_segment(frames, seg_start, seg_end, previous_desc)
+                
+                if result:
+                    segments.append(result)
+                    previous_desc = result['description']
+                    self.previous_descriptions.append(previous_desc)
+                    
+                    # Log sample
+                    if i < 3 or i % 10 == 0:
+                        logger.info(f"   -> {result['description'][:100]}...")
+            
+            # GPU Memory Management
+            if i % 10 == 0:
+                torch.cuda.empty_cache()
+                gc.collect()
+        
+        # Berechne finale Metriken
+        processing_time = time.time() - start_time
+        realtime_factor = processing_time / duration if duration > 0 else 0
+        
+        logger.info(f"✅ Temporal analysis complete: {len(segments)} segments in {processing_time:.1f}s")
+        logger.info(f"   Realtime factor: {realtime_factor:.2f}x")
+        if self.scene_context:
+            logger.info(f"   Detected scene: {self.scene_context}")
+        
+        # Clean GPU memory
+        torch.cuda.empty_cache()
+        gc.collect()
+        
+        return {
+            'segments': segments,
+            'metadata': {
+                'analyzer': 'qwen2_vl_temporal',
+                'model': self.model_name,
+                'video_duration': duration,
+                'analyzed_duration': duration,
+                'total_segments': len(segments),
+                'fps_analyzed': len(segments) / duration if duration > 0 else 0,
+                'frames_per_segment': self.frames_per_segment,
+                'processing_time': processing_time,
+                'temporal_coverage': len(segments) * self.segment_duration / duration if duration > 0 else 0,
+                'realtime_factor': realtime_factor,
+                'scene_context': self.scene_context,
+                'detected_attributes': self.detected_person_attributes,
+                'method': 'temporal_multi_frame_grid_analysis',
+                'optimizations': {
+                    'resolution': f"{self.target_resolution[0]}x{self.target_resolution[1]}",
+                    'max_pixels': self.max_pixels,
+                    'overlap_ratio': self.overlap_ratio,
+                    'device': self.device
+                }
+            }
+        }
+    
+    # Kompatibilität mit Base Class
+    def process_batch_gpu(self, frames: List[np.ndarray], frame_times: List[float]) -> List[Dict[str, Any]]:
+        """Für Kompatibilität - nutzt intern analyze()"""
+        logger.warning("process_batch_gpu called on temporal analyzer - not optimized for batch processing")
+        return []

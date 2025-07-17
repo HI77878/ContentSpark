@@ -619,6 +619,7 @@ class CPUBatchTemporalFlow(GPUBatchAnalyzer):
                 flow_analysis['timestamp'] = timestamp
                 flow_data.append(flow_analysis)
                 
+<<<<<<< HEAD
                 # Create flow segment with temporal window
                 segment_start = max(0, timestamp - 0.5)  # 0.5s window before
                 segment_end = min(duration + frame_times[0], timestamp + 0.5)  # 0.5s window after
@@ -631,6 +632,14 @@ class CPUBatchTemporalFlow(GPUBatchAnalyzer):
                     'segment_id': f'temporal_flow_{int(timestamp * 10)}',
                     # Enhanced descriptions
                     'description': self.create_movement_description(flow_analysis),
+=======
+                # Create flow segment
+                segment = {
+                    'timestamp': float(timestamp),
+                    'type': 'temporal_flow',
+                    # Enhanced descriptions
+                    'movement_description': self.create_movement_description(flow_analysis),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     'movement_type': flow_analysis.get('movement_type', 'unknown'),
                     'flow_intensity': self.classify_flow_intensity(flow_analysis.get('average_magnitude', 0)),
                     'motion_coherence': flow_analysis.get('motion_coherence', 0.5),
@@ -657,6 +666,7 @@ class CPUBatchTemporalFlow(GPUBatchAnalyzer):
         # Analyze narrative structure
         narrative_analysis = self.analyze_narrative_structure(flow_data, transitions, duration)
         
+<<<<<<< HEAD
         # Convert transitions into temporal segments
         for transition in transitions:
             transition_timestamp = transition.get('timestamp', 0)
@@ -686,6 +696,37 @@ class CPUBatchTemporalFlow(GPUBatchAnalyzer):
                     'pacing': pacing_analysis.get('pacing', 'unknown'),
                     'rhythm': pacing_analysis.get('rhythm', 'unknown')
                 })
+=======
+        # Add summary segments
+        segments.append({
+            'type': 'pacing_analysis',
+            'pacing': pacing_analysis.get('pacing', 'unknown'),
+            'rhythm': pacing_analysis.get('rhythm', 'unknown'),
+            'rhythm_pattern': pacing_analysis.get('rhythm_pattern', 'unknown'),
+            'pacing_description': self.create_pacing_description(pacing_analysis),
+            'technical_metrics': pacing_analysis
+        })
+        
+        segments.append({
+            'type': 'narrative_structure',
+            'structure': narrative_analysis.get('structure', 'unknown'),
+            'phases': narrative_analysis.get('phases', []),
+            'structure_description': self.create_structure_description(narrative_analysis),
+            'narrative_complexity': narrative_analysis.get('narrative_complexity', 0)
+        })
+        
+        # Add transition summary
+        if transitions:
+            segments.append({
+                'type': 'scene_transitions',
+                'transitions': transitions,
+                'total_transitions': len(transitions),
+                'transition_summary': f"{len(transitions)} Szenenwechsel erkannt",
+                'avg_transition_strength': np.mean([
+                    t.get('mean_difference', 0) for t in transitions
+                ]) if transitions else 0
+            })
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         return {'segments': segments}
     
@@ -800,6 +841,7 @@ class CPUBatchTemporalFlow(GPUBatchAnalyzer):
     
     def analyze(self, video_path: str) -> Dict[str, Any]:
         """Analyze video for temporal flow and narrative structure"""
+<<<<<<< HEAD
         logger.info(f"[TemporalFlow] Analyzing {video_path}")
         
         # Extract frames with higher frequency for flow analysis (1 frame per second for temporal coverage)
@@ -815,6 +857,20 @@ class CPUBatchTemporalFlow(GPUBatchAnalyzer):
         result = self.process_batch_gpu(frames, timestamps)
         
         logger.info(f"[TemporalFlow] Generated {len(result['segments'])} temporal segments")
+=======
+        print(f"[TemporalFlow] Analyzing {video_path}")
+        
+        # Extract frames with higher frequency for flow analysis
+        frames, timestamps = self.extract_frames(video_path, max_frames=20)
+        
+        if frames is None or len(frames) == 0:
+            return {'segments': []}
+        
+        # Process frames
+        result = self.process_batch_gpu(frames, timestamps)
+        
+        print(f"[TemporalFlow] Analyzed temporal flow with {len(result['segments'])} segments")
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         return result
 
 

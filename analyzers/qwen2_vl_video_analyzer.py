@@ -28,6 +28,7 @@ class Qwen2VLVideoAnalyzer(GPUBatchAnalyzer):
     def __init__(self, batch_size=1):
         super().__init__(batch_size)
         self.analyzer_name = "qwen2_vl_temporal"
+<<<<<<< HEAD
         # DISABLE INT8 - produces gibberish output!
         # self.model_name = "Qwen/Qwen2-VL-7B-Instruct-GPTQ-Int8"
         # self.fallback_model_name = "Qwen/Qwen2-VL-7B-Instruct"
@@ -90,6 +91,30 @@ class Qwen2VLVideoAnalyzer(GPUBatchAnalyzer):
                 low_cpu_mem_usage=True
             )
             logger.info(f"[{self.analyzer_name}] ✅ Loaded with eager attention")
+=======
+        self.model_name = "Qwen/Qwen2-VL-7B-Instruct"
+        
+        # Video processing parameters
+        self.max_frames = 16  # Optimal für 7B Modell
+        self.segment_duration = 2.0  # 2 Sekunden pro Segment
+        
+    def _load_model_impl(self):
+        """Load Qwen2-VL model correctly"""
+        logger.info(f"[{self.analyzer_name}] Loading Qwen2-VL-7B model...")
+        
+        # Correct model loading
+        self.model = Qwen2VLForConditionalGeneration.from_pretrained(
+            self.model_name,
+            torch_dtype=torch.bfloat16,  # Use bfloat16 for better stability
+            device_map=self.device,
+            trust_remote_code=True
+        )
+        
+        self.processor = AutoProcessor.from_pretrained(
+            self.model_name,
+            trust_remote_code=True
+        )
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         self.model.eval()
         logger.info(f"[{self.analyzer_name}] Model loaded successfully")
@@ -123,6 +148,7 @@ class Qwen2VLVideoAnalyzer(GPUBatchAnalyzer):
     def analyze_video_segment(self, frames: List[Image.Image], start_time: float, end_time: float) -> Dict[str, Any]:
         """Analyze video segment with Qwen2-VL"""
         
+<<<<<<< HEAD
         # Create high-quality German prompt for detailed action analysis
         prompt = f"""Analysiere Sekunde {start_time:.0f}-{end_time:.0f} des Videos.
 
@@ -136,6 +162,18 @@ BESCHREIBE GENAU:
 4. DETAILS: Objekte in Händen, Gesichtsausdruck, Beleuchtung
 
 KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
+=======
+        # Create proper video description prompt
+        prompt = f"""Describe what happens in this video from {start_time:.1f} to {end_time:.1f} seconds.
+Focus on:
+- Actions and movements
+- People and objects
+- Scene changes
+- Visual elements
+- Any text or graphics
+
+Provide a detailed temporal description of the video content."""
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
 
         # Prepare messages for Qwen2-VL
         content = []
@@ -168,6 +206,7 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
                 return_tensors="pt"
             ).to(self.device)
             
+<<<<<<< HEAD
             # Generate response with optimized parameters
             with torch.no_grad():
                 generated_ids = self.model.generate(
@@ -178,6 +217,15 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
                     temperature=0.0,  # Deterministic
                     num_beams=1,      # No beam search for speed
                     pad_token_id=self.processor.tokenizer.pad_token_id
+=======
+            # Generate response
+            with torch.no_grad():
+                generated_ids = self.model.generate(
+                    **inputs,
+                    max_new_tokens=256,
+                    do_sample=False,
+                    use_cache=True
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 )
             
             # Decode response
@@ -186,12 +234,17 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
                 skip_special_tokens=True
             ).strip()
             
+<<<<<<< HEAD
             # Update context tracking
             self.previous_description = generated_text
             self._update_scene_context(generated_text)
             
             return {
                 'segment_id': f"qwen_temporal_{int(start_time * 10)}",
+=======
+            return {
+                'segment_id': f"qwen_temporal_{int(start_time)}",
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 'start_time': start_time,
                 'end_time': end_time,
                 'timestamp': start_time,
@@ -203,6 +256,7 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
             
         except Exception as e:
             logger.error(f"Error analyzing segment at {start_time}s: {e}")
+<<<<<<< HEAD
             import traceback
             logger.error(f"Full traceback: {traceback.format_exc()}")
             return None
@@ -225,6 +279,10 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
         if "tätowiert" in description or "Tattoo" in description:
             self.person_attributes['tattoos'] = True
     
+=======
+            return None
+    
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     def process_batch_gpu(self, frames, frame_times):
         """Process batch of frames on GPU - required by base class"""
         return []
@@ -248,6 +306,7 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
         segments = []
         current_time = 0.0
         
+<<<<<<< HEAD
         # Process video with optimized segments (~16 for 49s video)
         while current_time < duration:
             # Calculate segment boundaries  
@@ -274,6 +333,26 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
             
             # Move to next segment
             current_time += self.segment_step
+=======
+        # Process video in segments
+        while current_time < duration:
+            end_time = min(current_time + self.segment_duration, duration)
+            
+            # Extract frames for this segment
+            frames = self.extract_frames_for_segment(
+                str(video_path), 
+                current_time, 
+                end_time - current_time
+            )
+            
+            if frames:
+                result = self.analyze_video_segment(frames, current_time, end_time)
+                if result:
+                    segments.append(result)
+                    logger.info(f"   Segment {current_time:.1f}s: {result['description'][:60]}...")
+            
+            current_time = end_time
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             
             # Memory cleanup
             torch.cuda.empty_cache()
@@ -281,8 +360,12 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
         
         logger.info(f"[{self.analyzer_name}] Completed: {len(segments)} segments")
         
+<<<<<<< HEAD
         # CRITICAL FIX: Ensure segments are properly returned
         result = {
+=======
+        return {
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             'analyzer_name': self.analyzer_name,
             'segments': segments,
             'summary': {
@@ -290,6 +373,7 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
                 'video_duration': duration
             }
         }
+<<<<<<< HEAD
         
         # DEBUG LOGGING: Verify result before return
         logger.info(f"[{self.analyzer_name}] Return result keys: {list(result.keys())}")
@@ -302,6 +386,8 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
             logger.error(f"[{self.analyzer_name}] ERROR: No segments to return!")
         
         return result
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     
     def extract_frames_for_segment(self, video_path: str, start_time: float, duration: float) -> List[Image.Image]:
         """Extract frames for a specific segment"""
@@ -333,6 +419,7 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
         cap.release()
         return frames
     
+<<<<<<< HEAD
     def extract_frames_for_segment_working(self, video_path: str, start_time: float, duration: float) -> List[Image.Image]:
         """Extract frames using working 97-segment parameters"""
         cap = cv2.VideoCapture(str(video_path))
@@ -433,6 +520,8 @@ KURZ & PRÄZISE (40 Wörter). Was passiert GENAU in diesen 2 Sekunden?"""
             logger.error(f"Full traceback: {traceback.format_exc()}")
             return None
     
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     def __del__(self):
         """Cleanup"""
         if hasattr(self, 'model'):

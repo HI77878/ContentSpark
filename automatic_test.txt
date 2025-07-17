@@ -1,0 +1,42 @@
+🎬 VOLLAUTOMATISCHER TEST - LEON SCHLIEBACH VIDEO
+=============================================
+Start: Sat Jul 12 14:22:51 UTC 2025
+
+API Call mit TikTok URL...
+
+✅ Result-Datei: results/7446489995663117590_multiprocess_20250712_142748.json
+✅ VOLLAUTOMATISCH! Nur TikTok URL eingegeben!
+
+📊 PERFORMANCE:
+Processing Time: 126.0s
+Realtime Factor: 2.6x
+Successful Analyzers: 18/18
+Reconstruction Score: 100/100
+
+TikTok URL: https://www.tiktok.com/@leon_schliebach/video/7446489995663117590
+✅ TikTok URL wurde automatisch heruntergeladen\!
+
+TikTok Metadata:
+  Username: leon_schliebach
+  Views: 97,000
+  Likes: 4,674
+
+🔍 KEY ANALYZER RESULTS:
+Text Overlay: 98 Segmente
+Object Types: 33
+Pitch: 225Hz
+
+🎯 AUTOMATISIERUNGS-CHECK:
+========================
+✅ VOLLAUTOMATISCH: API hat TikTok URL direkt akzeptiert
+✅ Video wurde automatisch heruntergeladen
+✅ Kein manueller Eingriff erforderlich
+✅ Alle 18 Analyzer erfolgreich
+✅ Realtime Factor: 2.6x (Ziel <3x erreicht!)
+
+📝 API ÄNDERUNGEN:
+- video_path ist jetzt optional
+- TikTok URLs werden automatisch heruntergeladen
+- TikTok Metadata wird automatisch erfasst
+
+Test abgeschlossen: Sat Jul 12 14:28:57 UTC 2025

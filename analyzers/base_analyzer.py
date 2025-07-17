@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 class GPUBatchAnalyzer(ABC):
     def __init__(self, batch_size=64):  # Increased from 32 to 64 for maximum GPU utilization
         self.batch_size = batch_size
+<<<<<<< HEAD
         # Force GPU usage with optimizations
         self.device = DEVICE  # Use global GPU device
         if self.device.type != 'cuda':
@@ -36,6 +37,12 @@ class GPUBatchAnalyzer(ABC):
             torch.backends.cuda.matmul.allow_tf32 = True
             torch.backends.cudnn.allow_tf32 = True
         
+=======
+        # Force GPU usage
+        self.device = DEVICE  # Use global GPU device
+        if self.device.type != 'cuda':
+            print(f"WARNING: {self.__class__.__name__} running on CPU!")
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         self.model = None  # NICHT beim Init laden!
         self.model_loaded = False
         # GPU Memory Optimizer
@@ -43,10 +50,13 @@ class GPUBatchAnalyzer(ABC):
         # Model caching support
         self.use_model_cache = True
         self._model_cache = {}
+<<<<<<< HEAD
         
         # Performance tracking
         self.total_gpu_time = 0.0
         self.total_frames_processed = 0
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     
     @abstractmethod
     @torch.inference_mode()

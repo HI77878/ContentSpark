@@ -1,0 +1,486 @@
+{
+  "video_duration": 48.81,
+  "reconstruction_score": 67.15986394557822,
+  "metrics": {
+    "seconds_with_data": 49,
+    "total_seconds": 48,
+    "avg_data_types": 2.63265306122449,
+    "coverage_percentage": 102.08333333333333
+  },
+  "timeline": {
+    "0": {
+      "text": [
+        "WAS GEHT AB ICH"
+      ],
+      "speech": "Was geht ab? Ich nehme euch heute noch mal mit in den Tag eines hart arbeitenden Beamten. Morgens",
+      "camera": "static",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "1": {
+      "text": [
+        "MAL MIT IN DEN TAG"
+      ],
+      "camera": "tilt_up",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "2": {
+      "text": [
+        "EINES HART ARBEITENDEN BEAMTEN"
+      ],
+      "camera": "tilt_up",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "3": {
+      "text": [
+        "MORGENS ERSTMAL KURZ READY GEMACHT"
+      ],
+      "speech": "erst mal kurz ready gemacht, den Bart abrasiert, damit die Kollegen im B\u00fcro mich auch wieder erkennen.",
+      "camera": "static",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "4": {
+      "text": [
+        "IV.IIY MORGENS ERSTMAL KURZ READY GEMACHT"
+      ],
+      "camera": "pan_right",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "5": {
+      "text": [
+        "DAMIT DIE KOLLEGEN IM"
+      ],
+      "camera": "pan_left",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "6": {
+      "text": [
+        "B\u00dcRO MICH AUCH WIEDERERKENNEN"
+      ],
+      "camera": "tilt_up",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "7": {
+      "text": [
+        "SCHON MAL DEN SHAKE VORBEREITET ydy"
+      ],
+      "speech": "Schauen wir den Shake vorbereitet und dann gibt es jetzt eine kurze Ofetransition, weil ich war etwas sp\u00e4ter an, weil ich versucht habe, alles mit zu filmen.",
+      "camera": "tilt_down",
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "8": {
+      "text": [
+        "UND DANN GIBT'S JETZT NE Udy"
+      ],
+      "camera": "pan_right",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "9": {
+      "text": [
+        "KURZE OUTFIT TRANSITION"
+      ],
+      "camera": "pan_left",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "10": {
+      "text": [
+        "SP\u00e4T DRAN"
+      ],
+      "camera": "pan_right",
+      "effects": {
+        "motion_blur": "heavy",
+        "brightness": "dark"
+      }
+    },
+    "11": {
+      "text": [
+        "ALLES MITZUFILMEN"
+      ],
+      "camera": "pan_left",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "12": {
+      "text": [
+        "GENAU AUS DEM GRUND"
+      ],
+      "speech": "Genauso ist die irgendwo und habe ich mir dann auch noch eine M\u00fctze aufgezogen, weil ich es nicht mehr geschafft habe, meine Haare zu machen. Auf dem Weg ins B\u00fcro da noch ein bisschen zu Musik gewalt,",
+      "camera": "tilt_down",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "13": {
+      "text": [
+        "AUCH NOCH NE M\u00fc TZE AUFGEZOGEN"
+      ],
+      "camera": "pan_left",
+      "effects": {
+        "motion_blur": "light"
+      }
+    },
+    "14": {
+      "text": [
+        "GESCHAFFT HAB"
+      ],
+      "camera": "tilt_down",
+      "effects": {
+        "motion_blur": "heavy",
+        "transition": "dissolve"
+      }
+    },
+    "15": {
+      "text": [
+        "MEINE HAARE ZU MACHEN"
+      ],
+      "camera": "pan_right",
+      "effects": {
+        "motion_blur": "heavy",
+        "brightness": "dark"
+      }
+    },
+    "16": {
+      "text": [
+        "DANN NOCH N BISSCHEN"
+      ],
+      "camera": "pan_right",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "17": {
+      "text": [
+        "ZUR MUSIK GEVIBET"
+      ],
+      "speech": "man sieht leider nicht so viel davor, was ein Handy runtergefallen ist. Deswegen geht es dir direkt weiter, als ich schon den B\u00fcro angekommen bin.",
+      "camera": "tilt_down",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "18": {
+      "text": [
+        "SO VIEL DAVON"
+      ],
+      "camera": "tilt_up",
+      "effects": {
+        "motion_blur": "heavy",
+        "brightness": "very_dark",
+        "transition": "dissolve"
+      }
+    },
+    "19": {
+      "text": [
+        "WEIL MEIN HANDY RUNTERGEFALLEN IST"
+      ],
+      "camera": "tilt_up",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "20": {
+      "text": [
+        "DESWEGEN GEHT'S HIER DIREKT WEITER"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "21": {
+      "text": [
+        "B\u00fcRO ANGEKOMMEN BIN"
+      ],
+      "speech": "Ich habe erst mal ein paar Maids bearbeitet und ein paar Auftr\u00e4ge angeschaut. Und dann an unserem Azubi, der einfach drei Jahre \u00e4lter ist, als ich ein paar Sachen erkl\u00e4rt.",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "22": {
+      "text": [
+        "ICH HAB ERSTMAL N"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "23": {
+      "text": [
+        "PAAR MAILS BEARBEITET UND"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "24": {
+      "text": [
+        "AUFTR\u00e4GE ANGESCHAUT UND DANN"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "25": {
+      "text": [
+        "DER EINFACH 3 JAHRE"
+      ],
+      "effects": {
+        "motion_blur": "heavy",
+        "brightness": "dark"
+      }
+    },
+    "26": {
+      "text": [
+        "\u00e4LTER IST ALS ICH"
+      ],
+      "effects": {
+        "motion_blur": "medium"
+      }
+    },
+    "27": {
+      "text": [
+        "WIR SIND DANN AUCH"
+      ],
+      "speech": "Wir sind dann auch noch zu einem Au\u00dfentheming gefahren, davon kann ich leider nicht so viel zeigen. Deswegen seht ihr mich hier wieder am Schreibtisch,",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "28": {
+      "text": [
+        "NOCH ZU NEM AU\u00df ENTERMIN GEFAHREN"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark",
+        "transition": "dissolve"
+      }
+    },
+    "29": {
+      "text": [
+        "NICHT so VIEL ZEIGEN"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "30": {
+      "text": [
+        "DESWEGEN SEHT IHR MICH"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "31": {
+      "text": [
+        "HIER WIEDER AM SCHREIBTISCH"
+      ],
+      "speech": "wie ich noch ein paar Rechnungen bearbeitet habe und dann war auch schon feierabend. Ich bin direkt von der Arbeit au\u00dfens stimmen gefahren,",
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "32": {
+      "text": [
+        "PAAR RECHNUNGEN BEARBEITET HAB"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "33": {
+      "text": [
+        "UND DANN WAR AUCH"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "dark"
+      }
+    },
+    "34": {
+      "text": [
+        "ICH BIN DIREKT VON"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark",
+        "transition": "dissolve"
+      }
+    },
+    "35": {
+      "text": [
+        "DER ARBEIT AUS INS"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "36": {
+      "text": [
+        "HAB NUR NE BANANE"
+      ],
+      "speech": "habe nur eine Banane auf dem Weg noch gegessen. Dann noch mein Kollegen abkohlen, eigentlich stand heute legt er auf dem Plan aber.",
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "37": {
+      "text": [
+        "AUF DEM WEG GEGESSEN"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "38": {
+      "text": [
+        "EIGENTLICH STAND HEUTE LEGDAY"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "39": {
+      "text": [
+        "AUF DEM PLAN"
+      ],
+      "effects": {
+        "motion_blur": "heavy",
+        "brightness": "dark",
+        "transition": "dissolve"
+      }
+    },
+    "40": {
+      "text": [
+        "ABER ICH GLAUB IHR"
+      ],
+      "speech": "Ich glaube, ihr seht selbst, das k\u00f6nnte schwierig werden. Deswegen haben wir Oberk\u00f6rper trainiert und im Training selbst habe ich dann aber nicht mehr so viel mitgefilmt, weil ich einfach schnell durchziehen wollte.",
+      "effects": {
+        "motion_blur": "light",
+        "transition": "dissolve"
+      }
+    },
+    "41": {
+      "text": [
+        "SEHT SELBST DAS K\u00f6 NNTE"
+      ],
+      "effects": {
+        "motion_blur": "medium"
+      }
+    },
+    "42": {
+      "text": [
+        "SCHWIERIG WERDEN DESWEGEN HABEN"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark",
+        "transition": "fade_out"
+      }
+    },
+    "43": {
+      "text": [
+        "WIR OBERK\u00f6RPER TRAINIERT"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "dark"
+      }
+    },
+    "44": {
+      "text": [
+        "VOM TRAINING SELBST"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "very_dark"
+      }
+    },
+    "45": {
+      "text": [
+        "NICHT MEHR SO VIEL MITGEFILMT"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "very_dark"
+      }
+    },
+    "46": {
+      "text": [
+        "WEIL ICH EINFACH SCHNELL"
+      ],
+      "speech": "Und deswegen war es auch schon mit dem Vlog. Ciao!",
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "very_dark"
+      }
+    },
+    "47": {
+      "text": [
+        "UND DESWEGEN WAR"
+      ],
+      "effects": {
+        "motion_blur": "light",
+        "brightness": "very_dark"
+      }
+    },
+    "48": {
+      "text": [
+        "DEM VLOG. CIAO"
+      ],
+      "effects": {
+        "motion_blur": "medium",
+        "brightness": "very_dark"
+      }
+    }
+  }
+}

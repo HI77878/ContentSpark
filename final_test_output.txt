@@ -1,0 +1,24 @@
+[download] 100% of    7.27MiB
+🎬 Processing TikTok URL: https://www.tiktok.com/@manel_nicolau/video/7196765040433761542
+
+📥 Downloading video...
+                             ✅ Downloaded: /home/user/tiktok_videos/videos/7196765040433761542.mp4
+   Creator: @unknown
+   Description: hopefully I pass all my exams 🤞#fy #fyp #fypシ #vlog #gym #study #student #medvet #gymtok #college #v...
+   Views: 0
+   Likes: 0
+
+🔍 Starting analysis with metadata...
+
+✅ Analysis complete!
+   Processing time: 251.8s
+   Successful analyzers: 20/20
+   Results saved to: /home/user/tiktok_production/results/7196765040433761542_multiprocess_20250710_065220.json
+
+📋 Saved metadata:
+   TikTok URL: ✅
+   Creator: ❌
+   Video ID: ✅
+   Duration: ✅
+
+✅ Complete! All analyzer data saved with TikTok metadata.

@@ -365,6 +365,7 @@ class GPUBatchEyeTracking(GPUBatchAnalyzer):
             all_results.extend(batch_results)
         
         print(f"[EyeTracking] Found {len(all_results)} eye tracking segments")
+<<<<<<< HEAD
         
         # Ensure we have at least one segment for testing
         if len(all_results) == 0:
@@ -377,4 +378,6 @@ class GPUBatchEyeTracking(GPUBatchAnalyzer):
                 'gaze_confidence': 0.5
             }]
         
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         return {'segments': clean_segments(all_results)}

@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 
 class GPUBatchBackgroundSegmentationLight(GPUBatchAnalyzer):
     def __init__(self):
+<<<<<<< HEAD
         super().__init__(batch_size=16)  # Reduziert auf 16 für Stabilität
         self.model = None
         self.processor = None
@@ -29,6 +30,13 @@ class GPUBatchBackgroundSegmentationLight(GPUBatchAnalyzer):
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
             torch.cuda.synchronize()
+=======
+        super().__init__(batch_size=32)  # Erhöht von 16 auf 32
+        self.model = None
+        self.processor = None
+        self.sample_rate = 120  # Every 4 seconds for 2x faster processing
+        self.resize_resolution = (256, 256)  # Kleiner als 512x512 für mehr Speed
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
     def _load_model_impl(self):
         """Load SegFormer-B0 - smallest and fastest"""
@@ -40,14 +48,24 @@ class GPUBatchBackgroundSegmentationLight(GPUBatchAnalyzer):
         self.processor = SegformerImageProcessor.from_pretrained(model_name)
         self.model = SegformerForSemanticSegmentation.from_pretrained(
             model_name,
+<<<<<<< HEAD
             torch_dtype=torch.float32  # Use FP32 to avoid dtype issues
+=======
+            torch_dtype=torch.float16
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         )
         self.model.cuda()
         self.model.eval()
         
+<<<<<<< HEAD
         # Disable torch.compile for stability (causes storage pool errors)
         # if hasattr(torch, 'compile'):
         #     self.model = torch.compile(self.model, mode="reduce-overhead")
+=======
+        # Enable CUDA optimizations
+        if hasattr(torch, 'compile'):
+            self.model = torch.compile(self.model, mode="reduce-overhead")
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         logger.info("✅ SegFormer-B0 loaded - 8x faster!")
     
@@ -71,20 +89,30 @@ class GPUBatchBackgroundSegmentationLight(GPUBatchAnalyzer):
             # Resize für mehr Speed
             pil_images = []
             for frame in batch_frames:
+<<<<<<< HEAD
                 # Ensure proper dtype
                 if frame.dtype != np.uint8:
                     frame = (frame * 255).astype(np.uint8) if frame.max() <= 1.0 else frame.astype(np.uint8)
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 # Resize BEFORE color conversion (faster)
                 frame_resized = cv2.resize(frame, self.resize_resolution, interpolation=cv2.INTER_AREA)
                 frame_rgb = cv2.cvtColor(frame_resized, cv2.COLOR_BGR2RGB)
                 pil_images.append(Image.fromarray(frame_rgb))
             
+<<<<<<< HEAD
             # Process batch - FIX: Disable AMP to avoid storage pool error
             with torch.no_grad():
                 # Disable autocast to prevent storage pool allocation errors
                 with torch.cuda.amp.autocast(enabled=False):
                     inputs = self.processor(images=pil_images, return_tensors="pt")
                     # Keep as FP32
+=======
+            # Process batch
+            with torch.no_grad():
+                with torch.cuda.amp.autocast():
+                    inputs = self.processor(images=pil_images, return_tensors="pt")
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     inputs = {k: v.cuda() for k, v in inputs.items()}
                     
                     outputs = self.model(**inputs)
@@ -170,6 +198,7 @@ class GPUBatchBackgroundSegmentationLight(GPUBatchAnalyzer):
                 # Scene complexity
                 scene_complexity = 'simple' if len(detected_objects) < 5 else 'medium' if len(detected_objects) < 10 else 'complex'
                 
+<<<<<<< HEAD
                 # Create unique description
                 dominant_objects = sorted(detected_objects.items(), key=lambda x: x[1], reverse=True)[:3]
                 obj_descriptions = [f"{name} ({ratio:.1%})" for name, ratio in dominant_objects]
@@ -185,13 +214,21 @@ class GPUBatchBackgroundSegmentationLight(GPUBatchAnalyzer):
                     'timestamp': float(timestamp),
                     'segment_id': f'background_seg_{int(timestamp * 10)}',
                     'description': description,
+=======
+                segments.append({
+                    'timestamp': float(timestamp),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     'detected_objects': detected_objects,
                     'environment': environment,
                     'person_present': person_present,
                     'person_ratio': float(person_ratio),
                     'scene_complexity': scene_complexity,
                     'num_objects': len(detected_objects),
+<<<<<<< HEAD
                     'dominant_objects': dominant_objects
+=======
+                    'dominant_objects': sorted(detected_objects.items(), key=lambda x: x[1], reverse=True)[:5]
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 })
         
         return {'segments': segments}

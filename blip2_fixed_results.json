@@ -1,0 +1,149 @@
+{
+  "segments": [
+    {
+      "timestamp": 0.0,
+      "frame_number": 0,
+      "description": "a person sleeping in a bed"
+    },
+    {
+      "timestamp": 0.9934030370923576,
+      "frame_number": 1,
+      "description": "a person laying on a bed in a room"
+    },
+    {
+      "timestamp": 1.986806074184715,
+      "frame_number": 2,
+      "description": "a bed with white sheets and pillows"
+    },
+    {
+      "timestamp": 2.9802091112770728,
+      "frame_number": 3,
+      "description": "a person laying on top of a bed"
+    },
+    {
+      "timestamp": 3.97361214836943,
+      "frame_number": 4,
+      "description": "a woman standing in a bedroom"
+    },
+    {
+      "timestamp": 4.967015185461787,
+      "frame_number": 5,
+      "description": "a woman with a braid in her hair in a bathroom"
+    },
+    {
+      "timestamp": 5.9604182225541456,
+      "frame_number": 6,
+      "description": "a woman brushing her hair in the bathroom"
+    },
+    {
+      "timestamp": 6.953821259646503,
+      "frame_number": 7,
+      "description": "a woman brushing her teeth in front of a mirror"
+    },
+    {
+      "timestamp": 7.94722429673886,
+      "frame_number": 8,
+      "description": "a lake with buildings in the background"
+    },
+    {
+      "timestamp": 8.940627333831218,
+      "frame_number": 9,
+      "description": "a woman with long hair in a park"
+    },
+    {
+      "timestamp": 9.934030370923574,
+      "frame_number": 10,
+      "description": "a person walking on the ground"
+    },
+    {
+      "timestamp": 10.927433408015933,
+      "frame_number": 11,
+      "description": "a woman standing in a kitchen"
+    },
+    {
+      "timestamp": 11.920836445108291,
+      "frame_number": 12,
+      "description": "a woman in a kitchen preparing food"
+    },
+    {
+      "timestamp": 12.914239482200648,
+      "frame_number": 13,
+      "description": "a person pouring milk into a cup"
+    },
+    {
+      "timestamp": 13.907642519293006,
+      "frame_number": 14,
+      "description": "a woman sitting at a desk in front of a window"
+    },
+    {
+      "timestamp": 14.901045556385363,
+      "frame_number": 15,
+      "description": "a woman sitting at a desk in front of a window"
+    },
+    {
+      "timestamp": 15.89444859347772,
+      "frame_number": 16,
+      "description": "a woman sitting at a desk in front of a window"
+    },
+    {
+      "timestamp": 16.88785163057008,
+      "frame_number": 17,
+      "description": "a woman sitting at a desk in front of a window"
+    },
+    {
+      "timestamp": 17.881254667662436,
+      "frame_number": 18,
+      "description": "a woman working on her laptop in front of a window"
+    },
+    {
+      "timestamp": 18.874657704754792,
+      "frame_number": 19,
+      "description": "a woman working on her laptop in front of a window"
+    },
+    {
+      "timestamp": 19.86806074184715,
+      "frame_number": 20,
+      "description": "a woman holding an umbrella in the rain"
+    },
+    {
+      "timestamp": 20.86146377893951,
+      "frame_number": 21,
+      "description": "a person walking on a tile floor"
+    },
+    {
+      "timestamp": 21.854866816031866,
+      "frame_number": 22,
+      "description": "coffee cups and a purse on a table"
+    },
+    {
+      "timestamp": 22.848269853124222,
+      "frame_number": 23,
+      "description": "a person opening a door with an alarm sign on it"
+    },
+    {
+      "timestamp": 23.841672890216582,
+      "frame_number": 24,
+      "description": "two plastic containers with food in them"
+    },
+    {
+      "timestamp": 24.83507592730894,
+      "frame_number": 25,
+      "description": "a television screen showing people sitting around a table"
+    },
+    {
+      "timestamp": 25.828478964401295,
+      "frame_number": 26,
+      "description": "a person holding a bag of food on a couch"
+    },
+    {
+      "timestamp": 26.821882001493652,
+      "frame_number": 27,
+      "description": "a person holding a bowl of food in front of a television"
+    }
+  ],
+  "summary": "Video shows: alarm, around, background, bathroom, bedroom, bowl, braid, brushing, buildings, coffee, containers, couch, cups, desk, door",
+  "total_frames_analyzed": 28,
+  "video_duration": 28.916666666666668,
+  "analysis_time": 65.55886816978455,
+  "model": "BLIP-2 OPT-2.7B (8-bit)"
+}

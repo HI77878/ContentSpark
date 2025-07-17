@@ -30,11 +30,14 @@ class GPUBatchSpeechFlow(GPUBatchAnalyzer):
         
     def analyze(self, video_path: str) -> Dict[str, Any]:
         """Analyze speech flow patterns including pitch and speed"""
+<<<<<<< HEAD
         # FFmpeg Environment Fix
         import os
         os.environ['LD_LIBRARY_PATH'] = '/home/user/ffmpeg-install/lib:' + os.environ.get('LD_LIBRARY_PATH', '')
         os.environ['PATH'] = '/home/user/ffmpeg-install/bin:' + os.environ.get('PATH', '')
         
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         logger.info(f"[SpeechFlow] Analyzing {video_path}")
         
         try:

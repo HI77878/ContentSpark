@@ -40,7 +40,11 @@ class GPUBatchObjectDetectionYOLO(GPUBatchAnalyzer):
         self.device = 'cuda'
         self.model = None
         self.sample_rate = 10  # Sample every 0.33 seconds for DENSE coverage
+<<<<<<< HEAD
         self.conf_threshold = 0.2   # Lowered for more detections
+=======
+        self.conf_threshold = 0.25  # Balanced threshold for quality detections
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         self.iou_threshold = 0.45  # Standard IOU
         self.track_objects = True  # Enable object tracking across frames
     

@@ -30,6 +30,7 @@ class Qwen2VLVideoAnalyzer(GPUBatchAnalyzer):
         self.analyzer_name = "qwen2_vl_temporal"
         self.model_name = "Qwen/Qwen2-VL-7B-Instruct"
         
+<<<<<<< HEAD
         # Video processing parameters - OPTIMIZED
         self.max_frames = 24  # Increased for better temporal coverage
         self.segment_duration = 1.0  # Reduced to 1 second for more detailed analysis
@@ -39,6 +40,11 @@ class Qwen2VLVideoAnalyzer(GPUBatchAnalyzer):
             torch.backends.cudnn.benchmark = True
             torch.backends.cuda.matmul.allow_tf32 = True
             torch.backends.cudnn.allow_tf32 = True
+=======
+        # Video processing parameters
+        self.max_frames = 16  # Optimal für 7B Modell
+        self.segment_duration = 2.0  # 2 Sekunden pro Segment
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
     def _load_model_impl(self):
         """Load Qwen2-VL model correctly"""

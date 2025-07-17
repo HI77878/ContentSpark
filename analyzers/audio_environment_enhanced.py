@@ -149,16 +149,22 @@ class AudioEnvironmentEnhanced(GPUBatchAnalyzer):
             audio, sr, spectral_centroid, zcr
         )
         
+<<<<<<< HEAD
         # Create comprehensive description for this segment
         sounds_desc = ', '.join([s['description'] for s in sounds[:3]])  # Top 3 sounds
         description = f"{environment['description']}. Audio: {sounds_desc}. {self.describe_audio_characteristics(rms, spectral_centroid, zcr)}"
         
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         return {
             'timestamp': start_time,
             'start_time': start_time,
             'end_time': end_time,
+<<<<<<< HEAD
             'segment_id': f'audio_env_{int(start_time * 10)}',
             'description': description,
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             'duration': end_time - start_time,
             'environment_type': environment['type'],
             'environment_description': environment['description'],
@@ -619,8 +625,11 @@ class AudioEnvironmentEnhanced(GPUBatchAnalyzer):
                 'timestamp': start_time,
                 'start_time': start_time,
                 'end_time': end_time,
+<<<<<<< HEAD
                 'segment_id': f'audio_env_{int(start_time * 10)}',
                 'description': f'Audio-Umgebung im Segment {start_time:.1f}s-{end_time:.1f}s. Basis-Analyse ohne erweiterte Features.',
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 'duration': end_time - start_time,
                 'environment_type': 'unknown',
                 'environment_description': 'Audio-Umgebung',
@@ -673,10 +682,13 @@ class AudioEnvironmentEnhanced(GPUBatchAnalyzer):
             return {
                 'segments': [{
                     'timestamp': 0.0,
+<<<<<<< HEAD
                     'start_time': 0.0,
                     'end_time': 3.0,
                     'segment_id': 'audio_env_error',
                     'description': f'Audio-Umgebungsanalyse fehlgeschlagen: {str(e)}',
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     'environment_type': 'error',
                     'environment_description': 'Analyse fehlgeschlagen',
                     'error': str(e)

@@ -1,0 +1,16 @@
+[Unit]
+Description=TikTok Video Analyzer API
+After=network.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user/tiktok_production
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+EnvironmentFile=/home/user/tiktok_production/fix_ffmpeg_env.sh
+ExecStart=/usr/bin/python3 /home/user/tiktok_production/api/max_data_api_server.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

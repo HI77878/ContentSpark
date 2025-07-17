@@ -1,0 +1,87 @@
+{
+  "segments": [
+    {
+      "timestamp": 0.0,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "description": ": The video depicts a man in a bathroom setting, brushing his teeth",
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 2.0,
+      "start_time": 2.0,
+      "end_time": 4.0,
+      "description": "He is wearing a sleeveless shirt and appears to be in the middle of his daily routine",
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 4.0,
+      "start_time": 4.0,
+      "end_time": 6.0,
+      "description": "The camera angle is from a slightly elevated perspective, capturing the man from the chest up",
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 6.0,
+      "start_time": 6.0,
+      "end_time": 8.0,
+      "description": "The bathroom has a tiled floor and a mirror above the sink, and there are toiletries visible on the counter",
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 8.0,
+      "start_time": 8.0,
+      "end_time": 10.0,
+      "description": "The man is using a toothbrush and toothpaste, and he seems to be in a good mood, as he is smiling and looking directly at the camera",
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 10.0,
+      "start_time": 10.0,
+      "end_time": 12.0,
+      "description": "The lighting is bright, and there are no texts visible on the screen",
+      "confidence": 0.8
+    }
+  ],
+  "metadata": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-DPO-hf",
+    "video_duration": 48.96666666666667,
+    "frames_analyzed": 32,
+    "frame_timestamps": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      21.0,
+      22.0,
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0
+    ],
+    "approach": "simple_direct"
+  },
+  "full_description": ": The video depicts a man in a bathroom setting, brushing his teeth. He is wearing a sleeveless shirt and appears to be in the middle of his daily routine. The camera angle is from a slightly elevated perspective, capturing the man from the chest up. The bathroom has a tiled floor and a mirror above the sink, and there are toiletries visible on the counter. The man is using a toothbrush and toothpaste, and he seems to be in a good mood, as he is smiling and looking directly at the camera. The lighting is bright, and there are no texts visible on the screen."
+}

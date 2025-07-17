@@ -1,0 +1,77 @@
+{
+  "video_info": {
+    "path": "/home/user/tiktok_production/test_videos/leon_schliebach_7446489995663117590.mp4",
+    "duration": 48.96666666666667,
+    "fps": 30,
+    "frames": 1469
+  },
+  "analyzer_config": {
+    "fps_process": 15,
+    "window_size": 15,
+    "stride": 5,
+    "memory_size": 1024,
+    "clusters": 128
+  },
+  "results": {
+    "total_segments": 5,
+    "segments_per_second": 0.10211027910142954,
+    "coverage_percentage": 0.6820966643975493,
+    "temporal_gaps": 0,
+    "multi_frame_count": 0,
+    "quality_metrics": {
+      "objects": 0,
+      "actions": 0,
+      "text_overlays": 0,
+      "camera_movements": 0,
+      "specific_details": 0
+    }
+  },
+  "segments": [
+    {
+      "start_time": 48.333333333333336,
+      "end_time": 48.4,
+      "timestamp": 48.333333333333336,
+      "duration": 0.06666666666666288,
+      "caption": "[48.3s] a man sitting on a machine in a gym \u2192 [48.4s] a man sitting on a machine in a gym",
+      "confidence": 0.8,
+      "frame_count": 2
+    },
+    {
+      "start_time": 48.46666666666667,
+      "end_time": 48.53333333333333,
+      "timestamp": 48.46666666666667,
+      "duration": 0.06666666666666288,
+      "caption": "[48.5s] a man sitting on a machine in a gym \u2192 [48.5s] a man sitting on a machine in a gym",
+      "confidence": 0.8,
+      "frame_count": 2
+    },
+    {
+      "start_time": 48.6,
+      "end_time": 48.666666666666664,
+      "timestamp": 48.6,
+      "duration": 0.06666666666666288,
+      "caption": "[48.6s] a man sitting on a machine in a gym \u2192 [48.7s] a man sitting on a machine in a gym",
+      "confidence": 0.8,
+      "frame_count": 2
+    },
+    {
+      "start_time": 48.733333333333334,
+      "end_time": 48.8,
+      "timestamp": 48.733333333333334,
+      "duration": 0.06666666666666288,
+      "caption": "[48.7s] a man sitting on a machine in a gym \u2192 [48.8s] a man squats on a machine in the gym",
+      "confidence": 0.8,
+      "frame_count": 2
+    },
+    {
+      "start_time": 48.86666666666667,
+      "end_time": 48.93333333333333,
+      "timestamp": 48.86666666666667,
+      "duration": 0.06666666666666288,
+      "caption": "[48.9s] a man squats on a machine in the gym \u2192 [48.9s] a man in a suit and tie is standing in front of a black background",
+      "confidence": 0.8,
+      "frame_count": 2
+    }
+  ],
+  "analysis_time": 81.49292850494385
+}

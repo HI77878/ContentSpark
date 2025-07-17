@@ -1,0 +1,44 @@
+{
+  "segments": [
+    {
+      "timestamp": 1.0,
+      "start_time": 1.0,
+      "end_time": 2.0,
+      "description": "In the next second, he moves closer to the sink, probably to rinse off his mouth or spit out toothpaste. The background reveals a bathroom setting, with a mirror above the sink and some decorative items hanging on the wall.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 2.0,
+      "start_time": 2.0,
+      "end_time": 3.0,
+      "description": "In the third second, he turns around slightly towards the camera while holding onto the handle of the toothbrush, possibly to address the viewers or show a demonstration. Another person is partially visible in the background, sitting at a desk and looking at something, likely a computer screen.",
+      "confidence": 0.95
+    }
+  ],
+  "metadata": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-hf",
+    "optimization": "second-by-second",
+    "frames_analyzed": 16,
+    "timestamps": [
+      0.0,
+      3.2333333333333334,
+      6.5,
+      9.766666666666667,
+      13.033333333333333,
+      16.3,
+      19.566666666666666,
+      22.833333333333332,
+      26.066666666666666,
+      29.333333333333332,
+      32.6,
+      35.86666666666667,
+      39.13333333333333,
+      42.4,
+      45.666666666666664,
+      48.93333333333333
+    ],
+    "effective_fps": 0.32697547683923706,
+    "coverage": "partial"
+  },
+  "full_description": "his is a still image of a man brushing his teeth with an electric toothbrush. He appears to be in the process of cleaning his upper front teeth. The man is wearing a white t-shirt and has several tattoos on both arms and chest. There is no text overlay present.\n[1s] In the next second, he moves closer to the sink, probably to rinse off his mouth or spit out toothpaste. The background reveals a bathroom setting, with a mirror above the sink and some decorative items hanging on the wall.\n[2s] In the third second, he turns around slightly towards the camera while holding onto the handle of the toothbrush, possibly to address the viewers or show a demonstration. Another person is partially visible in the background, sitting at a desk and looking at something, likely a computer screen."
+}

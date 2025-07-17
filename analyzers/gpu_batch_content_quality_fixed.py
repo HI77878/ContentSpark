@@ -161,6 +161,7 @@ class GPUBatchContentQualityFixed(GPUBatchAnalyzer):
         clip_scores = {}
         if self.clip_model is not None:
             clip_scores = self._get_clip_quality_scores(frame)
+<<<<<<< HEAD
         
         # Create comprehensive description
         quality_issues = []
@@ -184,6 +185,11 @@ class GPUBatchContentQualityFixed(GPUBatchAnalyzer):
             'end_time': float(timestamp) + 0.5,
             'segment_id': f'quality_{int(timestamp * 10)}',
             'description': description,
+=======
+            
+        return {
+            'timestamp': float(timestamp),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             'frame_number': frame_idx,
             'quality_score': float(quality_score),
             'quality_class': quality_class,

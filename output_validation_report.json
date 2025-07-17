@@ -1,0 +1,117 @@
+{
+  "validation_timestamp": "2025-07-11T06:38:07.473165",
+  "file_analyzed": "results/test_video_multiprocess_20250711_063658.json",
+  "quality_score": 45.0,
+  "has_tiktok_url": "https://www.tiktok.com/@testuser/video/123456789",
+  "total_segments": 157,
+  "analyzer_quality": {
+    "cut_analysis": {
+      "status": "OK",
+      "segments": 9,
+      "has_timestamps": true,
+      "avg_data_per_segment": 176
+    },
+    "text_overlay": {
+      "status": "OK",
+      "segments": 20,
+      "has_timestamps": false,
+      "avg_data_per_segment": 94
+    },
+    "camera_analysis": {
+      "status": "OK",
+      "segments": 7,
+      "has_timestamps": true,
+      "avg_data_per_segment": 558
+    },
+    "object_detection": {
+      "status": "NO_DATA",
+      "segments": 0
+    },
+    "background_segmentation": {
+      "status": "OK",
+      "segments": 3,
+      "has_timestamps": true,
+      "avg_data_per_segment": 350
+    },
+    "scene_segmentation": {
+      "status": "OK",
+      "segments": 1,
+      "has_timestamps": true,
+      "avg_data_per_segment": 268
+    },
+    "color_analysis": {
+      "status": "OK",
+      "segments": 10,
+      "has_timestamps": true,
+      "avg_data_per_segment": 863
+    },
+    "visual_effects": {
+      "status": "OK",
+      "segments": 60,
+      "has_timestamps": true,
+      "avg_data_per_segment": 282
+    },
+    "age_estimation": {
+      "status": "OK",
+      "segments": 10,
+      "has_timestamps": true,
+      "avg_data_per_segment": 63
+    },
+    "content_quality": {
+      "status": "OK",
+      "segments": 10,
+      "has_timestamps": true,
+      "avg_data_per_segment": 522
+    },
+    "sound_effects": {
+      "status": "OK",
+      "segments": 1,
+      "has_timestamps": true,
+      "avg_data_per_segment": 146
+    },
+    "speech_rate": {
+      "status": "NO_DATA",
+      "segments": 0
+    },
+    "speech_transcription": {
+      "status": "NO_DATA",
+      "segments": 0
+    },
+    "audio_analysis": {
+      "status": "OK",
+      "segments": 7,
+      "has_timestamps": true,
+      "avg_data_per_segment": 355
+    },
+    "temporal_flow": {
+      "status": "OK",
+      "segments": 11,
+      "has_timestamps": true,
+      "avg_data_per_segment": 344
+    },
+    "audio_environment": {
+      "status": "OK",
+      "segments": 4,
+      "has_timestamps": true,
+      "avg_data_per_segment": 735
+    },
+    "comment_cta_detection": {
+      "status": "NO_DATA",
+      "segments": 0
+    },
+    "speech_emotion": {
+      "status": "OK",
+      "segments": 4,
+      "has_timestamps": true,
+      "avg_data_per_segment": 586
+    },
+    "speech_flow": {
+      "status": "NO_DATA",
+      "segments": 0
+    },
+    "qwen2_vl_temporal": {
+      "status": "ERROR",
+      "segments": 0
+    }
+  }
+}

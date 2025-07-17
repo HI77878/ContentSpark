@@ -1,0 +1,193 @@
+{
+  "segments": [
+    {
+      "timestamp": 0,
+      "start_time": 0,
+      "end_time": 1.9586666666666668,
+      "description": "sem Video gibt es mehrere Personen in verschiedenen Szenarien, die ich genauer beschreiben werde:\n\n\n1",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 1.9586666666666668,
+      "start_time": 1.9586666666666668,
+      "end_time": 3.9173333333333336,
+      "description": "**Person auf dem Fahrrad**\n   - Person ist links im Bild, sitzt auf einem Fahrrad und hat ein weißes T-Shirt mit schwarzer Aufschrift an",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 3.9173333333333336,
+      "start_time": 3.9173333333333336,
+      "end_time": 15.66933333333333,
+      "description": "Sie hält einen Handy in der linken Hand und denkt über etwas nach Von Sekunde 5 bis 10, der Mann hält das Handy immer noch hoch und schaut nach oben. Der Hintergrund zeigt eine Gymnastik-Umgebung mit Maschinen und Geräten. Ein weiterer Mann sitzt am Schreibtisch und liest etwas. Ihr Gesicht zeigt Überraschung Die Umgebung umfasst eine Straße mit Autos hinten und rechts sowie eine Bebauung mit Gebäuden **Person am Computer**\n   - Person steht rechts im Bild und nutzt einen Laptop Vom Sekunde 10 bis 15, der Mann mit dem Handy stellt sich vor die Kamera und lächelt. Beide Männer haben ihre Haare kurz geschoren. Im Hintergrund kann man eine Frau sehen, die sich auf ihrem Smartphone konzentriert.\n\n\nIn allen drei Zeitabschnitten ist die Kamera auf einer Ebene mit dem Mann stehend, was darauf hinweist, dass sie direkt über ihn oder sehr nah daneben gedrückt wurde. Er trägt ein Jackett mit einer Kreuz tief eingravierten Symbol auf der Brust und ein Schwarzes Unterhemm Seine Hände halten einen Stift und ein Papier",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 15.66933333333333,
+      "start_time": 15.66933333333333,
+      "end_time": 17.627999999999997,
+      "description": "Er scheint sich zu konzentrieren und lächelt leise",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 17.627999999999997,
+      "start_time": 17.627999999999997,
+      "end_time": 19.586666666666662,
+      "description": "Der Raum um ihn enthält Büromaterial wie Papier, Stifte und ein Glas",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 19.586666666666662,
+      "start_time": 19.586666666666662,
+      "end_time": 21.54533333333333,
+      "description": "**Person beim Putzen**\n   - Person befindet sich im Hintergrund und wuschelt sich",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 21.54533333333333,
+      "start_time": 21.54533333333333,
+      "end_time": 23.503999999999994,
+      "description": "Es handelt sich hierbei um eine Frau, die sich selbst betrachtet",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 23.503999999999994,
+      "start_time": 23.503999999999994,
+      "end_time": 25.46266666666666,
+      "description": "Sie hat ein weißes Hemd mit rotem Logo und ihr Gesicht zeigt Verwirrung",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 25.46266666666666,
+      "start_time": 25.46266666666666,
+      "end_time": 27.421333333333326,
+      "description": "Im Raum befinden sich verschiedene Pflanzen und ein Kühlschrank",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 27.421333333333326,
+      "start_time": 27.421333333333326,
+      "end_time": 29.379999999999992,
+      "description": "**Person im Auto**\n   - Eine weitere Person sitzt im Auto, das nicht voll in Sicht liegt",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 29.379999999999992,
+      "start_time": 29.379999999999992,
+      "end_time": 31.338666666666658,
+      "description": "Das Auto hat eine helle Innendecke und ein Lederinterieur",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 31.338666666666658,
+      "start_time": 31.338666666666658,
+      "end_time": 33.29733333333333,
+      "description": "Die Person hat ein weißes T-Shirt mit schwarzem Design und wirft einen Blick zurück",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 33.29733333333333,
+      "start_time": 33.29733333333333,
+      "end_time": 35.25599999999999,
+      "description": "**Person im Fitnessstudio**\n   - Ein Mann trainiert im Fitnessstudio",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 35.25599999999999,
+      "start_time": 35.25599999999999,
+      "end_time": 37.21466666666666,
+      "description": "Er hat keine Shirt und trägt ein Tattoo auf seiner Brust",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 37.21466666666666,
+      "start_time": 37.21466666666666,
+      "end_time": 39.173333333333325,
+      "description": "Er stellt sich vor und lacht",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 39.173333333333325,
+      "start_time": 39.173333333333325,
+      "end_time": 41.13199999999999,
+      "description": "Im Studio gibt es Maschinen und andere Gerätete",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 41.13199999999999,
+      "start_time": 41.13199999999999,
+      "end_time": 43.09066666666666,
+      "description": "**Person im Haus**\n   - Eine Person sitzt in einem Wohnzimmer und liest ein Buch",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 43.09066666666666,
+      "start_time": 43.09066666666666,
+      "end_time": 45.04933333333332,
+      "description": "Sie hat ein weißes T-Shirt mit schwarzem Symbol und ein Lächeln",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 45.04933333333332,
+      "start_time": 45.04933333333332,
+      "end_time": 47.00799999999999,
+      "description": "Im Raum gibt es eine Couch, ein Stuhl und einige Bücher",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    },
+    {
+      "timestamp": 47.00799999999999,
+      "start_time": 47.00799999999999,
+      "end_time": 48.966666666666654,
+      "description": "**Person im Parkingdeck**",
+      "duration": 1.9586666666666668,
+      "confidence": 0.8
+    }
+  ],
+  "metadata": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-hf",
+    "video_duration": 48.96666666666667,
+    "frames_analyzed": 16,
+    "frame_timestamps": [
+      0.0,
+      3.2333333333333334,
+      6.5,
+      9.766666666666667,
+      13.033333333333333,
+      16.3,
+      19.566666666666666,
+      22.833333333333332,
+      26.066666666666666,
+      29.333333333333332,
+      32.6,
+      35.86666666666667,
+      39.13333333333333,
+      42.4,
+      45.666666666666664,
+      48.93333333333333
+    ],
+    "segment_count": 20,
+    "average_segment_duration": 2.4483333333333333,
+    "coverage": "detailed",
+    "analysis_type": "extreme_detail"
+  },
+  "detailed_description": "sem Video gibt es mehrere Personen in verschiedenen Szenarien, die ich genauer beschreiben werde:\n\n\n1. **Person auf dem Fahrrad**\n   - Person ist links im Bild, sitzt auf einem Fahrrad und hat ein weißes T-Shirt mit schwarzer Aufschrift an. Sie hält einen Handy in der linken Hand und denkt über etwas nach. Ihr Gesicht zeigt Überraschung. Die Umgebung umfasst eine Straße mit Autos hinten und rechts sowie eine Bebauung mit Gebäuden.\n   \n2. **Person am Computer**\n   - Person steht rechts im Bild und nutzt einen Laptop. Er trägt ein Jackett mit einer Kreuz tief eingravierten Symbol auf der Brust und ein Schwarzes Unterhemm. Seine Hände halten einen Stift und ein Papier. Er scheint sich zu konzentrieren und lächelt leise. Der Raum um ihn enthält Büromaterial wie Papier, Stifte und ein Glas.\n3. **Person beim Putzen**\n   - Person befindet sich im Hintergrund und wuschelt sich. Es handelt sich hierbei um eine Frau, die sich selbst betrachtet. Sie hat ein weißes Hemd mit rotem Logo und ihr Gesicht zeigt Verwirrung. Im Raum befinden sich verschiedene Pflanzen und ein Kühlschrank.\n4. **Person im Auto**\n   - Eine weitere Person sitzt im Auto, das nicht voll in Sicht liegt. Das Auto hat eine helle Innendecke und ein Lederinterieur. Die Person hat ein weißes T-Shirt mit schwarzem Design und wirft einen Blick zurück.\n5. **Person im Fitnessstudio**\n   - Ein Mann trainiert im Fitnessstudio. Er hat keine Shirt und trägt ein Tattoo auf seiner Brust. Er stellt sich vor und lacht. Im Studio gibt es Maschinen und andere Gerätete.\n6. **Person im Haus**\n   - Eine Person sitzt in einem Wohnzimmer und liest ein Buch. Sie hat ein weißes T-Shirt mit schwarzem Symbol und ein Lächeln. Im Raum gibt es eine Couch, ein Stuhl und einige Bücher.\n7. **Person im Parkingdeck**",
+  "timeline": "In den ersten 5 Sekunden, wir sehen einen Mann mit tiefrotem Haarschnitt, der sich auf einem Stuhl befindet und ein Handy benutzt. Er hat eine Jacke an, die er offen trägt, um seine Muskelkeln zu zeigen. Es gibt auch eine Person hinter ihm, die nicht gut sichtbar ist. Die Kamera ist vom selben Standpunkt wie der Mann ausgerichtet.\n\n\n[5-10s] Von Sekunde 5 bis 10, der Mann hält das Handy immer noch hoch und schaut nach oben. Der Hintergrund zeigt eine Gymnastik-Umgebung mit Maschinen und Geräten. Ein weiterer Mann sitzt am Schreibtisch und liest etwas.\n\n\n[10-15s] Vom Sekunde 10 bis 15, der Mann mit dem Handy stellt sich vor die Kamera und lächelt. Beide Männer haben ihre Haare kurz geschoren. Im Hintergrund kann man eine Frau sehen, die sich auf ihrem Smartphone konzentriert.\n\n\nIn allen drei Zeitabschnitten ist die Kamera auf einer Ebene mit dem Mann stehend, was darauf hinweist, dass sie direkt über ihn oder sehr nah daneben gedrückt wurde."
+}

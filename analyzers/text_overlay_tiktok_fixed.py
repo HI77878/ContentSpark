@@ -31,8 +31,13 @@ class TikTokTextOverlayAnalyzer(GPUBatchAnalyzer):
         self.reader = None
         # Languages for TikTok - German and English
         self.languages = ['de', 'en']
+<<<<<<< HEAD
         # Sample every 0.17 seconds for maximum text coverage
         self.sample_rate = 5  # ERHÖHT: Every 0.17s at 30fps für schnelle Textänderungen
+=======
+        # Sample every 0.5 seconds for better text coverage
+        self.sample_rate = 15  # Every 0.5s at 30fps
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
     def _load_model_impl(self):
         """Load EasyOCR model optimized for TikTok subtitles"""

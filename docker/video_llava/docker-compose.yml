@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  video-llava:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: video-llava-service:latest
+    container_name: video-llava-service
+    restart: unless-stopped
+    ports:
+      - "8004:8004"
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - PYTHONUNBUFFERED=1
+      - TRANSFORMERS_CACHE=/app/models
+      - HF_HOME=/app/models
+    volumes:
+      # Mount video directories for access
+      - /home/user/tiktok_production/downloads/videos:/videos:ro
+      - /home/user/tiktok_production/results:/results:ro
+      # Model cache persistence
+      - video-llava-models:/app/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 300s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  video-llava-models:
+    driver: local

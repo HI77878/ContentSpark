@@ -1,0 +1,92 @@
+{
+  "test_timestamp": "2025-07-11T06:44:48.985981",
+  "video_duration": 9.31,
+  "tiktok_url": "https://www.tiktok.com/@marcgebauer/video/7525171065367104790",
+  "analysis_time": 68.89832353591919,
+  "realtime_factor": 7.400464396983801,
+  "successful_analyzers": 18,
+  "total_analyzers": 20,
+  "high_quality_analyzers": 7,
+  "analyzer_stats": {
+    "age_estimation": {
+      "segments": 10,
+      "rate": 1.0741138560687433
+    },
+    "audio_analysis": {
+      "segments": 6,
+      "rate": 0.6444683136412459
+    },
+    "audio_environment": {
+      "segments": 4,
+      "rate": 0.4296455424274973
+    },
+    "background_segmentation": {
+      "segments": 3,
+      "rate": 0.32223415682062295
+    },
+    "camera_analysis": {
+      "segments": 7,
+      "rate": 0.7518796992481203
+    },
+    "color_analysis": {
+      "segments": 10,
+      "rate": 1.0741138560687433
+    },
+    "comment_cta_detection": {
+      "segments": 0,
+      "rate": 0.0
+    },
+    "content_quality": {
+      "segments": 10,
+      "rate": 1.0741138560687433
+    },
+    "cut_analysis": {
+      "segments": 9,
+      "rate": 0.9667024704618689
+    },
+    "object_detection": {
+      "segments": 26,
+      "rate": 2.7926960257787323
+    },
+    "qwen2_vl_temporal": {
+      "segments": 0,
+      "rate": 0.0
+    },
+    "scene_segmentation": {
+      "segments": 1,
+      "rate": 0.10741138560687433
+    },
+    "sound_effects": {
+      "segments": 1,
+      "rate": 0.10741138560687433
+    },
+    "speech_emotion": {
+      "segments": 3,
+      "rate": 0.32223415682062295
+    },
+    "speech_flow": {
+      "segments": 9,
+      "rate": 0.9667024704618689
+    },
+    "speech_rate": {
+      "segments": 9,
+      "rate": 0.9667024704618689
+    },
+    "speech_transcription": {
+      "segments": 9,
+      "rate": 0.9667024704618689
+    },
+    "temporal_flow": {
+      "segments": 11,
+      "rate": 1.1815252416756175
+    },
+    "text_overlay": {
+      "segments": 19,
+      "rate": 2.0408163265306123
+    },
+    "visual_effects": {
+      "segments": 56,
+      "rate": 6.015037593984962
+    }
+  }
+}

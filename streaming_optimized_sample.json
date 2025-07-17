@@ -1,0 +1,14 @@
+{
+  "config": {
+    "fps": 15,
+    "window_size": 15,
+    "stride": 5
+  },
+  "performance": {
+    "analysis_time": 76.85039448738098,
+    "segments_total": 1,
+    "segments_10s": 0,
+    "temporal_density": 0
+  },
+  "sample_segments": []
+}

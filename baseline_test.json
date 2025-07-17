@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-07-13T06:29:09.085839",
+  "test_video": "https://www.tiktok.com/@leon_schliebach/video/7446489995663117590",
+  "processing_time": 394.1215167045593,
+  "processing_time_formatted": "394.1s",
+  "result_file": "/home/user/tiktok_production/results/7446489995663117590_multiprocess_20250713_062905.json",
+  "successful_analyzers": 18,
+  "total_analyzers": 18,
+  "gpu_utilization_avg": 1.4,
+  "gpu_before": {
+    "gpu_util_percent": 0.0,
+    "memory_used_mb": 189.0,
+    "memory_total_mb": 46080.0
+  },
+  "api_response": {
+    "status": "success",
+    "video_path": "/home/user/tiktok_videos/videos/7446489995663117590.mp4",
+    "processing_time": 392.8743267059326,
+    "successful_analyzers": 18,
+    "total_analyzers": 18,
+    "results_file": "/home/user/tiktok_production/results/7446489995663117590_multiprocess_20250713_062905.json",
+    "error": null
+  },
+  "video_duration": 48.96666666666667,
+  "realtime_factor": 8.023301430345798,
+  "reconstruction_score": 100.0
+}

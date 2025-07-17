@@ -1,0 +1,15 @@
+{
+    "status": "healthy",
+    "timestamp": "2025-07-09T07:18:22.837275",
+    "gpu": {
+        "gpu_available": true,
+        "gpu_name": "Quadro RTX 8000",
+        "gpu_memory": {
+            "used_mb": 0.0,
+            "total_mb": 45541.3125,
+            "utilization": "0.0%"
+        }
+    },
+    "active_analyzers": 22,
+    "parallelization": "multiprocess"
+}

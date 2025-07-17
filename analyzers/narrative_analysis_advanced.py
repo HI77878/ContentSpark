@@ -204,6 +204,7 @@ class NarrativeAnalysisAdvanced(GPUBatchAnalyzer):
         description = self._create_segment_description(segment)
         
         # Determine dominant emotion
+<<<<<<< HEAD
         try:
             if segment['emotions']:
                 emotion_counts = Counter(segment['emotions'])
@@ -211,6 +212,12 @@ class NarrativeAnalysisAdvanced(GPUBatchAnalyzer):
             else:
                 dominant_emotion = 'neutral'
         except (KeyError, IndexError, TypeError):
+=======
+        if segment['emotions']:
+            emotion_counts = Counter(segment['emotions'])
+            dominant_emotion = emotion_counts.most_common(1)[0][0]
+        else:
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             dominant_emotion = 'neutral'
         
         # Analyze segment purpose

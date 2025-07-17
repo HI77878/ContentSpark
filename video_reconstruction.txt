@@ -1,0 +1,74 @@
+VIDEO RECONSTRUCTION: Leon Schliebach TikTok
+Duration: 48.8 seconds
+Source: Analysis data only (video not viewed)
+
+SCENE-BY-SCENE BREAKDOWN:
+========================
+
+[00s] Text on screen: "WAS GEHT AB ICH". Speech: "Was geht ab? Ich nehme euch heute noch mal mit in den Tag eines hart arbeitenden Beamten. Morgens". Effects: motion_blur, brightness
+[01s] Text on screen: "MAL MIT IN DEN TAG". Camera tilt_up. Effects: motion_blur, brightness
+[02s] Text on screen: "EINES HART ARBEITENDEN BEAMTEN". Camera tilt_up. Effects: motion_blur, brightness
+[03s] Text on screen: "MORGENS ERSTMAL KURZ READY GEMACHT". Speech: "erst mal kurz ready gemacht, den Bart abrasiert, damit die Kollegen im Büro mich auch wieder erkennen.". Effects: motion_blur, brightness
+[04s] Text on screen: "IV.IIY MORGENS ERSTMAL KURZ READY GEMACHT". Camera pan_right. Effects: motion_blur, brightness
+[05s] Text on screen: "DAMIT DIE KOLLEGEN IM". Camera pan_left. Effects: motion_blur, brightness
+[06s] Text on screen: "BÜRO MICH AUCH WIEDERERKENNEN". Camera tilt_up. Effects: motion_blur, brightness
+[07s] Text on screen: "SCHON MAL DEN SHAKE VORBEREITET ydy". Speech: "Schauen wir den Shake vorbereitet und dann gibt es jetzt eine kurze Ofetransition, weil ich war etwas später an, weil ich versucht habe, alles mit zu filmen.". Camera tilt_down. Effects: motion_blur, brightness
+[08s] Text on screen: "UND DANN GIBT'S JETZT NE Udy". Camera pan_right. Effects: motion_blur, brightness
+[09s] Text on screen: "KURZE OUTFIT TRANSITION". Camera pan_left. Effects: motion_blur, brightness
+[10s] Text on screen: "SPäT DRAN". Camera pan_right. Effects: motion_blur, brightness
+[11s] Text on screen: "ALLES MITZUFILMEN". Camera pan_left. Effects: motion_blur, brightness
+[12s] Text on screen: "GENAU AUS DEM GRUND". Speech: "Genauso ist die irgendwo und habe ich mir dann auch noch eine Mütze aufgezogen, weil ich es nicht mehr geschafft habe, meine Haare zu machen. Auf dem Weg ins Büro da noch ein bisschen zu Musik gewalt,". Camera tilt_down. Effects: motion_blur, brightness
+[13s] Text on screen: "AUCH NOCH NE Mü TZE AUFGEZOGEN". Camera pan_left. Effects: motion_blur
+[14s] Text on screen: "GESCHAFFT HAB". Camera tilt_down. Effects: motion_blur, transition
+[15s] Text on screen: "MEINE HAARE ZU MACHEN". Camera pan_right. Effects: motion_blur, brightness
+[16s] Text on screen: "DANN NOCH N BISSCHEN". Camera pan_right. Effects: motion_blur, brightness
+[17s] Text on screen: "ZUR MUSIK GEVIBET". Speech: "man sieht leider nicht so viel davor, was ein Handy runtergefallen ist. Deswegen geht es dir direkt weiter, als ich schon den Büro angekommen bin.". Camera tilt_down. Effects: motion_blur, brightness
+[18s] Text on screen: "SO VIEL DAVON". Camera tilt_up. Effects: motion_blur, brightness, transition
+[19s] Text on screen: "WEIL MEIN HANDY RUNTERGEFALLEN IST". Camera tilt_up. Effects: motion_blur, brightness
+[20s] Text on screen: "DESWEGEN GEHT'S HIER DIREKT WEITER". Effects: motion_blur, brightness
+[21s] Text on screen: "BüRO ANGEKOMMEN BIN". Speech: "Ich habe erst mal ein paar Maids bearbeitet und ein paar Aufträge angeschaut. Und dann an unserem Azubi, der einfach drei Jahre älter ist, als ich ein paar Sachen erklärt.". Effects: motion_blur, brightness
+[22s] Text on screen: "ICH HAB ERSTMAL N". Effects: motion_blur, brightness
+[23s] Text on screen: "PAAR MAILS BEARBEITET UND". Effects: motion_blur, brightness
+[24s] Text on screen: "AUFTRäGE ANGESCHAUT UND DANN". Effects: motion_blur, brightness
+[25s] Text on screen: "DER EINFACH 3 JAHRE". Effects: motion_blur, brightness
+[26s] Text on screen: "äLTER IST ALS ICH". Effects: motion_blur
+[27s] Text on screen: "WIR SIND DANN AUCH". Speech: "Wir sind dann auch noch zu einem Außentheming gefahren, davon kann ich leider nicht so viel zeigen. Deswegen seht ihr mich hier wieder am Schreibtisch,". Effects: motion_blur, brightness
+[28s] Text on screen: "NOCH ZU NEM AUß ENTERMIN GEFAHREN". Effects: motion_blur, brightness, transition
+[29s] Text on screen: "NICHT so VIEL ZEIGEN". Effects: motion_blur, brightness
+[30s] Text on screen: "DESWEGEN SEHT IHR MICH". Effects: motion_blur, brightness
+[31s] Text on screen: "HIER WIEDER AM SCHREIBTISCH". Speech: "wie ich noch ein paar Rechnungen bearbeitet habe und dann war auch schon feierabend. Ich bin direkt von der Arbeit außens stimmen gefahren,". Effects: motion_blur, brightness
+[32s] Text on screen: "PAAR RECHNUNGEN BEARBEITET HAB". Effects: motion_blur, brightness
+[33s] Text on screen: "UND DANN WAR AUCH". Effects: motion_blur, brightness
+[34s] Text on screen: "ICH BIN DIREKT VON". Effects: motion_blur, brightness, transition
+[35s] Text on screen: "DER ARBEIT AUS INS". Effects: motion_blur, brightness
+[36s] Text on screen: "HAB NUR NE BANANE". Speech: "habe nur eine Banane auf dem Weg noch gegessen. Dann noch mein Kollegen abkohlen, eigentlich stand heute legt er auf dem Plan aber.". Effects: motion_blur, brightness
+[37s] Text on screen: "AUF DEM WEG GEGESSEN". Effects: motion_blur, brightness
+[38s] Text on screen: "EIGENTLICH STAND HEUTE LEGDAY". Effects: motion_blur, brightness
+[39s] Text on screen: "AUF DEM PLAN". Effects: motion_blur, brightness, transition
+[40s] Text on screen: "ABER ICH GLAUB IHR". Speech: "Ich glaube, ihr seht selbst, das könnte schwierig werden. Deswegen haben wir Oberkörper trainiert und im Training selbst habe ich dann aber nicht mehr so viel mitgefilmt, weil ich einfach schnell durchziehen wollte.". Effects: motion_blur, transition
+[41s] Text on screen: "SEHT SELBST DAS Kö NNTE". Effects: motion_blur
+[42s] Text on screen: "SCHWIERIG WERDEN DESWEGEN HABEN". Effects: motion_blur, brightness, transition
+[43s] Text on screen: "WIR OBERKöRPER TRAINIERT". Effects: motion_blur, brightness
+[44s] Text on screen: "VOM TRAINING SELBST". Effects: motion_blur, brightness
+[45s] Text on screen: "NICHT MEHR SO VIEL MITGEFILMT". Effects: motion_blur, brightness
+[46s] Text on screen: "WEIL ICH EINFACH SCHNELL". Speech: "Und deswegen war es auch schon mit dem Vlog. Ciao!". Effects: motion_blur, brightness
+[47s] Text on screen: "UND DESWEGEN WAR". Effects: motion_blur, brightness
+[48s] Text on screen: "DEM VLOG. CIAO". Effects: motion_blur, brightness
+
+SUMMARY:
+========
+Based on the analysis, this appears to be a TikTok video by Leon Schliebach showing "a day in the life of a hardworking civil servant" (Beamter). 
+
+The video includes:
+- German text overlays throughout explaining his morning routine
+- Speech narration matching the text
+- Various camera movements (tilts, pans)
+- Visual effects including motion blur and transitions
+- Shows morning preparation, getting ready, making a shake
+- Mentions being late and putting on a hat because no time for hair
+- Heading to the office with music
+
+The reconstruction captures the essential narrative and visual style of the video through text, speech, and technical details, even without scene descriptions from the StreamingDenseCaptioning analyzer.
+
+Data Coverage: 102.1%
+Reconstruction Score: 67%

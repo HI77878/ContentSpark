@@ -1,17 +1,62 @@
 [Unit]
+<<<<<<< HEAD
 Description=TikTok Analyzer Production API
 After=network.target
+=======
+Description=TikTok Video Analysis API - Production Service
+Documentation=file:///home/user/tiktok_production/DEPLOYMENT_GUIDE.md
+After=network.target nvidia-persistenced.service
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
 
 [Service]
 Type=simple
 User=user
 Group=user
 WorkingDirectory=/home/user/tiktok_production
+<<<<<<< HEAD
 ExecStart=/home/user/tiktok_production/start.sh
 Restart=always
 RestartSec=10
 Environment=PYTHONPATH=/home/user/tiktok_production
 Environment=CUDA_VISIBLE_DEVICES=0
+=======
+
+# Environment setup
+Environment="PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="CUDA_VISIBLE_DEVICES=0"
+Environment="PYTHONUNBUFFERED=1"
+Environment="PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512"
+
+# FFmpeg fix - critical for video processing
+Environment="OPENBLAS_NUM_THREADS=1"
+Environment="MKL_NUM_THREADS=1"
+Environment="OMP_NUM_THREADS=1"
+Environment="NUMEXPR_NUM_THREADS=1"
+
+# Start command
+ExecStartPre=/bin/bash -c 'source /home/user/tiktok_production/fix_ffmpeg_env.sh'
+ExecStart=/usr/bin/python3 /home/user/tiktok_production/api/stable_production_api_multiprocess.py
+
+# Restart policy
+Restart=always
+RestartSec=10
+StartLimitInterval=200
+StartLimitBurst=5
+
+# Resource limits
+LimitNOFILE=65536
+MemoryLimit=32G
+
+# Logging
+StandardOutput=append:/home/user/tiktok_production/logs/systemd_api.log
+StandardError=append:/home/user/tiktok_production/logs/systemd_api_error.log
+
+# Security
+PrivateTmp=true
+ProtectHome=read-only
+ProtectSystem=strict
+ReadWritePaths=/home/user/tiktok_production/results /home/user/tiktok_production/logs /home/user/tiktok_production/downloads
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
 
 [Install]
 WantedBy=multi-user.target

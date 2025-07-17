@@ -200,6 +200,7 @@ class AgeGenderInsightFace(GPUBatchAnalyzer):
                             'appearances': face_tracks.get(face_id, {}).get('appearances', 0) + 1
                         }
                 
+<<<<<<< HEAD
                 # Create description
                 if len(frame_faces) == 0:
                     description = "Keine Gesichter erkannt"
@@ -221,6 +222,11 @@ class AgeGenderInsightFace(GPUBatchAnalyzer):
                     'timestamp': round(timestamp, 2),
                     'segment_id': f'age_estimation_{int(timestamp * 10)}',
                     'description': description,
+=======
+                # Create segment
+                segment = {
+                    'timestamp': round(timestamp, 2),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     'faces_detected': len(frame_faces),
                     'faces': frame_faces,
                     'frame_analysis': self._analyze_frame_demographics(frame_faces)
@@ -231,11 +237,15 @@ class AgeGenderInsightFace(GPUBatchAnalyzer):
             except Exception as e:
                 logger.error(f"[AgeGenderInsightFace] Error processing frame at {timestamp}s: {e}")
                 segments.append({
+<<<<<<< HEAD
                     'start_time': max(0.0, round(timestamp - 0.5, 2)),
                     'end_time': round(timestamp + 0.5, 2),
                     'timestamp': round(timestamp, 2),
                     'segment_id': f'age_estimation_{int(timestamp * 10)}_error',
                     'description': f"Fehler bei Gesichtserkennung: {str(e)}",
+=======
+                    'timestamp': round(timestamp, 2),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     'faces_detected': 0,
                     'error': str(e)
                 })
@@ -385,9 +395,13 @@ class AgeGenderInsightFace(GPUBatchAnalyzer):
                            face_tracks: Dict) -> str:
         """Match face to existing identity or create new one"""
         if not face_tracks:
+<<<<<<< HEAD
             # Create unique ID based on embedding hash for consistency
             embedding_hash = hash(tuple(embedding.flatten()[:10]))  # Use first 10 values for uniqueness
             return f"person_{abs(embedding_hash) % 1000}"
+=======
+            return "person_0"
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         # Compare with existing embeddings
         min_distance = float('inf')

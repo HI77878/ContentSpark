@@ -1,0 +1,101 @@
+{
+  "segments": [
+    {
+      "timestamp": 0.0,
+      "start_time": 0.0,
+      "end_time": 6.995238095238095,
+      "description": ": In the 49-second video, the main focus is on a shirtless man standing in a room with a tattooed chest and arms, wearing a black beanie and a black jacket.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 6.995238095238095,
+      "start_time": 6.995238095238095,
+      "end_time": 13.99047619047619,
+      "description": "He is holding a toothbrush in his right hand and appears to be brushing his teeth.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 13.99047619047619,
+      "start_time": 13.99047619047619,
+      "end_time": 20.985714285714288,
+      "description": "The room has a modern, casual setting with a desk in the background, a potted plant, and a window with natural light coming in.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 20.985714285714288,
+      "start_time": 20.985714285714288,
+      "end_time": 27.98095238095238,
+      "description": "The man is looking directly at the camera with a slight smile.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 27.98095238095238,
+      "start_time": 27.98095238095238,
+      "end_time": 34.976190476190474,
+      "description": "The text overlay on the video reads \"WIR SIND DANN MANN\" and \"WIR SIND DANN WERKEN,\" which translates to \"We are men\" and \"We are working,\" respectively.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 34.976190476190474,
+      "start_time": 34.976190476190474,
+      "end_time": 41.97142857142857,
+      "description": "The man's actions are centered around personal hygiene, and the setting suggests a domestic or personal space.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 41.971428571428575,
+      "start_time": 41.971428571428575,
+      "end_time": 48.96666666666667,
+      "description": "The timing of the video is consistent throughout, with no significant changes in the man's position or actions.",
+      "confidence": 0.95
+    }
+  ],
+  "metadata": {
+    "model": "llava-hf/LLaVA-NeXT-Video-7B-DPO-hf",
+    "video_duration": 48.96666666666667,
+    "frames_analyzed": 32,
+    "frame_timestamps": [
+      0.0,
+      1.5666666666666667,
+      3.1333333333333333,
+      4.733333333333333,
+      6.3,
+      7.866666666666666,
+      9.466666666666667,
+      11.033333333333333,
+      12.6,
+      14.2,
+      15.766666666666667,
+      17.333333333333332,
+      18.933333333333334,
+      20.5,
+      22.066666666666666,
+      23.666666666666668,
+      25.233333333333334,
+      26.833333333333332,
+      28.4,
+      29.966666666666665,
+      31.566666666666666,
+      33.13333333333333,
+      34.7,
+      36.3,
+      37.86666666666667,
+      39.43333333333333,
+      41.03333333333333,
+      42.6,
+      44.166666666666664,
+      45.766666666666666,
+      47.333333333333336,
+      48.93333333333333
+    ],
+    "uniform_sampling": true,
+    "anti_hallucination": true,
+    "settings": {
+      "do_sample": false,
+      "temperature": 0.0,
+      "padding_side": "left",
+      "image_aspect_ratio": "pad"
+    }
+  },
+  "full_description": ": In the 49-second video, the main focus is on a shirtless man standing in a room with a tattooed chest and arms, wearing a black beanie and a black jacket. He is holding a toothbrush in his right hand and appears to be brushing his teeth. The room has a modern, casual setting with a desk in the background, a potted plant, and a window with natural light coming in. The man is looking directly at the camera with a slight smile. The text overlay on the video reads \"WIR SIND DANN MANN\" and \"WIR SIND DANN WERKEN,\" which translates to \"We are men\" and \"We are working,\" respectively. The man's actions are centered around personal hygiene, and the setting suggests a domestic or personal space. The timing of the video is consistent throughout, with no significant changes in the man's position or actions."
+}

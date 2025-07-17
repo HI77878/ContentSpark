@@ -40,13 +40,22 @@ ANALYZER_MAP = {
     'eye_tracking': ('gpu_batch_eye_tracking', 'GPUBatchEyeTracking'),
     'color_analysis': ('gpu_batch_color_analysis', 'GPUBatchColorAnalysis'),
     'composition_analysis': ('composition_analysis_light', 'GPUBatchCompositionAnalysisLight'),
+<<<<<<< HEAD
     'age_estimation': ('age_gender_insightface', 'AgeGenderInsightFace'),
     'face_emotion': ('face_emotion_mediapipe', 'FaceEmotionMediaPipe'),
+=======
+    'age_estimation': ('age_estimation_light', 'GPUBatchAgeEstimationLight'),
+    'face_emotion': ('face_emotion_deepface', 'FaceEmotionDeepFace'),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     'body_pose': ('body_pose_yolov8', 'BodyPoseYOLOv8'),
     'cut_analysis': ('cut_analysis_fixed', 'CutAnalysisFixedAnalyzer'),
     'scene_segmentation': ('scene_segmentation_fixed', 'SceneSegmentationFixedAnalyzer'),
     'content_quality': ('gpu_batch_content_quality_fixed', 'GPUBatchContentQualityFixed'),
+<<<<<<< HEAD
     'visual_effects': ('visual_effects_cv_based', 'VisualEffectsCVBased'),
+=======
+    'visual_effects': ('visual_effects_light_fixed', 'VisualEffectsLight'),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     'product_detection': ('gpu_batch_product_detection_light', 'GPUBatchProductDetectionLight'),
     
     # Audio analyzers
@@ -58,6 +67,7 @@ ANALYZER_MAP = {
     'comment_cta_detection': ('gpu_batch_comment_cta_detection', 'GPUBatchCommentCTADetection'),
     
     # CPU analyzers
+<<<<<<< HEAD
     'temporal_flow': ('narrative_analysis_wrapper', 'NarrativeAnalysisWrapper'),
     
     # Cross-analyzer intelligence - MUST RUN LAST
@@ -67,6 +77,14 @@ ANALYZER_MAP = {
     'streaming_dense_captioning': ('streaming_dense_captioning_fixed', 'StreamingDenseCaptioningFixed'),
     # 'qwen2_vl_optimized': ('qwen2_vl_optimized_analyzer', 'Qwen2VLOptimizedAnalyzer'),  # REMOVED from Clean Server MVP
     'qwen2_vl_temporal': ('qwen2_vl_video_analyzer', 'Qwen2VLVideoAnalyzer'),
+=======
+    'temporal_flow': ('cpu_batch_temporal_flow', 'CPUBatchTemporalFlow'),
+    
+    # Video understanding analyzers
+    'streaming_dense_captioning': ('streaming_dense_captioning_fixed', 'StreamingDenseCaptioningFixed'),
+    'qwen2_vl_optimized': ('qwen2_vl_optimized_analyzer', 'Qwen2VLOptimizedAnalyzer'),
+    'qwen2_vl_temporal': ('qwen2_vl_video_analyzer_production', 'Qwen2VLVideoAnalyzerProduction'),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
     'qwen2_vl_ultra': ('qwen2_vl_ultra_detailed', 'Qwen2VLUltraDetailedAnalyzer'),
 }
 

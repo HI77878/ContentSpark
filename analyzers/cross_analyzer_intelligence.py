@@ -31,6 +31,7 @@ class CrossAnalyzerIntelligence:
         
         logger.info("[CrossAnalyzer] Initialized intelligence system")
     
+<<<<<<< HEAD
     def analyze_with_context(self, video_path: str, previous_results: Dict[str, Any]) -> Dict[str, Any]:
         """
         FIXED: Missing method that the API calls
@@ -42,15 +43,23 @@ class CrossAnalyzerIntelligence:
         return self.analyze(previous_results)
     
     def analyze(self, video_path_or_outputs) -> Dict[str, Any]:
+=======
+    def analyze(self, analyzer_outputs: Dict[str, Any]) -> Dict[str, Any]:
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         """
         Main entry point for cross-analyzer intelligence
         
         Args:
+<<<<<<< HEAD
             video_path_or_outputs: Video path (string) or analyzer outputs (dict)
+=======
+            analyzer_outputs: Dictionary of all analyzer outputs
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         Returns:
             Enhanced analysis with cross-correlations and insights
         """
+<<<<<<< HEAD
         # Handle both video path and analyzer outputs
         if isinstance(video_path_or_outputs, str):
             # If called with video path, create basic cross-analysis segments
@@ -97,6 +106,9 @@ class CrossAnalyzerIntelligence:
                     'error': f'Invalid input type: {type(video_path_or_outputs)}'
                 }
             }
+=======
+        self.analyzer_outputs = analyzer_outputs
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         
         # Build unified timeline
         self.timeline = self._build_unified_timeline()
@@ -118,8 +130,12 @@ class CrossAnalyzerIntelligence:
         enhanced_segments = self._create_enhanced_segments()
         
         return {
+<<<<<<< HEAD
             'segments': enhanced_segments,  # FIXED: Use 'segments' for compatibility
             'enhanced_segments': enhanced_segments,  # Keep for backward compatibility
+=======
+            'enhanced_segments': enhanced_segments,
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             'person_insights': person_insights,
             'scene_insights': scene_insights,
             'narrative_insights': narrative_insights,
@@ -128,7 +144,11 @@ class CrossAnalyzerIntelligence:
             'comprehensive_insights': comprehensive_insights,
             'key_moments': self._identify_key_moments(),
             'metadata': {
+<<<<<<< HEAD
                 'analyzers_used': list(self.analyzer_outputs.keys()),
+=======
+                'analyzers_used': list(analyzer_outputs.keys()),
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                 'timeline_events': len(self.timeline),
                 'total_insights': len(comprehensive_insights)
             }
@@ -138,6 +158,7 @@ class CrossAnalyzerIntelligence:
         """Build a unified timeline from all analyzer outputs"""
         timeline = []
         
+<<<<<<< HEAD
         # Validate analyzer_outputs
         if not isinstance(self.analyzer_outputs, dict):
             logger.error(f"[CrossAnalyzer] analyzer_outputs is not a dict: {type(self.analyzer_outputs)}")
@@ -184,6 +205,28 @@ class CrossAnalyzerIntelligence:
             logger.error(f"[CrossAnalyzer] Error sorting timeline: {e}")
         
         logger.info(f"[CrossAnalyzer] Built timeline with {len(timeline)} events from {len(self.analyzer_outputs)} analyzers")
+=======
+        # Extract events from each analyzer
+        for analyzer_name, data in self.analyzer_outputs.items():
+            # Skip if data is not a dict (e.g., error string)
+            if not isinstance(data, dict):
+                logger.warning(f"[CrossAnalyzer] Skipping {analyzer_name} - not a dict: {type(data)}")
+                continue
+            
+            if 'segments' in data:
+                for segment in data['segments']:
+                    event = {
+                        'timestamp': segment.get('timestamp', segment.get('start_time', 0)),
+                        'end_time': segment.get('end_time', segment.get('timestamp', 0)),
+                        'analyzer': analyzer_name,
+                        'data': segment
+                    }
+                    timeline.append(event)
+        
+        # Sort by timestamp
+        timeline.sort(key=lambda x: x['timestamp'])
+        
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
         return timeline
     
     def _analyze_person_behavior(self) -> Dict[str, Any]:
@@ -356,6 +399,7 @@ class CrossAnalyzerIntelligence:
         if not body_language:
             return {'dominant': 'unknown', 'variety': 0}
         
+<<<<<<< HEAD
         # Ensure body_language contains dicts, not strings
         languages = []
         for bl in body_language:
@@ -371,6 +415,14 @@ class CrossAnalyzerIntelligence:
         
         return {
             'dominant': language_counts.most_common(1)[0][0] if language_counts else 'unknown',
+=======
+        languages = [bl['language'] for bl in body_language]
+        from collections import Counter
+        language_counts = Counter(languages)
+        
+        return {
+            'dominant': language_counts.most_common(1)[0][0],
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             'variety': len(language_counts),
             'changes': sum(1 for i in range(1, len(languages)) if languages[i] != languages[i-1])
         }

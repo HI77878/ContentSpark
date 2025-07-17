@@ -109,14 +109,22 @@ class CutAnalysisFixedAnalyzer(GPUBatchAnalyzer):
             mean_diff = diff.mean().item()
             
             # Always create a segment for tracking
+<<<<<<< HEAD
             is_cut = mean_diff > self.threshold
+=======
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             segment = {
                 "timestamp": frame_times[i],
                 "start_time": frame_times[i-1],
                 "end_time": frame_times[i],
+<<<<<<< HEAD
                 "segment_id": f'cut_{int(frame_times[i] * 10)}',
                 "frame_diff": mean_diff,
                 "is_cut": is_cut
+=======
+                "frame_diff": mean_diff,
+                "is_cut": mean_diff > self.threshold
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
             }
             
             # Also check for jump cuts with lower threshold
@@ -129,6 +137,7 @@ class CutAnalysisFixedAnalyzer(GPUBatchAnalyzer):
                     frame_times[i]
                 )
                 
+<<<<<<< HEAD
                 shot_duration = frame_times[i] - frame_times[current_shot_start]
                 description = f"Schnitt bei {frame_times[i]:.1f}s: {cut_info['description']} (Intensität: {mean_diff:.1f}, Shot-Dauer: {shot_duration:.1f}s)"
                 
@@ -136,12 +145,21 @@ class CutAnalysisFixedAnalyzer(GPUBatchAnalyzer):
                     "description": description,
                     "type": cut_info["type"],
                     "cut_description": cut_info["description"],
+=======
+                segment.update({
+                    "type": cut_info["type"],
+                    "description": cut_info["description"],
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     "confidence": min(mean_diff / 50.0, 1.0),
                     "intensity": cut_info["intensity"],
                     "color_change": cut_info["color_change"],
                     "luminance_change": cut_info["luminance_change"],
                     "motion_change": cut_info["motion_change"],
+<<<<<<< HEAD
                     "shot_duration": shot_duration,
+=======
+                    "shot_duration": frame_times[i] - frame_times[current_shot_start],
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     "shot_number": shot_count
                 })
                 
@@ -149,11 +167,17 @@ class CutAnalysisFixedAnalyzer(GPUBatchAnalyzer):
                 current_shot_start = i
                 shot_count += 1
             else:
+<<<<<<< HEAD
                 description = f"Kontinuierlicher Shot bei {frame_times[i]:.1f}s (Diff: {mean_diff:.1f})"
                 segment.update({
                     "description": description,
                     "type": "no_cut",
                     "cut_description": "Continuous shot",
+=======
+                segment.update({
+                    "type": "no_cut",
+                    "description": "Continuous shot",
+>>>>>>> 737fef1f5ce8d7eec45c5518784ebaf5218324cc
                     "confidence": 0.0
                 })
             

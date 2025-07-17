@@ -27,6 +27,9 @@ id_ed25519*
 api_keys.txt
 tokens.json
 credentials.json
+*token*
+*secret*
+GIT_PUSH_*.md
 
 # =====================================================
 # TEMPORARY AND CACHE FILES
